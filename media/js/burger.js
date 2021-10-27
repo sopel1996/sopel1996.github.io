@@ -1,30 +1,3 @@
-$(document).ready(function () {
-    if ($('.counter').length > 0) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 2000
-        });
-    }
-
-    if ($('.grid').length > 0) {
-
-        var $container = $(".grid");
-      
-        $container.masonry({
-          columnWidth: ".grid-item",
-          itemSelector: ".grid-item",
-          isFitWidth: true,
-          gutter: 20
-        });
-      
-      
-    }
-});
-
-$(window).scroll(function () {
-    $('header').toggleClass('shrink', $(this).scrollTop() > 80);
-});
-
 function burgerMenu(selector) {
     let menu = $(selector);
     let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -44,9 +17,9 @@ function burgerMenu(selector) {
         button.toggleClass('burger-menu_button_active');
 
         if (menu.hasClass('burger-menu_active')) {
-            $('body').css('overflow', 'hidden');
+            $('body').css('overlow', 'hidden');
         } else {
-            $('body').css('overflow', 'visible');
+            $('body').css('overlow', 'visible');
         }
     }
 }

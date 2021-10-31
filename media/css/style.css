@@ -184,7 +184,7 @@ header ._nav>li:hover>ul.sub-menu {
 }
 
 header ._nav>li>ul.sub-menu {
-    background : rgba(2, 32, 59, 0.95);
+    background : #080325;
     display    : none;
     line-height: 25px;
     position   : absolute;
@@ -378,7 +378,7 @@ Mob menu
     -ms-flex-flow        : column;
     flex-flow            : column;
     height               : 100%;
-    background-color     : #6a6c6d;
+    background-color     : #080325;
     overflow-y           : auto;
     right                : -100%;
     -webkit-transition   : 0.8s;

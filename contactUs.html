@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="sectionInner">
             <section class="mobMenu">
@@ -20,31 +21,63 @@
                     <a href="" class="burger-menu_button">
                         <spun class="burger-menu_lines"></spun>
                     </a>
-                    <nav class="burger-menu_nav">
-                        <a class="burger-menu_link" href="#">דף הבית</a>
-                        <a class="burger-menu_link" href="#">הפירמה</a>
-                        <a class="burger-menu_link" href="#">תביעה נגד משרד הביטחון</a>
-                        <a class="burger-menu_link" href="#">תיאופר תונלשרו ףוג יקזנ</a>
-                        <a class="burger-menu_link" href="#">מאמרים</a>
-                        <a class="burger-menu_link" href="#">תרושקת</a>
-                        <a class="burger-menu_link" href="#">תוצלמה</a>
-                    </nav>
+                    <ul class="burger-menu_nav" style="overflow: scroll;">
+                        <li class="burger-menu_link"><a href="#"> דף הבית </a></li>
+                        <li class="burger-menu_link"><a href="#">הפירמה</a></li>
+                        <li class="burger-menu_link"><a href="#">תביעה נגד משרד הביטחון</a></li>
+                        <li class="burger-menu_link"><a href="#">תיאופר תונלשרו ףוג יקזנ</a></li>
+                        <li class="burger-menu_link"><a href="#">מאמרים</a></li>
+                        <li class="burger-menu_link"><a href="#">תרושקת</a></li>
+                        <li class="burger-menu_link"><a href="#">תוצלמה</a></li>
+
+                        <li class=" burger-menu_link menu-item-has-children">
+                            <a href="#">אודות</a>
+                            <ul class="sub-menu">
+                                <li class="burger-menu_link"><a href="#">אודות
+                                        משרדנו</a>
+                                </li>
+                                <li class="burger-menu_link"><a href="#">צוות המשרד</a></li>
+                                <li class="burger-menu_link"><a href="#">המלצות
+                                        מלקוחות – לקוחות ממליצים על משרד יניר הראל ושות'</a></li>
+                                <li class="burger-menu_link"><a href="#">תמונות
+                                        משרד יניר הראל ושות'</a></li>
+                                <li class="burger-menu_link"><a href="#">משרדנו
+                                        בעיתונות</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
                     <div class="burger-menu_overlay"></div>
                 </div>
             </section>
-            <div class="_logo"></div>
-            <nav class="_nav">
-                <a class="_navItem" href="#">דף הבית</a>
-                <a class="_navItem" href="#">הפירמה</a>
-                <a class="_navItem" href="#">תביעה נגד משרד הביטחון</a>
-                <a class="_navItem" href="#">תיאופר תונלשרו ףוג יקזנ</a>
-                <a class="_navItem" href="#">מאמרים</a>
-                <a class="_navItem" href="#">תרושקת</a>
-                <a class="_navItem" href="#">תוצלמה</a>
-            </nav>
+            <a href="/">
+                <div class="_logo"></div>
+            </a>
+            <ul class="_nav">
+                <li class="_navItem"><a href="#">דף הבית</a></li>
+                <li class="_navItem"><a href="#">הפירמה</a></li>
+                <li class="_navItem"><a href="#">תביעה נגד משרד הביטחון</a></li>
+                <li class="_navItem"><a href="#">תיאופר תונלשרו ףוג יקזנ</a></li>
+                <li class="_navItem"><a href="#">מאמרים</a></li>
+                <li class="_navItem"><a href="#">תרושקת</a></li>
+                <li class="_navItem menu-item-has-children"><a href="#">תוצלמה</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">אודות משרדנו</a>
+                        </li>
+                        <li class="menu-item"><a href="#" d>צוות המשרד</a></li>
+                        <li class="menu-item"><a href="#">המלצות
+                                מלקוחות – לקוחות ממליצים על משרד יניר הראל ושות'</a></li>
+                        <li class="menu-item"><a href="#">תמונות
+                                משרד יניר הראל ושות'</a></li>
+                        <li class="menu-item"><a href="#">משרדנו בעיתונות</a></li>
+                    </ul>
+                </li>
+
+            </ul>
             <button class="btn"> יצירת קשר </button>
         </div>
     </header>
+
     <section class="sectionSmallBanner">
         <div class="sectionInner">
             <h3 class="sectionSmallBanner_title">
@@ -72,11 +105,11 @@
                 <label for="email">
                     אימייל
                     <input type="email" name="email" id="email" placeholder="כתובת דוא&quot;ל">
-                    
+
                 </label>
                 <label for="">הודעה
 
-                    <textarea name="messange" id="messange"  placeholder="האם יש לכם משהו להוסיף?"></textarea>
+                    <textarea name="messange" id="messange" placeholder="האם יש לכם משהו להוסיף?"></textarea>
                 </label>
                 <input type="submit" value="שליחה    >" class="btn">
             </form>
@@ -116,6 +149,7 @@
             </div>
         </div>
     </section>
+
     <section class="address">
         <div class="sectionInner">
             <div class="firstAddress">
@@ -124,9 +158,11 @@
                     <h5 class="subtitle">רח׳ הארבעה 28, תל אביב</h5>
                 </div>
                 <div class="mapImg">
-                <div class="addressImg"></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.9618903942123!2d34.783869515164305!3d32.070279481191115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b9d680ff7c7%3A0x7b569c8815ba00a4!2zSGFBcmJhJ2EgMjgsIFRlbCBBdml2LVlhZm8sINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2sru!4v1635195161033!5m2!1sru!2sru" width="300" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+                    <div class="addressImg"></div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.9618903942123!2d34.783869515164305!3d32.070279481191115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b9d680ff7c7%3A0x7b569c8815ba00a4!2zSGFBcmJhJ2EgMjgsIFRlbCBBdml2LVlhZm8sINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2sru!4v1635195161033!5m2!1sru!2sru"
+                        width="300" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
             <div class="secondAddress">
                 <div class="text">
@@ -135,12 +171,15 @@
                 </div>
                 <div class="mapImg">
                     <div class="addressImg"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22595.190490249384!2d35.21183592769719!3d32.66489469219912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c52c88a105f69%3A0x1af0f4f569b30ad3!2zU2FyaWQsINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2sru!4v1635195065834!5m2!1sru!2sru" width="300" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22595.190490249384!2d35.21183592769719!3d32.66489469219912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c52c88a105f69%3A0x1af0f4f569b30ad3!2zU2FyaWQsINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2sru!4v1635195065834!5m2!1sru!2sru"
+                        width="300" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            
+
         </div>
     </section>
+
     <footer>
         <div class="sectionInner">
             <div class="_firstLine">
@@ -286,9 +325,11 @@
             </div>
         </div>
     </footer>
+
     <script src="media/js/jquery-3.6.0.min.js"></script>
     <script src="media/js/masonry.pkgd.min.js"></script>
     <script src="media/js/index.js"></script>
+
 </body>
 
 </html>

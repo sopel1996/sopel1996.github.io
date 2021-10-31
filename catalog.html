@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="sectionInner">
             <section class="mobMenu">
@@ -20,47 +21,79 @@
                     <a href="" class="burger-menu_button">
                         <spun class="burger-menu_lines"></spun>
                     </a>
-                    <nav class="burger-menu_nav">
-                        <a class="burger-menu_link" href="#">דף הבית</a>
-                        <a class="burger-menu_link" href="#">הפירמה</a>
-                        <a class="burger-menu_link" href="#">תביעה נגד משרד הביטחון</a>
-                        <a class="burger-menu_link" href="#">תיאופר תונלשרו ףוג יקזנ</a>
-                        <a class="burger-menu_link" href="#">מאמרים</a>
-                        <a class="burger-menu_link" href="#">תרושקת</a>
-                        <a class="burger-menu_link" href="#">תוצלמה</a>
-                    </nav>
+                    <ul class="burger-menu_nav" style="overflow: scroll;">
+                        <li class="burger-menu_link"><a href="#"> דף הבית </a></li>
+                        <li class="burger-menu_link"><a href="#">הפירמה</a></li>
+                        <li class="burger-menu_link"><a href="#">תביעה נגד משרד הביטחון</a></li>
+                        <li class="burger-menu_link"><a href="#">תיאופר תונלשרו ףוג יקזנ</a></li>
+                        <li class="burger-menu_link"><a href="#">מאמרים</a></li>
+                        <li class="burger-menu_link"><a href="#">תרושקת</a></li>
+                        <li class="burger-menu_link"><a href="#">תוצלמה</a></li>
+
+                        <li class=" burger-menu_link menu-item-has-children">
+                            <a href="#">אודות</a>
+                            <ul class="sub-menu">
+                                <li class="burger-menu_link"><a href="#">אודות
+                                        משרדנו</a>
+                                </li>
+                                <li class="burger-menu_link"><a href="#">צוות המשרד</a></li>
+                                <li class="burger-menu_link"><a href="#">המלצות
+                                        מלקוחות – לקוחות ממליצים על משרד יניר הראל ושות'</a></li>
+                                <li class="burger-menu_link"><a href="#">תמונות
+                                        משרד יניר הראל ושות'</a></li>
+                                <li class="burger-menu_link"><a href="#">משרדנו
+                                        בעיתונות</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
                     <div class="burger-menu_overlay"></div>
                 </div>
             </section>
-            <div class="_logo"></div>
-            <nav class="_nav">
-                <a class="_navItem" href="#">דף הבית</a>
-                <a class="_navItem" href="#">הפירמה</a>
-                <a class="_navItem" href="#">תביעה נגד משרד הביטחון</a>
-                <a class="_navItem" href="#">תיאופר תונלשרו ףוג יקזנ</a>
-                <a class="_navItem" href="#">מאמרים</a>
-                <a class="_navItem" href="#">תרושקת</a>
-                <a class="_navItem" href="#">תוצלמה</a>
-            </nav>
+            <a href="/">
+                <div class="_logo"></div>
+            </a>
+            <ul class="_nav">
+                <li class="_navItem"><a href="#">דף הבית</a></li>
+                <li class="_navItem"><a href="#">הפירמה</a></li>
+                <li class="_navItem"><a href="#">תביעה נגד משרד הביטחון</a></li>
+                <li class="_navItem"><a href="#">תיאופר תונלשרו ףוג יקזנ</a></li>
+                <li class="_navItem"><a href="#">מאמרים</a></li>
+                <li class="_navItem"><a href="#">תרושקת</a></li>
+                <li class="_navItem menu-item-has-children"><a href="#">תוצלמה</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">אודות משרדנו</a>
+                        </li>
+                        <li class="menu-item"><a href="#" d>צוות המשרד</a></li>
+                        <li class="menu-item"><a href="#">המלצות
+                                מלקוחות – לקוחות ממליצים על משרד יניר הראל ושות'</a></li>
+                        <li class="menu-item"><a href="#">תמונות
+                                משרד יניר הראל ושות'</a></li>
+                        <li class="menu-item"><a href="#">משרדנו בעיתונות</a></li>
+                    </ul>
+                </li>
+
+            </ul>
             <button class="btn"> יצירת קשר </button>
         </div>
     </header>
-        <section class="sectionSmallBanner">
-            <div class="sectionInner">
-                <h3 class="sectionSmallBanner_title">
-                    מאמרים
-                </h3>
-                <h4 class="sectionSmallBanner_breadcrumbs">
-                    המאירי ושות' > מאמרים ופרסומים
-                </h4>
-            </div>
-        </section>
 
-        <section class="ArticlesCatalog">
-            <div class="sectionInner">
-                <div class="grid">
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
+    <section class="sectionSmallBanner">
+        <div class="sectionInner">
+            <h3 class="sectionSmallBanner_title">
+                מאמרים
+            </h3>
+            <h4 class="sectionSmallBanner_breadcrumbs">
+                המאירי ושות' > מאמרים ופרסומים
+            </h4>
+        </div>
+    </section>
+
+    <section class="ArticlesCatalog">
+        <div class="sectionInner">
+            <div class="grid">
+                <div class="grid-item">
+                    <div class="itemImg"></div>
                     <h5 class="itemTitle">
                         פיצויים על תביעה בצבא
                     </h5>
@@ -75,268 +108,268 @@
                                 fill="#F2AD00" />
                         </svg>
                     </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    <div class="grid-item">
-                        <div class="itemImg"></div>
-                    <h5 class="itemTitle">
-                        פיצויים על תביעה בצבא
-                    </h5>
-                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
-                        פיצוי כספי משמעותי? </div>
-                    <a class="more">
-
-                        <span>קרא עוד </span>
-                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
-                                fill="#F2AD00" />
-                        </svg>
-                    </a>
-                    </div>
-                    
                 </div>
-            </div>
-        </section>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
 
-        
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class="itemImg"></div>
+                    <h5 class="itemTitle">
+                        פיצויים על תביעה בצבא
+                    </h5>
+                    <div class="itemSubtitle">האם ידעתם שבמקרה של פציעה צבא ניתן לקבל פיצוי כספי משמעותי? צבא ניתן לקבל
+                        פיצוי כספי משמעותי? </div>
+                    <a class="more">
+
+                        <span>קרא עוד </span>
+                        <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.531 4.927a.388.388 0 0 1 0-.548L4.79.114a.388.388 0 0 1 .547.548L1.352 4.653l3.984 3.991a.388.388 0 0 1-.547.549L.53 4.927Z"
+                                fill="#F2AD00" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="sectionInner">
             <div class="_firstLine">
@@ -482,9 +515,11 @@
             </div>
         </div>
     </footer>
+
     <script src="media/js/jquery-3.6.0.min.js"></script>
     <script src="media/js/masonry.pkgd.min.js"></script>
     <script src="media/js/index.js"></script>
+
 </body>
 
 </html>

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/normolize.css"> -->
     <link rel="stylesheet" href="media/css/style.css">
     <link rel="stylesheet" href="media/css/styleMob.css">
     <title>המאירי-ושות</title>
@@ -21,28 +20,59 @@
                     <a href="" class="burger-menu_button">
                         <spun class="burger-menu_lines"></spun>
                     </a>
-                    <nav class="burger-menu_nav">
-                        <a class="burger-menu_link" href="#">דף הבית</a>
-                        <a class="burger-menu_link" href="#">הפירמה</a>
-                        <a class="burger-menu_link" href="#">תביעה נגד משרד הביטחון</a>
-                        <a class="burger-menu_link" href="#">תיאופר תונלשרו ףוג יקזנ</a>
-                        <a class="burger-menu_link" href="#">מאמרים</a>
-                        <a class="burger-menu_link" href="#">תרושקת</a>
-                        <a class="burger-menu_link" href="#">תוצלמה</a>
-                    </nav>
+                    <ul class="burger-menu_nav" style="overflow: scroll;">
+                        <li class="burger-menu_link"><a href="#"> דף הבית </a></li>
+                        <li class="burger-menu_link"><a href="#">הפירמה</a></li>
+                        <li class="burger-menu_link"><a href="#">תביעה נגד משרד הביטחון</a></li>
+                        <li class="burger-menu_link"><a href="#">תיאופר תונלשרו ףוג יקזנ</a></li>
+                        <li class="burger-menu_link"><a href="#">מאמרים</a></li>
+                        <li class="burger-menu_link"><a href="#">תרושקת</a></li>
+                        <li class="burger-menu_link"><a href="#">תוצלמה</a></li>
+
+                        <li class=" burger-menu_link menu-item-has-children">
+                            <a href="#">אודות</a>
+                            <ul class="sub-menu">
+                                <li class="burger-menu_link"><a href="#">אודות
+                                        משרדנו</a>
+                                </li>
+                                <li class="burger-menu_link"><a href="#">צוות המשרד</a></li>
+                                <li class="burger-menu_link"><a href="#">המלצות
+                                        מלקוחות – לקוחות ממליצים על משרד יניר הראל ושות'</a></li>
+                                <li class="burger-menu_link"><a href="#">תמונות
+                                        משרד יניר הראל ושות'</a></li>
+                                <li class="burger-menu_link"><a href="#">משרדנו
+                                        בעיתונות</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
                     <div class="burger-menu_overlay"></div>
                 </div>
             </section>
-            <div class="_logo"></div>
-            <nav class="_nav">
-                <a class="_navItem" href="#">דף הבית</a>
-                <a class="_navItem" href="#">הפירמה</a>
-                <a class="_navItem" href="#">תביעה נגד משרד הביטחון</a>
-                <a class="_navItem" href="#">תיאופר תונלשרו ףוג יקזנ</a>
-                <a class="_navItem" href="#">מאמרים</a>
-                <a class="_navItem" href="#">תרושקת</a>
-                <a class="_navItem" href="#">תוצלמה</a>
-            </nav>
+            <a href="/">
+                <div class="_logo"></div>
+            </a>
+            <ul class="_nav">
+                <li class="_navItem"><a href="#">דף הבית</a></li>
+                <li class="_navItem"><a href="#">הפירמה</a></li>
+                <li class="_navItem"><a href="#">תביעה נגד משרד הביטחון</a></li>
+                <li class="_navItem"><a href="#">תיאופר תונלשרו ףוג יקזנ</a></li>
+                <li class="_navItem"><a href="#">מאמרים</a></li>
+                <li class="_navItem"><a href="#">תרושקת</a></li>
+                <li class="_navItem menu-item-has-children"><a href="#">תוצלמה</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">אודות משרדנו</a>
+                        </li>
+                        <li class="menu-item"><a href="#" d>צוות המשרד</a></li>
+                        <li class="menu-item"><a href="#">המלצות
+                                מלקוחות – לקוחות ממליצים על משרד יניר הראל ושות'</a></li>
+                        <li class="menu-item"><a href="#">תמונות
+                                משרד יניר הראל ושות'</a></li>
+                        <li class="menu-item"><a href="#">משרדנו בעיתונות</a></li>
+                    </ul>
+                </li>
+
+            </ul>
             <button class="btn"> יצירת קשר </button>
         </div>
     </header>
@@ -730,10 +760,12 @@
     </footer>
 
     </footer>
+
     <script src="media/js/jquery-3.6.0.min.js"></script>
     <script src="media/js/jquery.waypoints.min.js"></script>
     <script src="media/js/jquery.counterup.min.js"></script>
     <script src="media/js/index.js"></script>
+
 </body>
 
 </html>

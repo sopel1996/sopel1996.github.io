@@ -93,6 +93,44 @@ jQuery(document).ready(function () {
       });
     }
 
+    // const swiper = new Swiper('.swiper', {
+    //   loop: true,  
+    //   calculateHeight:true,
+    //   slidesPerView: 4,
+    //   spaceBetween: 10,
+    //   // direction: 'vertical',
+    //   // calculateHeight:true,
 
+    // });
+    if ($(".swiper").length > 0) {
+      const swiper = new Swiper('.swiper', {
+        loop: true,  
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoHeight: false,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          520: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          790: {
+            slidesPerView: 3,
+          },
+          1030: {
+            slidesPerView: 4,
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        });
+    }
+      
 })(jQuery);
 });

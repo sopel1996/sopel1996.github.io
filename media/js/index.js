@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
         loop: true,  
         direction: 'horizontal',
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 20,
         autoHeight: false,
         breakpoints: {
           320: {

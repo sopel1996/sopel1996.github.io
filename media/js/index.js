@@ -49,29 +49,29 @@ jQuery(document).ready(function () {
     };
 
 
-    var mobileMenu = function () {
-      $(".mobMenu  ul > li.menu-item-has-children > ul.sub-menu").each(
-        function () {
-          $(this).data("true-height", $(this).outerHeight());
-          $(this).css("height", 0);
-        }
-      );
+    // var mobileMenu = function () {
+    //   $(".mobMenu  ul > li.menu-item-has-children > ul.sub-menu").each(
+    //     function () {
+    //       $(this).data("true-height", $(this).outerHeight());
+    //       $(this).css("height", 0);
+    //     }
+    //   );
       
-      $(".mobMenu  ul > li.menu-item-has-children > a").on(
-        "click",
-        function (e) {
-          e.preventDefault();
-          $submenu = $(this).parent().find("> ul.sub-menu");
-          if ($submenu.height() > 0) {
-            $submenu.css("height", 0);
-            $(this).removeClass("active");
-          } else {
-            $(this).addClass("active");
-            $submenu.css("height", $submenu.data("true-height"));
-          }
-        }
-      );
-    };
+    //   $(".mobMenu  ul > li.menu-item-has-children > a").on(
+    //     "click",
+    //     function (e) {
+    //       e.preventDefault();
+    //       $submenu = $(this).parent().find("> ul.sub-menu");
+    //       if ($submenu.height() > 0) {
+    //         $submenu.css("height", 0);
+    //         $(this).removeClass("active");
+    //       } else {
+    //         $(this).addClass("active");
+    //         $submenu.css("height", $submenu.data("true-height"));
+    //       }
+    //     }
+    //   );
+    // };
 
     var counters = function () {
         $(".counter").counterUp({delay: 5, time: 600,});
@@ -82,7 +82,7 @@ jQuery(document).ready(function () {
       counters();
     }
 
-    mobileMenu();
+    // mobileMenu();
 
     if ($(".grid").length > 0) {
       $(".grid").masonry({
@@ -93,17 +93,40 @@ jQuery(document).ready(function () {
       });
     }
 
-    // const swiper = new Swiper('.swiper', {
-    //   loop: true,  
-    //   calculateHeight:true,
-    //   slidesPerView: 4,
-    //   spaceBetween: 10,
-    //   // direction: 'vertical',
-    //   // calculateHeight:true,
+   
+    if ($(".swiper1").length > 0) {
+      const swiper = new Swiper('.swiper1', {
+        loop: true,  
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 20, 
+        autoHeight: false,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          520: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          790: {
+            slidesPerView: 3,
+          },
+          1030: {
+            slidesPerView: 4,
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination_1",
+          dynamicBullets: true,
+        },
+        });
+    }
 
-    // });
-    if ($(".swiper").length > 0) {
-      const swiper = new Swiper('.swiper', {
+
+    if ($(".swiper2").length > 0) {
+      const swiper2 = new Swiper('.swiper2', {
         loop: true,  
         direction: 'horizontal',
         slidesPerView: 1,
@@ -126,11 +149,47 @@ jQuery(document).ready(function () {
           }
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-pagination_2",
           dynamicBullets: true,
         },
         });
     }
       
+    var mobileMenu = function () {
+      $(".pushmenu > ul > li.menu-item-has-children > ul.sub-menu").each(
+        function () {
+          $(this).data("true-height", $(this).outerHeight());
+          $(this).css("height", 0);
+        }
+      );
+      $(".nav-list").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(".pushmenu-push").toggleClass("pushmenu-push-toleft");
+        $(".pushmenu-right").toggleClass("pushmenu-open");
+        if ($(this).find("i").text() == "תפריט") {
+          $(this).find("i").text("סגירה");
+        } else {
+          $(this).find("i").text("תפריט");
+        }
+      });
+      $(".pushmenu > ul > li.menu-item-has-children > a").on(
+        "click",
+        function (e) {
+          e.preventDefault();
+          $submenu = $(this).parent().find("> ul.sub-menu");
+          if ($submenu.height() > 0) {
+            $submenu.css("height", 0);
+            $(this).removeClass("active");
+          } else {
+            $(this).addClass("active");
+            $submenu.css("height", $submenu.data("true-height"));
+          }
+        }
+      );
+    };
+
+    mobileMenu();
+
 })(jQuery);
 });

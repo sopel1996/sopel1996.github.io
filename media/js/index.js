@@ -121,6 +121,10 @@ jQuery(document).ready(function () {
           el: ".swiper-pagination_1",
           dynamicBullets: true,
         },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         });
     }
 

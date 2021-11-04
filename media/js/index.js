@@ -98,7 +98,7 @@ jQuery(document).ready(function () {
       const swiper = new Swiper('.swiper1', {
         loop: true,  
         direction: 'horizontal',
-        slidesPerView: 1,
+        slidesPerView: 4,
         spaceBetween: 20, 
         autoHeight: false,
         breakpoints: {
@@ -122,8 +122,8 @@ jQuery(document).ready(function () {
           dynamicBullets: true,
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.btnNext_1',
+          prevEl: '.btnPrev_1',
         },
         });
     }
@@ -155,6 +155,10 @@ jQuery(document).ready(function () {
         pagination: {
           el: ".swiper-pagination_2",
           dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: '.btnNext_2',
+          prevEl: '.btnPrev_2',
         },
         });
     }

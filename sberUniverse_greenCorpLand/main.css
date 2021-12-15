@@ -27,7 +27,7 @@ header a {
 }
 
 button {
-    font-family     : 'Raleway', sans—serif;
+    font-family     : 'Raleway', sans-serif;
     font-size       : 15px;
     color           : #fff;
     background-color: #23a030;
@@ -44,8 +44,6 @@ button {
     justify-content: space-around;
     padding-top    : 115px;
     padding-bottom : 115px;
-    background: green;
-
 }
 
 .about h1 {

@@ -39,11 +39,14 @@ button {
 }
 
 .about {
-    display        : flex;
-    align-items    : center;
-    justify-content: space-around;
-    padding-top    : 115px;
-    padding-bottom : 115px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : space-around;
+    padding-top        : 115px;
+    padding-bottom     : 115px;
+    background         : url('img/back.png') no-repeat;
+    background-position: center;
+    background-size    : cover;
 }
 
 .about h1 {

@@ -9,6 +9,10 @@ header {
     align-items    : center;
     justify-content: space-between;
     padding        : 20px;
+    background     : #fff;
+    position       : sticky;
+    top            : 0;
+    z-index        : 1;
 }
 
 .header__logo {
@@ -82,8 +86,10 @@ button:hover {
 }
 
 .about__sun-image {
-    width : 100px;
-    height: 100px;
+    width    : 100px;
+    height   : 100px;
+    animation: rotation 10s linear infinite;
+    position : absolute;
 }
 
 .form__containter {
@@ -152,35 +158,48 @@ select {
     margin-top : 40px;
 }
 
-footer{
-    padding: 90px 20px;
-    font-size: 16px;
+footer {
+    padding    : 90px 20px;
+    font-size  : 16px;
     font-weight: 600;
 }
-.footer__container{
-    display: flex;
+
+.footer__container {
+    display        : flex;
     justify-content: center;
 }
 
-.footer__group{
+.footer__group {
     margin-right: 80px;
 }
-.footer__group h3{
-    font-size: 16px;
-    opacity: 0.7;
+
+.footer__group h3 {
+    font-size    : 16px;
+    opacity      : 0.7;
     margin-bottom: 30px;
 }
-.footer__links{
-    display: flex;
+
+.footer__links {
+    display       : flex;
     flex-direction: column;
 }
 
-.footer__links a{
+.footer__links a {
     margin-bottom: 15px;
 }
 
-.footer__copyright{
+.footer__copyright {
     margin-top: 40px;
     text-align: center;
-    opacity: 0.5;
+    opacity   : 0.5;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }

@@ -203,3 +203,64 @@ footer {
         transform: rotate(360deg)
     }
 }
+
+@media screen and (max-width: 1050px) and (min-width: 720px) {
+    .about{
+        padding: 115px 20px;
+    }
+    .about h1,
+    .form h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__image{
+        width: 280px;
+    }
+    .about__sun-image{
+        width: 75px;
+        height: 75px;
+    }
+    .footer__group{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 719px) and (min-width: 320px) {
+    header{
+        padding: 10px;
+    }
+    .header__logo{
+        height: 20px;
+    }
+    .about{
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+    .about h1,
+    .form h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__images{
+        order: 1;
+    }
+    .about__info{
+        order: 2;
+    }
+    .about__image{
+        width: 280px;
+    }
+    .about__sun-image{
+        width: 75px;
+        height: 75px;
+    }
+    .form{
+        padding: 50px 10px;
+    }
+    footer{
+        padding: 50px 10px;
+    }
+    .footer__container{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,363 @@
+@media (max-width: 1170px) {
+  .sectionInner {
+    padding: 0 20px;
+  }
+
+  .sectionVideo {
+    height: 654px;
+    padding: 20px 0;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    width: 630px;
+    height: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  .sectionVideo .sectionVideo_media iframe {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .sectionSearchForm .calculator2021 .fields li label {
+    padding: 10px;
+  }
+  .sectionSearchForm .calculator2021 .fields li label::before {
+    left: 17px;
+  }
+
+  .sectionSearchForm .calculator2021 .fields li label span.title,
+.sectionSearchForm .calculator2021 .fields li label select,
+.sectionSearchForm .calculator2021 .fields li label input {
+    font-size: 15px;
+  }
+
+  .sectionSearchForm .calculator2021 .fields li .lastInput {
+    width: 100%;
+  }
+
+  .sectionFirstTable .firstTable th {
+    padding-left: 5px;
+  }
+  .sectionFirstTable .firstTable td {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .sectionSecondTable .secondTable th {
+    padding-left: 5px;
+  }
+  .sectionSecondTable .secondTable td {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .sectionVideo .sectionVideo_list .textBetweenLists {
+    font-size: 16px;
+  }
+  .sectionVideo .sectionVideo_list .list {
+    font-size: 15px;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    width: 395px;
+    height: 275px;
+  }
+}
+@media (max-width: 768px) {
+  .sectionInner {
+    padding: 0 20px;
+  }
+
+  .sectionAccordeon .accordeonItem_trigger {
+    font-family: "almoni", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 50px;
+  }
+  .sectionAccordeon .accordeonItem_content {
+    font-family: "almoni", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .sectionFirstTable #relative {
+    overflow: scroll;
+    height: 800px;
+  }
+  .sectionFirstTable .firstTable {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .sectionFirstTable .firstTable tr:first-child {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .sectionFirstTable .firstTable th {
+    position: sticky;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .sectionFirstTable .firstTable td {
+    min-width: 150px;
+    padding: 5px;
+  }
+
+  .sectionFooter .sectionFooter_firstLine .footerImg {
+    width: 100%;
+    height: auto;
+  }
+  .sectionFooter .sectionFooter_firstLine .footerText {
+    font-family: "almoni", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .sectionFooter .sectionFooter_secondLine {
+    flex-direction: column;
+  }
+  .sectionFooter .sectionFooter_secondLine .realmediaLogo {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .sectionFooter .sectionFooter_secondLine .copyright {
+    order: 2;
+    font-family: "almoni", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .sectionSearchForm {
+    background-size: cover;
+    background-position: 50% 50%;
+    /* New Picker */
+  }
+  .sectionSearchForm .tablewrap-inner table tr th:first-child,
+.sectionSearchForm .tablewrap-inner table tr td:first-child {
+    padding: 5px;
+    width: 150px;
+  }
+  .sectionSearchForm .calculator2021 .fields li {
+    flex-direction: column;
+  }
+  .sectionSearchForm .calculator2021 .fields li label {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .sectionSearchForm .calculator2021 .fields li label span.title {
+    font-family: "almoni", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .sectionSearchForm .calculator2021 .fields li label select,
+.sectionSearchForm .calculator2021 .fields li label input {
+    font-family: "almoni", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .sectionSearchForm .calculator2021 .fields li label:before {
+    left: 20px;
+    top: calc(50% + 10px);
+  }
+  .sectionSearchForm .calculator2021 .fields li .lastInput {
+    width: 100%;
+  }
+  .sectionSearchForm .calculator2021 .fields li .lastInput::before {
+    top: calc(50%);
+  }
+  .sectionSearchForm .calculator2021 .results {
+    display: none;
+    margin: 0 0 20px 0;
+  }
+  .sectionSearchForm .t-datepicker {
+    flex-direction: column;
+  }
+  .sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out, .sectionSearchForm .t-datepicker {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .sectionSecondTable #relative {
+    height: 800px;
+    overflow: scroll;
+  }
+  .sectionSecondTable .secondTable {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .sectionSecondTable .secondTable tr:first-child {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .sectionSecondTable .secondTable th {
+    position: sticky;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .sectionSecondTable .secondTable td {
+    min-width: 150px;
+    padding: 5px;
+  }
+
+  .sectionVideo {
+    height: 100%;
+  }
+  .sectionVideo .content {
+    flex-direction: column;
+  }
+  .sectionVideo .sectionVideo_list {
+    order: 2;
+  }
+  .sectionVideo .sectionVideo_list .list {
+    font-family: "almoni", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .sectionVideo .sectionVideo_list .textBetweenLists {
+    font-family: "almoni", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .sectionVideo .sectionVideo_media {
+    order: 1;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 540px;
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .sectionSearchForm .tablewrap-inner table tr th:first-child,
+.sectionSearchForm .tablewrap-inner table tr td:first-child {
+    padding: 5px;
+    width: 100px;
+  }
+
+  .sectionVideo .title {
+    font-size: 28px;
+  }
+  .sectionVideo .sectionVideo_list .list {
+    font-size: 20px;
+  }
+  .sectionVideo .sectionVideo_list .textBetweenLists {
+    font-size: 22px;
+  }
+  .sectionVideo .sectionVideo_media {
+    width: 100%;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .sectionFooter .sectionFooter_firstLine .footerImg {
+    width: 90%;
+  }
+}
+@media (max-width: 360px) {
+  .sectionSearchForm .tablewrap-inner table tr th:first-child,
+.sectionSearchForm .tablewrap-inner table tr td:first-child {
+    padding: 5px;
+    width: 60px;
+  }
+  .sectionSearchForm_Logo {
+    width: 265px;
+    height: 93px;
+  }
+  .sectionSearchForm_title {
+    font-size: 42px;
+  }
+  .sectionSearchForm_subtitle {
+    font-size: 32px;
+  }
+  .sectionSearchForm_text {
+    font-size: 22px;
+  }
+  .sectionSearchForm_form {
+    font-size: 20px;
+  }
+  .sectionSearchForm_form .firstLineForm,
+.sectionSearchForm_form .secondLineForm {
+    padding: 0;
+  }
+  .sectionSearchForm_form .checkboxSport {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+  .sectionSearchForm_form .destination,
+.sectionSearchForm_form .departure,
+.sectionSearchForm_form .arrival {
+    width: 100%;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain label {
+    margin-top: 10px;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container {
+    width: 100%;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container select,
+.sectionSearchForm_form-personalInformation .personalInformationMain .container input {
+    width: 100%;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container #lastSelect {
+    width: 100%;
+  }
+
+  .sectionVideo .title {
+    font-size: 28px;
+  }
+  .sectionVideo .sectionVideo_list .list {
+    font-size: 16px;
+  }
+  .sectionVideo .sectionVideo_list .textBetweenLists {
+    font-size: 22px;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    width: 290px;
+    height: 200px;
+  }
+
+  .sectionAccordeon .title {
+    font-size: 22px;
+  }
+  .sectionAccordeon .subtitle {
+    font-size: 18px;
+  }
+  .sectionAccordeon .accordeonTitle {
+    font-size: 28px;
+  }
+  .sectionAccordeon .accordeonItem_trigger {
+    font-size: 16px;
+  }
+  .sectionAccordeon .accordeonItem_content {
+    font-size: 14px;
+  }
+
+  .sectionFooter .sectionFooter_firstLine .footerText {
+    font-size: 16px;
+  }
+  .sectionFooter .sectionFooter_secondLine .copyright {
+    font-Size: 18px;
+  }
+}

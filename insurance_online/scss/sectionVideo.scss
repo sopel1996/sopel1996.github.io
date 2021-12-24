@@ -1,0 +1,64 @@
+@import 'mixins.scss';
+.sectionVideo{
+    height: toRem(654);
+    background: #FAFAFA url(/img/png/sectionVideoBg.png) 50% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(250, 250, 250, 0.75);
+    }
+    .sectionInner{
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .content{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: toRem(25);
+    }
+    .title{
+        @include AlmoniBold(28);
+        color: #00549B;
+        margin-bottom: toRem(3);
+        margin-top: toRem(40);
+
+    }
+    .sectionVideo_list{
+
+        .list{
+            list-style: none;
+            @include AlmoniRegular(18);
+            color: #5A5A5A;
+            margin-bottom: toRem(10);
+            &:last-child{
+                margin: 0;
+            }
+        }
+        .textBetweenLists{
+            @include AlmoniBold(22);
+            color: #00549B;
+            margin-bottom: toRem(10);
+        }
+    }
+    .sectionVideo_media{
+        iframe{
+        width: toRem(729);
+        height: toRem(526);
+        }   
+    }
+}

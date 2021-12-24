@@ -1,0 +1,38 @@
+.sectionFooter{
+
+    .sectionInner{
+        height: toRem(120);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &_phone{
+        text-decoration: none;
+        @include RobotoMedium(24);
+        color: $primary-color;
+        &:visited,
+        &:active{
+            color: $primary-color;
+
+        }
+    }
+    &_logo{
+        @include RalewayBlack(48);
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+    &_social{
+
+        &-item{
+            margin-right: toRem(23);
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                width: toRem(28);
+                height: toRem(28);
+            }
+        }
+    }
+}

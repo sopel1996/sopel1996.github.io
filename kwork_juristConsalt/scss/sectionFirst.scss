@@ -1,0 +1,80 @@
+.sectionFirst{
+    height: toRem(520);
+    background: #F0F0F0 url(../img/svg/bgFirstSection.svg) calc(50% - 175px) no-repeat;
+    margin-bottom: toRem(95);
+    .sectionInner{
+        height: 555px;
+        position: relative;
+        padding-top: toRem(80);
+        
+    }
+    &_text{
+        &-title{
+            @include RalewayBold(48);
+            color: $primary-color-text;
+            margin-bottom: toRem(40);
+            width: toRem(761);
+        }
+        &-item{
+            @include RobotoRegular(24);
+            color: $primary-color-text;
+            margin-bottom: toRem(50);
+            width: toRem(525);
+        }
+        .btn{
+            margin-bottom: toRem(10);
+        }
+    }
+    &_conditions{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: toRem(555);
+        width: toRem(780);
+        background: transparent url(../img/png/womanImg.png) 80% 50% no-repeat;
+        &-items{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: toRem(130);
+            width: toRem(780);
+            background-color: $primary-color;
+            padding: toRem(25) toRem(45);
+            ul{
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                list-style-position: inside;
+                color: $secondary-text-color; 
+                li{
+                    width: toRem(165);
+                    height: toRem(75);
+                    padding-left: toRem(25);
+                    border: none;
+                    border-left: 1px solid $secondary-text-color;
+                    @include RalewaySemiBold    (16);
+                    &:nth-child(2){
+                        width: 150px;
+                    }
+                    &:nth-child(1){
+                        // width: 150px;
+                        border: none;
+                    }
+                    &::marker {
+                        margin: 0;
+                    }
+                    div{
+                        margin-top: toRem(5);
+                        // width: 100%;
+                        // height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

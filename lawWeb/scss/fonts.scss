@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+----------------------------
+Fonts
+-----------------------------
+*/
+@font-face {
+    font-family: "Almoni";
+        src: url('../fonts/almoni-neue-aaa-light.ttf')  format('truetype'), 
+             url('../fonts/almoni-neue-aaa-light.woff') format('woff'), 
+             url('../fonts/almoni-neue-aaa-light.woff2') format('woff2'); 
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Almoni";
+        src: url('../fonts/almoni-neue-aaa-normal.ttf')  format('truetype'),
+             url('../fonts/almoni-neue-aaa-normal.woff') format('woff'),
+             url('../fonts/almoni-neue-aaa-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Almoni";
+        src: url('../fonts/almoni-neue-aaa-bold.ttf')  format('truetype'),
+             url('../fonts/almoni-neue-aaa-bold.woff') format('woff'),
+             url('../fonts/almoni-neue-aaa-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Almoni";
+        src: url('../fonts/almoni-neue-aaa-black.ttf')  format('truetype'),
+             url('../fonts/almoni-neue-aaa-black.woff') format('woff'),
+             url('../fonts/almoni-neue-aaa-black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}

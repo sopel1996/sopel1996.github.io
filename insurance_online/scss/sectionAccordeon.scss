@@ -1,0 +1,87 @@
+@import 'mixins.scss';
+.sectionAccordeon{
+    margin-top: toRem(40);
+    .sectionInner{
+        
+    }
+    .title{
+        text-align: center;
+        @include AlmoniBold(22);
+        color: #00549B;
+        margin-bottom: toRem(10);
+        
+    }
+    .subtitle{
+        text-align: center;
+        @include AlmoniRegular(18);
+        color: #5A5A5A;
+        margin-bottom: toRem(40);
+        
+    }
+    .accordeonTitle{
+        text-align: center;
+        @include AlmoniBold(28);
+        color: #00549B;
+        margin-bottom: toRem(20);
+
+    }
+
+    .accordeon{
+        
+        &Item{
+            position: relative;
+            
+            margin-bottom: toRem(10);
+            
+            &_input{
+                position: absolute;
+                top:0;
+                left: 0;
+                opacity: 0;
+                
+                &:checked ~ .accordeonItem_trigger{
+                    &::after{
+                        content: "-";
+                    }
+
+                }
+                &:checked ~ .accordeonItem_content{
+                    display: flex;
+                }
+            }
+            &_trigger{
+                position: relative;
+                &::after{
+                    display: block;
+                    color: #fff;
+                    content: "+";
+                    position: absolute;
+                    left: toRem(20);
+                }
+                @include AlmoniBold(22);
+
+                display: block;
+                padding: toRem(10);
+                padding-left: toRem(150);
+                background-color: #00549B;
+                    color: #fff;
+                    width: 100%;
+                    min-height: toRem(45);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+            }
+            &_content{
+                @include AlmoniRegular(20);
+
+                padding: toRem(20);
+                display: none;
+                color: #5A5A5A;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

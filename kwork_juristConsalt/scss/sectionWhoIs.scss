@@ -1,0 +1,95 @@
+.sectionWhoIs{
+    margin-bottom: toRem(100);
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: toRem(472);
+    }
+    &_title{
+        margin-bottom: toRem(30);
+        @include RalewayBold(36);
+        color: $primary-color;
+    }
+    &_parts{
+        width: 100%;
+        flex-grow: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-item{
+            width: toRem(380);
+            height: toRem(180);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+                &Number{
+                    width: toRem(180);
+                    height: toRem(180);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include RalewaySemiBold(48);
+                    color:$primary-color-text;
+                    margin-right: toRem(20);
+                }
+                &Text{
+                    width: toRem(200);
+                    &Title{
+                        @include RalewaySemiBold(24);
+                        margin-bottom: torem(10);
+                    }
+                    &Item{
+                        @include RalewayRegular(18);
+                    }
+                }
+            &:nth-child(1){
+                .sectionWhoIs_parts-itemNumber{
+                    background: transparent url('../img/svg/directors.svg') 50% 50% no-repeat;
+                    background-size: contain;
+                }
+            }
+            &:nth-child(2){
+                .sectionWhoIs_parts-itemNumber{
+                    background: transparent url('../img/svg/company.svg') 50% 50% no-repeat;
+                    background-size: contain;
+
+                }
+            }
+            &:nth-child(3){
+                .sectionWhoIs_parts-itemNumber{
+                    background: transparent url('../img/svg/years.svg') 50% 50% no-repeat;
+                    background-size: contain;
+
+                }
+            }
+            &:nth-child(4){
+                .sectionWhoIs_parts-itemNumber{
+                    background: transparent url('../img/svg/choose.svg') 50% 50% no-repeat;
+                    background-size: contain;
+
+                    font-size: toRem(36);
+                }
+            }
+            &:nth-child(5){
+                .sectionWhoIs_parts-itemNumber{
+                    background: transparent url('../img/svg/Payouts.svg') 50% 50% no-repeat;
+                    background-size: contain;
+
+                    font-size: toRem(24);
+                }
+            }
+            &:nth-child(6){
+                .sectionWhoIs_parts-itemNumber{
+                    background: transparent url('../img/svg/offices.svg') 50% 50% no-repeat;
+                    background-size: contain;
+
+                }
+            }
+            }
+        }
+}

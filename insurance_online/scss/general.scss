@@ -1,0 +1,39 @@
+@import 'mixins.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+a,
+a:active,
+a:visited{
+    outline: none;
+    text-decoration: none;
+    color: #0070cc;
+}
+h1,h2,h3,h4,h5,h6{margin:0;}
+.sectionInner{
+    max-width: toRem(1170);
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
+
+input{  
+    outline: none;
+    border: 1px solid rgb(133, 133, 133); 
+    background-clip: padding-box; //delete shadow for input on apple device
+}
+._borderNone{
+    border: none !important;
+}
+._opacity{
+    opacity: 1 !important;
+}
+._marked{
+    color:#00549B;
+}
+._markedRed{
+    color:#F00D11;
+}

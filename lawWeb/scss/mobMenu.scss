@@ -1,0 +1,274 @@
+@import 'mixins.scss';
+
+/*
+----------------------------
+Mob menu
+-----------------------------
+*/
+
+
+
+
+.burger-menu_nav {
+  padding       : 0 0 toRem(40) 0;
+  overflow             : scroll;
+  top                  : 0;
+  z-index              : 70;
+  display              : flex;
+  flex-flow            : column;
+  height               : 100%;
+  background-color     : #fff;
+  overflow             : scroll;
+  right                : -100%;
+  -webkit-transition   : 0.8s;
+  -moz-transition      : 0.8s;
+  -o-transition        : 0.8s;
+  transition           : 0.8s;
+  @include AlmoniBold(15);
+}
+
+.burger-menu_active .burger-menu_nav {
+  right             : 0;
+  -webkit-transition: 0.4s;
+  -moz-transition   : 0.4s;
+  -o-transition     : 0.4s;
+  transition        : 0.4s;
+}
+
+.burger-menu_link {
+  text-decoration: none;
+  text-transform : uppercase;
+  color          : #080325;
+  border-bottom  : 1px solid #e1e1e1;
+  width          : 100%;
+  line-height    : toRem(35);
+  height: toRem(35);
+}
+
+.burger-menu_link:first-child {
+  border-top: none;
+}
+
+.burger-menu_link:hover {
+  filter: brightness(0.9);
+}
+
+.burger-menu_overlay {
+  display : none;
+  position: fixed;
+  top     : 0;
+  left    : 0;
+  width   : 100vw;
+  height  : 100vh;
+  z-index : 50;
+}
+
+.pushmenu-push-toleft .burger-menu_overlay {
+  display         : block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  text-align: center;
+
+  .logoImg {
+    height: toRem(40);
+  }
+}
+
+ul.burger-menu_nav>li {
+  padding: 0 toRem(30);
+}
+
+ul.burger-menu_nav>li>a {
+  display: block;
+  width  : 100%;
+}
+
+ul.burger-menu_nav>li.menu-item-has-children>a {
+  position: relative;
+}
+
+ul.burger-menu_nav>li.menu-item-has-children>a:after {
+  font-family       : "FontAwesome";
+  content           : "\f107";
+  position          : absolute;
+  left              : 0px;
+  color             : inherit;
+  font-size         : 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition   : all 0.2ms ease-in-out;
+  -o-transition     : all 0.2ms ease-in-out;
+  transition        : all 0.2s ease-in-out;
+}
+
+ul.burger-menu_nav>li>ul.sub-menu {
+  margin            : 0 -20px;
+  overflow          : hidden;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition   : height 0.5ms ease-in-out;
+  -o-transition     : height 0.5ms ease-in-out;
+  transition        : height 0.5s ease-in-out;
+}
+
+ul.burger-menu_nav>li>ul.sub-menu {
+  margin            : 0 -20px;
+  overflow          : hidden;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition   : height 0.5ms ease-in-out;
+  -o-transition     : height 0.5ms ease-in-out;
+  transition        : height 0.5s ease-in-out;
+}
+
+ul.burger-menu_nav>li>ul.sub-menu>li {
+  border-top: 1px rgba(35, 113, 186, .2) solid;
+  padding   : 0 20px;
+  color     : lighten(#080325, 30%);
+  min-height: 35px;
+  height    : auto;
+}
+
+ul.burger-menu_nav>li a {
+  height: 100%;
+}
+
+ul.burger-menu_nav>li a.active {
+  color: #fd5c27;
+}
+
+ul.burger-menu_nav>li.menu-item-has-children>a.active:after {
+  color    : inherit;
+  transform: rotate(180deg);
+}
+
+
+
+.pushmenu-push {
+  overflow-x: hidden;
+}
+
+body.pushmenu-push-toleft .nav-list div span:nth-child(1) {
+  transform: translateY(1px) rotate(45deg);
+}
+
+body.pushmenu-push-toleft .nav-list span:nth-child(2) {
+  opacity                 : 0;
+  -webkit-transition-delay: 0s;
+  transition-delay        : 0s;
+}
+
+body.pushmenu-push-toleft .nav-list div span:nth-child(3) {
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+
+
+.pushmenu{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition   : all 0.3s ease-in-out;
+  transition        : all 0.3s ease-in-out;
+}
+
+
+.nav-list {
+  width           : 60px;
+  height          : 61px;
+  padding         : 0;
+  display: none;
+  
+  position        : absolute;
+  top             : 0;
+  right           : 0;
+  background-color: transparent;
+  border          : 0;
+  outline         : none;
+  cursor          : pointer;
+  justify-content : center;
+  align-items     : center;
+  flex-direction  : column;
+  text-decoration : none !important;
+  z-index         : 2000;
+  background      : #080325;
+}
+
+.nav-list div {
+  height  : 16px;
+  width   : 26px;
+  position: relative;
+}
+
+.nav-list i {
+  font-size  : 18px;
+  font-weight: 700;
+  line-height: 10px;
+  margin     : 8px 0 0 0;
+  color      : #fff;
+  text-align : center;
+  @include AlmoniNormal(13);
+  font-style: normal;
+}
+
+.nav-list span {
+  -webkit-transition: opacity 0.1s ease-in-out 0.1s;
+  transition        : opacity 0.1s ease-in-out 0.1s;
+  display           : block;
+  background        : #fff;
+  width             : 26px;
+  height            : 2px;
+  font-size         : 10px;
+  text-align        : center;
+  border-radius     : 0;
+  position          : relative;
+  top               : 50%;
+  margin        : -1px 0 0 0;
+  right             : 0;
+}
+
+.nav-list div span:nth-child(1),
+.nav-list div span:nth-child(3) {
+  -webkit-transition: all 0.2s ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out 0s;
+  transition        : all 0.2s ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out 0s;
+  transition        : all 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out 0s;
+  transition        : all 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s;
+}
+
+.nav-list div span:nth-child(1) {
+  transform: translateY(-5px);
+}
+
+.nav-list div span:nth-child(3) {
+  transform: translateY(5px);
+}
+
+.pushmenu-right.pushmenu-open {
+  transform: translateX(0);
+}
+
+.pushmenu,
+.pushmenu-wrapper {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition   : all 0.3s ease-in-out;
+  transition        : all 0.3s ease-in-out;
+}
+
+.pushmenu-right {
+  transform: translateX(240px);
+}
+
+.pushmenu {
+  background        : #fff;
+  width             : 220px;
+  height            : calc(100vh - 60px);
+  top               : 60px;
+  right             : 0;
+  padding           : 0 0 80px 0;
+  z-index           : 999;
+  position          : fixed;
+  display           : block;
+  -webkit-box-shadow: inset 4px 0 5px -2px rgb(35 113 186 / 20%);
+  -moz-box-shadow   : inset 4px 0 5px -2px rgba(35, 113, 186, .2);
+  box-shadow        : inset 4px 0 5px -2px rgb(35 113 186 / 20%);
+  overflow-y        : scroll;
+  box-shadow: inset 4px 0 5px -2px rgba(35,113,186,0.2);
+
+}

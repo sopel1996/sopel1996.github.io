@@ -1,0 +1,25 @@
+@function toRem($value) {
+    $remValue: $value + px; 
+    @return $remValue;
+}
+
+@mixin AlmoniLight($size_px) {
+    font-family: "almoni",sans-serif;
+    font-weight: 300;
+    font-size: toRem($size_px);
+}
+@mixin AlmoniRegular($size_px) {
+    font-family: "almoni",sans-serif;
+    font-weight: 500;
+    font-size: toRem($size_px);
+}
+@mixin AlmoniBold($size_px) {
+    font-family: "almoni",sans-serif;
+    font-weight: 700;
+    font-size: toRem($size_px);
+}
+@mixin AlmoniBlack($size_px) {
+    font-family: "almoni",sans-serif;
+    font-weight: 900;
+    font-size: toRem($size_px);
+}

@@ -1,0 +1,47 @@
+.sectionBenefits{
+    .sectionInner{
+        height: toRem(400);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &_title{
+        margin-bottom: toRem(60);
+        @include RalewayBold(36);
+        color: $primary-color;
+    }
+    &_items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-item{
+            width: toRem(223);
+            height: toRem(162);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            &Img{
+                width: toRem(100);
+                height: toRem(100);
+            }
+            &Text{
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                text-align: center;
+                flex-grow: 2;
+                @include RalewayMedium(18);
+                color: $primary-color-text;
+            }
+            &:nth-child(2){
+                .sectionBenefits_items-itemText{
+                    width: 80%;
+                } 
+            }
+        }
+    }
+}

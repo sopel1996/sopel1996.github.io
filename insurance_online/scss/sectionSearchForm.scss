@@ -1,0 +1,568 @@
+@import 'mixins.scss';
+.sectionSearchForm{
+
+    min-height: toRem(1165);
+    width: 100%;
+    background: url(/img/png/sectionSearchBg.jpg) 0 0 no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .sectionInner{
+        position: relative;
+        z-index: 10;
+        padding-top: toRem(60);
+    }
+    &_Logo{
+        width: toRem(295);
+        height: toRem(93);
+        margin: 0 auto;
+        margin-bottom: toRem(60);
+        background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
+        background-size: cover;
+    }
+    &_title{
+        @include AlmoniBlack(42);
+        color: #00549B;
+        text-align: center;
+        margin-bottom: toRem(20)
+    }
+    &_subtitle{
+        @include AlmoniBold(32);
+        color: #000;
+        text-align: center;
+        margin-bottom: toRem(20)
+    }
+    &_text{
+        @include AlmoniRegular(22);
+        color: #000;
+        text-align: center;
+        margin-bottom: toRem(20)
+    }
+    
+    
+    
+    
+    
+    // &_form{
+        
+    //     @include AlmoniRegular(20);
+
+        
+    //     .firstLineForm{
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //         margin-bottom: toRem(20);
+    //         padding: 0 toRem(10);
+    //     }
+    //     .secondLineForm{
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: center;
+    //         justify-content: flex-start;
+    //         margin-bottom: toRem(40);
+    //         padding: 0 toRem(10);
+    //     }
+    //     .checkboxSport{
+    //         margin-left: toRem(10);
+    //         width: toRem(20);
+    //         height: toRem(20);
+    //     }
+    //     .labelSport{
+    //         margin-left: toRem(20);
+    //         color: #00549B;
+    //     }
+    //     .destination,
+    //     .departure,
+    //     .arrival{
+    //         appearance: none;
+    //         width: toRem(365);
+    //         height: toRem(40);
+    //         padding: toRem(10) toRem(20);
+    //         background: #fff url(/img/svg/inputArrow.svg) toRem(10) no-repeat;
+    //         color:#00559bB2;
+    //     }
+    //     // .departure{
+    //     //     position: relative;
+    //     //     &::before{
+    //     //         font-size: 16px;
+    //     //         display: block;
+    //     //         content: "123";
+    //     //         position: absolute;
+    //     //         left: 50%;
+    //     //         top: calc(50% - 8px);
+    //     //         color: red;
+    //     //     }
+    //     //     &:focus {
+    //     //         &::before{
+    //     //             display: none;
+    //     //         }
+    //     //     }
+    //     // }
+    //     // .arrival{
+    //     //     // &::-webkit-calendar-picker-indicator { display:none;}
+    //     // }
+    //     &-personalInformation{
+    //         // height: toRem(330);
+    //         .personalInformationHeader{
+    //             height: toRem(57);
+    //             background-color: #00549B;
+    //             color: #fff;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: flex-start;
+    //             padding-right: toRem(20);
+    //             @include AlmoniBold(32);
+
+    //         }
+    //         .personalInformationMain{
+    //             margin-bottom: toRem(16);
+    //             display: flex;
+    //             flex-direction: row;
+    //             align-items: center;
+    //             justify-content: space-between;
+    //             flex-wrap: wrap;
+    //             min-height: toRem(264);
+    //             background-color: #FAFAFA;
+    //             padding: 0 toRem(20);
+    //             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+    //             .container{
+    //                 display: flex;
+    //                 flex-direction: column;
+    //                 align-items: flex-start;
+    //                 justify-content: space-between;
+    //                 @include AlmoniBold(20);
+    //                 // height: toRem(68);
+    //                 select,
+    //                 input{
+    //                     @include AlmoniRegular(20);
+    //                     height: toRem(40);
+    //                     width: toRem(208);
+    //                     color: #888888;
+    //                     margin-top: toRem(5);
+
+    //                 }
+    //                 #lastSelect{
+    //                     width: toRem(667);
+    //                     margin-bottom: toRem(20);
+    //                 }
+    //             }
+    //         }
+    //         .personalInformationFooter{
+    //             height: toRem(57);
+    //             background-color: #EEEEEE;
+    //             color: #00549B;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: flex-start;
+    //             padding-right: toRem(20);
+    //             @include AlmoniBold(20);
+    //         }
+    //     }
+    //     .btn{
+    //         display: block;
+    //         margin: toRem(40) auto 0;
+    //         height: toRem(50);
+    //         width: toRem(204);
+    //         text-align: center;
+    //         @include AlmoniBold(20);
+    //         color: #fff;
+    //         background-color: #00549B;
+    //     }
+    // }
+
+    
+      .calculator2021 a:link, .calculator2021  a:visited,.calculator2021  a:hover {
+          color: #000;
+          text-decoration: none;
+        }
+    .calculator2021 a img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+        
+      
+      .buy a p{direction: rtl}
+      .calculator2021 input[type="text"],
+      .calculator2021 input[type="number"],
+      .calculator2021 select {
+          border: 1px #ececec solid;
+          border-radius: 3px;
+          background: #fff;
+          color: #000;
+          font-family: Arial;
+          font-size: 12px;
+          line-height: 30px;
+          height: 30px;
+          padding: 0 10px;
+          -webkit-appearance: none;
+      }
+      
+      .calculator2021 .dates {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      
+      .calculator2021 .dates label {
+          width: toRem(200);
+          padding: 5px 0;
+          
+          
+      }
+      
+      .calculator2021 .dates label span.title {
+          display: block;
+          @include AlmoniRegular(18);
+          margin-right: toRem(10);
+          color: #00549B;
+      }
+      
+      .calculator2021 .dates label input[type="text"] {
+          width: 100%;
+      }
+      
+      .calculator2021 .dates label.checkbox {
+          width: 100%;
+          display: flex;
+          max-width: 650px;
+          padding: 7px 0;
+
+          &:nth-child(2){
+              padding-top: 15px;
+          }
+          &:nth-child(6){
+              padding-bottom: 15px;
+          }
+      }
+      
+      .calculator2021 .dates label.etgari,
+      .calculator2021 .dates label.ski {
+          display: none;
+      }
+      
+      .calculator2021 .fields {
+          margin: 0 0 toRem(20) 0;
+          padding: 0;
+        //   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+        }
+        
+        
+        .calculator2021 .fields li {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0 0 0;
+            background: #fafafa;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+            padding-left: 10px;
+            padding-right: 10px;
+        //   border-radius: 3px;
+        // min-height: toRem(264);
+      }
+      
+      .calculator2021 .fields li .num {
+        
+        height: toRem(57);
+                background-color: #00549B;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-right: toRem(20);
+                @include AlmoniBold(28);
+                width: calc(100% + 20px);
+                margin: -10px;
+                margin-bottom: 0;
+      }
+      
+      .calculator2021 .fields li .num a {
+          width: toRem(15);
+          height: toRem(15);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: #ef1616;
+          font-size: toRem(15);
+          line-height: toRem(15);
+          margin: 0 0 0 toRem(5);
+          color: #fff;
+          position: relative;
+      }
+      
+      .calculator2021 .fields li .lastInput{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+      .calculator2021 .fields li label {
+          width: 20%;
+          position: relative;
+          padding: toRem(10);
+          &:first-child{
+              padding-right: 100px;
+          }
+          .lastInput{
+              width: toRem(667);
+          }
+        }
+
+      
+      .calculator2021 .fields li label span.title {
+          display: block;
+          color: #5A5A5A;
+          @include AlmoniBold(20);
+          margin: 0 0 5px 0;
+        }
+        
+        .calculator2021 .fields li label div.error {
+          @include AlmoniRegular(10);
+          color: red;
+      }
+      
+      .calculator2021 .fields li label select,
+      .calculator2021 .fields li label input {
+          width: 100%;
+          @include AlmoniRegular(20);
+          color: #888888;
+          height: toRem(40);
+      }
+      
+      .calculator2021 .fields li label:before {
+          content: "\25BE";
+          position: absolute;
+          font-size: toRem(12);
+          left: toRem(25);
+          top: calc(50% + 5px);
+      }
+      
+      .calculator2021 .fields li label.age:before {
+          display: none;
+      }
+      
+      .calculator2021 #addperson {
+          cursor: pointer;
+        height: toRem(57);
+                background-color: #EEEEEE;
+                color: #00549B;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-right: toRem(20);
+                @include AlmoniBold(20);
+                width: 100%;
+                border: none;
+      }
+      
+      .calculator2021 #addperson:hover {
+          color: #fff;
+          background: #069;
+          border-color: #069;
+      }
+      
+      .calculator2021 #calculate {
+        display: block;
+        margin: toRem(40) auto 0;
+        height: toRem(50);
+        width: toRem(204);
+        text-align: center;
+        @include AlmoniBold(20);
+        color: #fff;
+        background-color: #00549B;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .calculator2021 .results {
+          display: none;
+          margin: 0 0 20px 0;
+      }
+      
+      /* New Picker */
+      
+      .t-datepicker {
+          display: flex;
+      }
+      
+      .t-check-in, .t-check-out, .t-datepicker {
+          float: none;
+      }
+      
+      .t-check-in, .t-check-out {
+          @include AlmoniRegular(20);
+          border: 1px #00549B solid;
+          border-radius: 3px;
+          padding: 0 10px;
+          background-color: #fff;
+          width: toRem(365);
+            height: toRem(40);
+            color:#00559bB2;
+      }
+      
+      .t-dates {
+          padding: 0;
+          display: flex;
+          align-items: center;
+      }
+      
+      .t-datepicker-days .t-table-wrap {
+          margin-left: 0;
+          margin-right: 2%;
+      }
+      
+      .t-check-in .t-date-info-title, .t-check-out .t-date-info-title {
+          width: auto !important;
+          line-height: inherit;
+          padding: 0 !important;
+          position: static;
+          @include AlmoniRegular(20);
+      }
+      
+      .t-next, .t-prev, .t-table-condensed td, .t-table-condensed th {
+          border: 0 !important;
+          width: auto !important;
+          padding: 10px !important;
+      }
+      
+      .t-table-condensed {
+          border: 0 !important;
+      }
+      
+      .t-table-condensed th:first-child,
+      .t-table-condensed td:first-child {
+          text-align: center !important;
+          font-size: inherit !important;
+          background: inherit !important;
+          color: inherit !important;
+          font-weight: normal !important;
+      }
+      
+      .t-table-condensed tr th:first-child {
+          font-weight: bold;
+      }
+      
+      .t-table-condensed tbody td, .t-table-condensed tbody td:first-child {
+          background: #efefef !important;
+          border: 1px #fff solid !important;
+      }
+      
+      .t-table-condensed tbody td:hover,
+      .t-table-condensed tbody .t-range,
+      .t-table-condensed tbody .t-range:first-child,
+      .t-table-condensed tbody .t-start,
+      .t-table-condensed tbody .t-start:first-child,
+      .t-table-condensed tbody .t-end,
+      .t-table-condensed tbody .t-hover-day,
+      .t-table-condensed tbody .t-hover-day:first-child,
+      .t-table-condensed tbody .t-range-limit,
+      .t-table-condensed tbody .t-range-limit:first-child {
+          background: #069 !important;
+          color: #fff !important;
+      }
+      
+      .t-table-condensed tbody .t-today,
+      .t-today .t-hover-day-content {
+          background: orange !important;
+          color: #fff !important;
+      }
+      
+      .t-today:after, .t-today:hover:after  {
+          border-top-color: orange;
+      }
+      
+      .t-month-check-in,
+      .t-month-check-out {
+          margin: 0 5px;
+      }
+      
+      .t-check-in {
+          margin: 0 0 0 20px;
+      }
+      
+      .t-input {
+          display: none;
+      }
+      
+      .calculator2021 .tablewrap ul {
+          display: none;
+      }
+
+    input[type="checkbox"]{
+        width: toRem(20);
+        height: toRem(20);
+    } 
+
+    // .tablewrap-inner{
+    //     @include AlmoniRegular(18);
+    //     margin-top: toRem(20);
+
+    //     table{
+    //         width: 100%;
+    //             border-collapse: collapse;
+
+    //         th, td {
+    //             border: 1px solid #CCC;
+    //             height: toRem(50);
+    //             text-align: center;
+    //             color: #00549B;
+    //         }
+    //         th{
+    //             width: toRem(200);
+    //         }
+    //         tr:last-child{
+    //             th, td {
+    //                 color: #FFF;
+    //                 background-color: #00549B;
+    //             }
+    //         }
+    //     }
+    // }    
+    .tablewrap-inner{
+        @include AlmoniRegular(18);
+        margin-top: toRem(20);
+
+        table{
+            width: 100%;
+                border-collapse: collapse;
+
+            th, td {
+                border: 1px solid #CCC;
+                height: toRem(50);
+                text-align: center;
+                color: #00549B;
+            }
+            tr{
+                th:first-child,
+                td:first-child{
+                    width: toRem(293);
+                    color: #00549B;
+                    padding-right: toRem(20);
+                    padding-left: toRem(150);
+                }
+            }
+            tr:last-child{
+                th, td {
+                    color: #FFF;
+                    background-color: #00549B;
+                }
+            }
+        }
+    }    
+    
+   
+
+
+}

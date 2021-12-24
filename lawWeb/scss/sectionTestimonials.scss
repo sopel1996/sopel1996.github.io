@@ -1,0 +1,87 @@
+/*
+----------------------------
+Testimonials
+-----------------------------
+*/
+.testimonials{
+    // height: toRem(477);
+    background-color: $primaryBgColor;
+    padding: toRem(40) 0 toRem(20) 0;
+    .sectionInner{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h2{
+        color: #fff;
+        @include AlmoniBold(42);
+        margin: 0 0 toRem(20) 0;
+    }
+    &_list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        // margin: 0 toRem(50);
+        &Item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: #fff;
+            width: toRem(316);
+            height: toRem(335);
+            padding: toRem(20);
+            
+            .itemImg{
+                height: toRem(44);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 toRem(20) 0;
+            }
+            p{
+                @include AlmoniNormal(20);
+                color: $primaryColorText;
+                
+            }
+            .itemAuthor{
+                color: $thirdColorText;
+                @include AlmoniBold(20); 
+                flex-grow: 1;
+            }
+            
+        }
+        
+    }
+}
+.swiper1{
+    width    : 100%;
+    // height: auto;
+}
+
+.swiper-slide_1 {
+    min-height: 310px;
+    max-height: 350px;
+}
+.swiper-wrapper_1{
+    height: auto !important;
+    margin: 0 0 toRem(55) 0 !important;
+}
+.swiper1 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 20px !important;
+}
+.swiper-button-next, .swiper-button-prev{
+    top: auto !important;
+    bottom: 0;
+}
+
+// @media screen and (min-width: 640px) {
+
+//     .swiper-slide {
+//         min-height: 335px;
+//     }
+// }

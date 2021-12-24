@@ -1,0 +1,60 @@
+@import 'mixins.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,
+a:focus,
+a:visited{
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+h1,h2,h3,h4,h5,h6{margin:0;}
+.sectionInner{
+    max-width: toRem(1160);
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
+input{   
+    background-clip: padding-box;
+}
+._borderNone{
+    border: none !important;
+}
+._opacity{
+    opacity: 1 !important;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.textDecor{
+    width: toRem(140);
+    height: toRem(17);
+    background: transparent url(/img/svg/textDecore.svg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.btn{
+    width: 100%;
+    height: toRem(45);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: toRem(23);
+    cursor: pointer;
+    background-color: #82BCB0;
+    @include IBMPlexBold(20);
+    &:active{
+        background-color: #6b9b91;
+    }
+
+}
+address{
+    font-style: normal;
+}
+.title{
+    @include IBMPlexRegular(44);
+}

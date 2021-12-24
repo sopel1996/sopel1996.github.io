@@ -1,0 +1,56 @@
+@function toRem($value) {
+    $remValue: $value + px; 
+    @return $remValue;
+}
+
+@mixin RalewayRegular($size_px) {
+    font-family: "Raleway",sans-serif;
+    font-weight: 400;
+    font-size: toRem($size_px);
+}
+@mixin RalewayMedium($size_px) {
+    font-family: "Raleway",sans-serif;
+    font-weight: 500;
+    font-size: toRem($size_px);
+}
+@mixin RalewaySemiBold($size_px) {
+    font-family: "Raleway",sans-serif;
+    font-weight: 600;
+    font-size: toRem($size_px);
+}
+@mixin RalewayBold($size_px) {
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: toRem($size_px);
+}
+@mixin RalewayExtraBold($size_px) {
+    font-family: "Raleway",sans-serif;
+    font-weight: 800;
+    font-size: toRem($size_px);
+}
+@mixin RalewayBlack($size_px) {
+    font-family: "Raleway",sans-serif;
+    font-weight: 900;
+    font-size: toRem($size_px);
+}
+
+@mixin RobotoLight($size_px) {
+    font-family: "Roboto",sans-serif;
+    font-weight: 200;
+    font-size: toRem($size_px);
+}
+@mixin RobotoRegular($size_px) {
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: toRem($size_px);
+}
+@mixin RobotoMedium($size_px) {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: toRem($size_px);
+}
+@mixin RobotoBold($size_px) {
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: toRem($size_px);
+}

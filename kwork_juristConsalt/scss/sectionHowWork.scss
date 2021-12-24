@@ -1,0 +1,76 @@
+.sectionHowWork{
+    .sectionInner{
+        height: toRem(545);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &_title{
+        @include RalewayBold(36);
+        color: $primary-color;
+        margin-bottom: toRem(40);
+    }
+    &_attentions{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: toRem(40);
+        &-item{
+            width: toRem(580);
+            height: toRem(120);
+            border: 1px solid $primary-color;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: toRem(20);
+            &Exclamation{
+                @include RobotoMedium(120);
+                color: $third-color;
+
+            }
+            &Text{
+                @include RalewayMedium(18);
+                color: $primary-color-text;
+                text-align: center;
+                width: toRem(480);
+            }
+        }
+    }
+    &_stages{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: toRem(380);
+            &Img{
+                border: 6px solid $primary-color;
+                border-radius: 50%;
+                width: toRem(220);
+                height: toRem(220);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: toRem(20);
+                img{
+                    width: toRem(100);
+                    height: toRem(100);
+                }
+            }
+            &Text{
+                @include RalewayRegular(18);
+                color: $primary-color-text;
+                text-align: center;
+            }
+        }
+    }
+}

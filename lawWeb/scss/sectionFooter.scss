@@ -1,0 +1,281 @@
+/*
+----------------------------
+Footer
+-----------------------------
+*/
+footer {
+    background-color: $primaryBgColor;
+    
+    .sectionInner {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    h3 {
+        @include AlmoniBold(24);
+        color        : $secondaryColor;
+        border       : none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width        : 100%;
+        height       : toRem(33);
+        margin: 0 0 toRem(10) 0;
+
+    }
+
+    ._firstLine {
+        color          : rgba(255, 255, 255, 0.6);
+        width          : 100%;
+        padding    : toRem(30) 0;
+        display        : flex;
+        flex-direction : row;
+        align-items    : flex-start;
+        justify-content: space-between;
+
+        .footerList {
+            list-style: none;
+            width     : 100%;
+            height    : 100%;
+            @include AlmoniNormal(16);
+
+            li {
+                margin: 0 0 toRem(10) 0;
+                a {
+                    color          : rgb(255, 255, 255);
+                    border         : none;
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: flex-start;
+                }
+            }
+        }
+
+        .title {}
+
+        &-list,
+        &-services,
+        &-contacts,
+        &-feedback {
+            height: 100%;
+            width : toRem(315);
+        }
+
+
+
+        &-contacts {
+
+            li {
+                color: #fff;
+                @include AlmoniNormal(16);
+                display        : flex;
+                flex-direction : row;
+                align-items    : baseline;
+                justify-content: flex-start;
+                line-height    : 1.5;
+
+                &:nth-child(1) {
+                    a {
+                        color      : inherit;
+                        font-family: inherit;
+                    }
+
+                    i {
+                        margin: 0 0 0 toRem(10);
+                        font-size  : 15px;
+                        color      : $secondaryColor;
+                    }
+                }
+
+                &:nth-child(2) {
+                    a {
+                        color      : inherit;
+                        font-family: inherit;
+                    }
+
+                    i {
+                        margin: 0 0 0 toRem(10);
+                        font-size  : toRem(15);
+                        color      : $secondaryColor;
+                    }
+                }
+
+                &:nth-child(3) {
+                    a {
+                        color      : inherit;
+                        font-family: inherit;
+                    }
+
+                    i {
+                        margin: 0 0 0 toRem(10);
+                        font-size  : toRem(15);
+                        color      : $secondaryColor;
+                    }
+                }
+
+                &:nth-child(4) {
+                    .textTitle {
+                        display: block;
+                        @include AlmoniBold(20);
+                    }
+
+                    a {
+                        color      : inherit;
+                        font-family: inherit;
+                    }
+
+                    i {
+                        margin: 0 0 0 toRem(10);
+                        font-size  : toRem(15);
+                        color      : $secondaryColor;
+                    }
+                }
+
+                &:nth-child(5) {
+                    color: #fff;
+
+                    i {
+                        margin: 0 0 0 toRem(10);
+                        font-size  : toRem(15);
+                        color      : $secondaryColor;
+                    }
+
+                    a {
+                        color      : inherit;
+                        font-family: inherit;
+                    }
+
+                    .textTitle {
+                        color  : inherit;
+                        display: block;
+                        @include AlmoniBold(20);
+                    }
+                }
+            }
+
+        }
+
+        &-feedback {
+
+
+            .footerForm {
+                display        : flex;
+                flex-direction : column;
+                align-items    : center;
+                justify-content: space-between;
+                @include AlmoniNormal(16);
+
+                &-input {
+                    background-color: transparent;
+                    color           : #fff;
+                    width           : 100%;
+                    height          : toRem(40);
+                    margin   : 0 0 toRem(15) 0;
+                    border          : none;
+                    outline         : none;
+                    border          : 1px solid rgba(215, 218, 221, 0.2);
+                    padding         : toRem(10) toRem(20);
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+
+                }
+
+                .btn {
+                    width : 100%;
+                    height: toRem(40);
+                }
+            }
+
+        }
+    }
+
+
+
+    ._secondLine {
+        border: none;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        .sectionInner {
+            width          : 100%;
+            height         : toRem(100);
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+        }
+
+        .realmediaLogo {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: flex-end;
+            width          : 40%;
+
+            .logoImg {
+                width     : toRem(90);
+                height    : toRem(20);
+                background: transparent url(../img/REALMEDIAlogo.svg) 50% 50% / cover no-repeat;
+            }
+
+            .logoText {
+                @include AlmoniLight(15);
+                color: rgba(255, 255, 255, 0.4);
+
+                &::after {
+                    content    : "";
+                    border     : none;
+                    border-left: 1px solid rgba(255, 255, 255, 0.4);
+                    margin     : 0 toRem(10);
+                }
+            }
+        }
+
+        .socialLogo {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: center;
+            width          : 20%;
+            height         : toRem(25);
+
+            .fb {
+                display         : flex;
+                align-items     : center;
+                justify-content : center;
+                width           : toRem(25);
+                height          : toRem(25);
+                margin          : 0 toRem(5);
+                border-radius   : 50%;
+                background-color: #217BEE;
+
+                i {
+                    color    : #fff;
+                    font-size: 15px
+                }
+            }
+
+            .youtube {
+                display         : flex;
+                align-items     : center;
+                justify-content : center;
+                width           : toRem(25);
+                height          : toRem(25);
+                border-radius   : 50%;
+                background-color: #ff0000;
+                margin          : 0 toRem(5);
+
+                i {
+                    color    : #fff;
+                    font-size: 12px
+                }
+            }
+        }
+
+        .copyright {
+            width: 40%;
+            @include AlmoniNormal(18);
+            color: #ffffff;
+        }
+    }
+}

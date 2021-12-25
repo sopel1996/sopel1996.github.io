@@ -1,25 +1,25 @@
 @charset "UTF-8";
 @font-face {
   font-family: "almoni";
-  src: url("/fonts/almoni-dl-aaa-light.otf") format("openType");
+  src: url("../fonts/almoni-dl-aaa-light.otf") format("openType");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "almoni";
-  src: url("/fonts/almoni-dl-aaa-regular.otf") format("openType");
+  src: url("../fonts/almoni-dl-aaa-regular.otf") format("openType");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "almoni";
-  src: url("/fonts/almoni-dl-aaa-bold.otf") format("openType");
+  src: url("../fonts/almoni-dl-aaa-bold.otf") format("openType");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "almoni";
-  src: url("/fonts/almoni-dl-aaa-black.otf") format("openType");
+  src: url("../fonts/almoni-dl-aaa-black.otf") format("openType");
   font-weight: 900;
   font-display: swap;
 }
@@ -74,7 +74,7 @@ input {
 .sectionSearchForm {
   min-height: 1165px;
   width: 100%;
-  background: url(/img/png/sectionSearchBg.jpg) 0 0 no-repeat;
+  background: url(../img/png/sectionSearchBg.jpg) 0 0 no-repeat;
   background-size: contain;
   position: relative;
   overflow: hidden;
@@ -99,7 +99,7 @@ input {
   height: 93px;
   margin: 0 auto;
   margin-bottom: 60px;
-  background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
+  background: url(../img/svg/Logo.svg) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionSearchForm_title {
@@ -551,7 +551,7 @@ input {
 
 .sectionVideo {
   height: 654px;
-  background: #FAFAFA url(/img/png/sectionVideoBg.png) 50% 50% no-repeat;
+  background: #FAFAFA url(../img/png/sectionVideoBg.png) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
 }

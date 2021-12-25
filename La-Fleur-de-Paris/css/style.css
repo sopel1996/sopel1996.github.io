@@ -1,48 +1,48 @@
 @charset "UTF-8";
 @font-face {
   font-family: "IBMPlex";
-  src: url("/fonts/eot/IBMPlexSansHebrew-Light.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Light.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Light.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Light.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Light.woff2") format("woff2");
+  src: url("../fonts/eot/IBMPlexSansHebrew-Light.eot") format("embedded-opentype"), url("../fonts/otf/IBMPlexSansHebrew-Light.otf") format("openType"), url("../fonts/ttf/IBMPlexSansHebrew-Light.ttf") format("truetype"), url("../fonts/woff/IBMPlexSansHebrew-Light.woff") format("woff"), url("../fonts/woff2/IBMPlexSansHebrew-Light.woff2") format("woff2");
   /* Super Modern Browsers */
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "IBMPlex";
-  src: url("/fonts/eot/IBMPlexSansHebrew-Regular.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Regular.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Regular.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Regular.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Regular.woff2") format("woff2");
+  src: url("../fonts/eot/IBMPlexSansHebrew-Regular.eot") format("embedded-opentype"), url("../fonts/otf/IBMPlexSansHebrew-Regular.otf") format("openType"), url("../fonts/ttf/IBMPlexSansHebrew-Regular.ttf") format("truetype"), url("../fonts/woff/IBMPlexSansHebrew-Regular.woff") format("woff"), url("../fonts/woff2/IBMPlexSansHebrew-Regular.woff2") format("woff2");
   /* Super Modern Browsers */
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "IBMPlex";
-  src: url("/fonts/eot/IBMPlexSansHebrew-Bold.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Bold.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Bold.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Bold.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Bold.woff2") format("woff2");
+  src: url("../fonts/eot/IBMPlexSansHebrew-Bold.eot") format("embedded-opentype"), url("../fonts/otf/IBMPlexSansHebrew-Bold.otf") format("openType"), url("../fonts/ttf/IBMPlexSansHebrew-Bold.ttf") format("truetype"), url("../fonts/woff/IBMPlexSansHebrew-Bold.woff") format("woff"), url("../fonts/woff2/IBMPlexSansHebrew-Bold.woff2") format("woff2");
   /* Super Modern Browsers */
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "IBMPlexText";
-  src: url("/fonts/eot/IBMPlexSansHebrew-Text.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Text.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Text.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Text.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Text.woff2") format("woff2");
+  src: url("../fonts/eot/IBMPlexSansHebrew-Text.eot") format("embedded-opentype"), url("../fonts/otf/IBMPlexSansHebrew-Text.otf") format("openType"), url("../fonts/ttf/IBMPlexSansHebrew-Text.ttf") format("truetype"), url("../fonts/woff/IBMPlexSansHebrew-Text.woff") format("woff"), url("../fonts/woff2/IBMPlexSansHebrew-Text.woff2") format("woff2");
   /* Super Modern Browsers */
   font-display: swap;
 }
 @font-face {
   font-family: "Almoni";
-  src: url("/fonts/otf/almoni-dl-aaa-light.otf") format("openType");
+  src: url("../fonts/otf/almoni-dl-aaa-light.otf") format("openType");
   /* Super Modern Browsers */
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Almoni";
-  src: url("/fonts/otf/almoni-dl-aaa-regular.otf") format("openType");
+  src: url("../fonts/otf/almoni-dl-aaa-regular.otf") format("openType");
   /* Super Modern Browsers */
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Almoni";
-  src: url("/fonts/otf/almoni-dl-aaa-bold.otf") format("openType");
+  src: url("../fonts/otf/almoni-dl-aaa-bold.otf") format("openType");
   /* Super Modern Browsers */
   font-weight: 700;
   font-display: swap;
@@ -92,7 +92,7 @@ body {
 .textDecor {
   width: 140px;
   height: 17px;
-  background: transparent url(/img/svg/textDecore.svg) 50% 50% no-repeat;
+  background: transparent url(../img/svg/textDecore.svg) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -188,7 +188,7 @@ address {
   content: "";
   width: 20px;
   height: 20px;
-  background: transparent url(/img/svg/pnoeCall.svg) 50% 50% no-repeat;
+  background: transparent url(../img/svg/pnoeCall.svg) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionHeader_firstLine-phoneSearch .search {
@@ -208,7 +208,7 @@ address {
   color: #fff;
 }
 .sectionHeader_firstLine-phoneSearch .search .sendSearch {
-  background: transparent url("/img/svg/search.svg") 50% 50% no-repeat;
+  background: transparent url("../img/svg/search.svg") 50% 50% no-repeat;
   width: 14px;
   height: 14px;
   outline: none;
@@ -254,7 +254,7 @@ address {
   justify-content: space-between;
 }
 .sectionHeader_secondLine-userCart-cart {
-  background: transparent url(/img/svg/cart.svg) 50% 50% no-repeat;
+  background: transparent url(../img/svg/cart.svg) 50% 50% no-repeat;
   border: 1px solid #346056;
   border-radius: 50%;
   width: 27px;
@@ -262,7 +262,7 @@ address {
   cursor: pointer;
 }
 .sectionHeader_secondLine-userCart-user {
-  background: transparent url(/img/svg/user.svg) 50% 50% no-repeat;
+  background: transparent url(../img/svg/user.svg) 50% 50% no-repeat;
   border: 1px solid #346056;
   border-radius: 50%;
   width: 27px;
@@ -515,35 +515,35 @@ address {
   padding-bottom: 30px;
 }
 .sectionCards .grid-item:nth-child(1) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(2) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(3) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(4) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(5) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(6) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(7) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionCards .grid-item:nth-child(8) {
-  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -570,7 +570,7 @@ address {
 .sectionProduct_item_img {
   width: 500px;
   height: 616px;
-  background: transparent url(/img/png/productImg.png) 50% 50% no-repeat;
+  background: transparent url(../img/png/productImg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 .sectionProduct_item_content {
@@ -1060,7 +1060,7 @@ address {
   outline: none;
   padding: 9px;
   appearance: none;
-  background: transparent url(/img/svg/selectArrow.svg) 15px no-repeat;
+  background: transparent url(../img/svg/selectArrow.svg) 15px no-repeat;
 }
 .sectionOrderForm .otherOptions .secondRow {
   padding-top: 16px;
@@ -1281,7 +1281,7 @@ address {
   position: relative;
 }
 .sectionSubscribe_form .sendSubscribe {
-  background: #fff url("/img/svg/sendFormIcon.svg") 50% 50% no-repeat;
+  background: #fff url("../img/svg/sendFormIcon.svg") 50% 50% no-repeat;
   width: 20px;
   height: 20px;
   outline: none;

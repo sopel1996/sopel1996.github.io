@@ -1,0 +1,25 @@
+.sectionTitleText{
+    padding-right: toRem(40);
+    margin: toRem(60) 0;
+
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%
+    }
+    &_title{
+        @include AlmoniBold(24);
+        margin-bottom: toRem(5);
+        
+    }
+    &_text{
+        @include AlmoniRegular(20);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      
+    }
+}

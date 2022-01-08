@@ -1,0 +1,526 @@
+/*
+----------------------------
+Mobile adaptive
+-----------------------------
+*/
+@import 'mixins.scss';
+
+@media (max-width: 468px) {
+    .sectionInner {
+        padding: 0 toRem(20);
+        width: 100%;
+    }
+    .btn{
+        @include fontSize(14);
+    }
+    .click2action{
+        display: block;
+    }
+    .btnPrev{
+        right: 20px;
+    }
+    .btnNext{
+        left: 20px;
+    }
+
+    .swiper1,
+    .swiper2{
+        width: 75%;
+    }
+
+    //-----header----
+    header{
+        height: toRem(60);
+        background-color: #fff;
+        position: fixed;
+        box-shadow: 0 2px 3px 0 rgb(0 0 0 / 40%);
+        z-index: 999;
+    }
+    header .sectionInner{
+        height: 100%;
+    }
+    header .realmenu{
+        display: none;
+    }
+    header ._logo{
+        margin: 0;
+        background-image: url(../img/logoDark.png);
+        margin: 0 60px 0 0;
+        height: toRem(40);
+    }
+    header .btn{
+        display: none;
+    }
+    header svg{
+        display: block;
+    }
+    .nav-list{
+        display         : flex;
+      }
+    //------------
+
+
+    //-----banner-------
+    .banner{
+        padding: toRem(80) 0 0 0;
+    }
+    .banner ._cupple{
+        height: toRem(440);
+    }
+    .banner .sectionInner{
+        flex-direction: column;
+    }
+    .banner ._text .statsList-item{
+        width: 100%;
+        margin: 0 0 toRem(15) 0;
+        padding: 0 0 toRem(5) 0;
+        text-align: center;
+        border: none;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            height: toRem(1);
+            width: toRem(60);
+            background-color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            bottom: toRem(-5);
+            right: 50%;
+            transform: translate(toRem(30), 0);
+        }
+        &:first-child{
+            padding: 0 0 toRem(5) 0;
+            
+        }
+    }
+    .banner ._text h2{
+        @include fontSize(50);
+        text-align: center;
+    }
+    .banner ._text h3{
+        @include fontSize(25);
+        text-align: center;
+    }
+    .banner ._text h4{
+        @include fontSize(22);
+        text-align: center;
+    }
+    .banner ._text .statsList{
+        flex-direction: column;
+    }
+    .banner ._text .statsList-item .number{
+        @include fontSize(27);
+    }
+    .banner ._text .statsList-item .text{
+        @include fontSize(20);
+    }
+
+    // ----about-services---
+    .about-services {
+        padding: toRem(20) 0;
+    }
+    .about-services .sectionInner{
+        flex-direction: column;
+    }
+    .about-services h2,
+    .about-services .about-services_secondCol h2{
+        text-align: center;
+        @include fontSize(29);
+        
+    }
+    .about-services .about-services_firstCol .text{
+        
+        @include fontSize(18);
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        @include fontSize(14);
+        background-size: cover;
+    }
+    .about-services .about-services_secondCol .imgList-Item:hover {
+        background-size: cover;
+    }
+    .about-services .about-services_firstCol,
+    .about-services .about-services_secondCol{
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+    .about-services .about-services_firstCol{
+        margin: 0 0 toRem(30) 0;
+    }
+    .about-services .about-services_secondCol .imgList{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        width: 48%;
+        margin: 0;
+    }
+    .about-services .about-services_secondCol .imgList-Item:nth-child(2n){
+        margin: 0 0 toRem(20) 0;
+    }
+    .about-services .about-services_secondCol .imgList-Item:nth-last-child(1){
+        margin: 0;
+    }
+    // -------------
+
+
+    // ----steps-online---
+    .steps-online{
+        padding: toRem(20) 0;
+    }
+    .steps-online .stepsLine{
+        background: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+    }
+    .steps-online h2{
+        text-align: center;
+        @include fontSize(29);
+    }
+    .steps-online h3{
+        width: 100%;
+        margin: 0 0 toRem(20) 0;
+        @include fontSize(16);
+    }
+    .steps-online .stepsLine .firstStep, .steps-online .stepsLine .secondStep, .steps-online .stepsLine .thirdStep{
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        left: auto;
+        right: auto;
+        transform: translate(0);
+        justify-content: flex-start;
+        margin: 0 0 toRem(20) 0;
+    }
+    .steps-online .stepsLine .stepNumber{
+        margin: 0 0 0 toRem(20);
+    }
+    .steps-online .stepsLine .stepImg{
+        margin: 0 0 0 toRem(20);
+    }
+    .steps-online .stepsLine p{
+        @include fontSize(17);
+
+    }
+    .steps-online .btn {
+        height: 34px;
+    }
+    // -------------
+
+
+    //-----testimonials----
+    .testimonials {
+        padding: toRem(20) 0;
+    }
+    .testimonials h2{
+        @include fontSize(29);
+        
+    }
+    //------------ 
+    
+    
+    //-----why-us----   
+    .why-us{
+        padding: toRem(20) 0;
+    }
+    .why-us h2{
+        @include fontSize(29);
+        
+    }
+    .why-us .text .reason h3{
+        @include fontSize(23);
+        
+    }
+    .why-us .text .reason h4{
+        @include fontSize(20);
+        
+    }
+    .why-us .text .reason p{
+        @include fontSize(17);
+        
+    }
+    .why-us .text{
+        flex-direction: column;
+        margin: 0;
+    }
+    .why-us .text .firstCol, .why-us .text .secondCol{
+        width: 100%;
+        padding: 0
+    }
+    //------------
+    
+
+    //-----other-services----   
+    .other-services{
+        padding: toRem(20) 0;
+    }
+    .other-services h2{
+        @include fontSize(29);
+        
+    }
+    .other-services_listItem h3{
+        
+        @include fontSize(18);
+    }
+    .other-services_list{
+        flex-direction: column;
+    }
+    .other-services_listItem{
+        margin: 0 0 toRem(20) 0;
+    }
+    // -------------
+    
+
+    //-----articles----    
+    .articles {
+        padding: toRem(20) 0;
+    }
+    .articles h2{
+        @include fontSize(29);
+
+    }
+    .articles_listItem:hover .itemImg{
+        background-size: 100% 100%;
+    }
+    //------------
+
+
+    // ----footer---
+    footer ._firstLine{
+        flex-direction: column;
+        padding: toRem(20) 0;
+    }
+    footer ._firstLine-list, footer ._firstLine-services, footer ._firstLine-contacts, footer ._firstLine-feedback{
+        width: 100%;
+    }
+    footer h3{
+        font-size: toRem(22);
+        margin: toRem(10) 0 toRem(10) 0;
+    }
+    footer ._firstLine-contacts h3{
+        margin: 0 0 toRem(10) 0;
+    }
+    footer ._firstLine .footerList li a, footer ._firstLine-contacts, footer ._firstLine-contacts li, footer ._firstLine-feedback .footerForm .btn{
+        margin: 0 0 toRem(10) 0;
+        @include fontSize(14);
+    }
+    footer ._secondLine .sectionInner{
+        flex-direction: column;
+        margin: toRem(10) 0 toRem(63) 0;
+        padding: 0 0 toRem(10) 0;
+    }
+    footer ._secondLine .copyright{
+        width: 100%;
+        order: 3;
+        @include fontSize(14);
+        text-align: center;
+
+    }
+    footer ._secondLine .socialLogo{
+        width: 100%;
+        order: 2;
+    }
+    footer ._secondLine .realmediaLogo{
+        justify-content: center;
+        width: 100%;
+        order: 1;
+    }
+    // -------------
+    
+    
+    //-----small banner----
+    .sectionSmallBanner{
+        padding: toRem(80) 0 toRem(20) 0;
+    }
+    .sectionSmallBanner h2{
+        @include fontSize(45);
+    }
+    .sectionSmallBanner h3{
+        @include fontSize(14);
+    }
+    // -------------
+
+
+    //-----contact-us----
+    .contact-us{
+        padding: toRem(20) 0;
+    }
+    .contact-us .sectionInner{
+        flex-direction: column;
+    }
+    .contact-us .cuppleImg{
+        width: 100%;
+        margin: 0 0 toRem(20) 0;
+    }
+    .contact-us .contact-us_form{
+        border: none;
+        padding: 0;
+        margin: 0 0 toRem(20) 0;
+    }
+    .contact-us .contact-us_form h2{
+        @include fontSize(23);
+    }
+    .contact-us .contact-us_form label{
+        @include fontSize(16);
+    }
+    .contact-us .contact-us_form label input, .contact-us .contact-us_form label textarea{
+        @include fontSize(13);
+    }
+    .contact-us .contacts h2{
+        @include fontSize(18);
+    }
+    .contact-us .contacts li{
+        @include fontSize(17);
+    }
+    .contact-us .contacts .workTime .textTitle, .contact-us .contacts .location .textTitle{
+        @include fontSize(17);
+    }
+    //------------
+    
+    
+    //-----location----
+    .address{
+        padding: toRem(20) 0;
+    }
+    .address .sectionInner{
+        flex-direction: column;
+    }
+    .address .firstAddress, .address .secondAddress{
+        width: 100%;
+    }
+    .address .mapImg{
+        flex-direction: column;
+    }
+    .address .addressImg,
+    .address iframe{
+        margin: 0 0 toRem(20) 0;
+        width: 100% !important;
+    }
+    .address .text h2{
+        @include fontSize(20);
+    }
+    .address .text h3{
+        @include fontSize(16);
+    }
+    //------------
+
+
+    //-----services----
+    .services{
+        padding: toRem(20) 0;
+    }
+    .services .sectionInner{
+        flex-direction: column;
+        background-color: #fff;
+    }
+    .services .firstCol{
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .firstCol,
+    .services .secondCol{
+        width: 100%;
+        padding: 0;
+    }
+    .services .firstCol .form .formWrapper{
+        flex-direction: column;
+    }
+    .services .firstCol .form .formWrapper label{
+        width: 100%;
+        padding: 0;
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .firstCol .form .formWrapper .btn{
+        width: 100%;
+    }
+    .services .firstCol .gridWrap h2{
+        text-align: center;
+        @include fontSize(23);
+    }
+    .services .firstCol .gridWrap .grid{
+        margin: 0 auto;
+    }
+
+    .services .secondCol{
+        background-color: #fafafa;
+        padding: toRem(40) 0;
+    }
+    .services .secondCol .card{
+        padding: 0;
+        margin: 0 0 toRem(40) 0;
+    }
+    .services .firstCol .text{
+        padding: toRem(20) 0;
+        @include fontSize(16);
+    }
+    .services .firstCol .steps-online h2{
+        @include fontSize(29);
+    }    
+    .steps-online .subTitle{
+        @include fontSize(16);
+    }
+    .services .firstCol .form {
+        padding: toRem(20) toRem(17);
+    }
+    .services .firstCol .form h2{
+        @include fontSize(23);
+    }
+    .services .firstCol .form .formWrapper input{
+        @include fontSize(16);
+    }
+    .services .firstCol .gridWrap{
+        padding: toRem(20) 0
+    }
+    .services .firstCol .gridWrap .grid-item h3{
+        @include fontSize(16);
+    }
+    .services .firstCol .gridWrap .grid-item{
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .firstCol .gridWrap .grid-item h4{
+        @include fontSize(16);
+    }
+    .services .secondCol{
+        padding: toRem(20) 0;
+    }
+    .services .secondCol .card{
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .secondCol .card h3{
+        @include fontSize(20);
+    }
+    .services .secondCol .card p{
+        @include fontSize(16);
+    }
+    .services .secondCol .subscribe .subsForm h3{
+        @include fontSize(20);
+    }
+    .services .secondCol .fbConteiner{
+        margin: 0 0 toRem(20) 0;
+    }
+
+    //------------
+
+
+    //------article catalog------
+    .ArticlesCatalog{
+        padding: toRem(20) 0
+    }
+    .ArticlesCatalog .grid-item h3{
+        @include fontSize(20);
+    }
+    .ArticlesCatalog .grid-item h4{
+        @include fontSize(14);
+    }
+    .ArticlesCatalog .grid-item .more span{
+        @include fontSize(12);
+
+    }
+    //------------
+}

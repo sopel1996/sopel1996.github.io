@@ -1,0 +1,84 @@
+@import 'mixins.scss';
+.sectionForm{
+    height: toRem(480);
+    background-color: #CEA48B;
+    color: #FFFFFF;
+    .sectionInner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subTitle{
+        @include IBMPlexLight(14);
+        opacity: 0.6;
+        margin-top: toRem(60);
+    }
+    .title{
+        @include IBMPlexExtraLight(58);
+        letter-spacing: 0.15em;
+        margin-top: toRem(60);
+    }
+    .form{
+        margin-top: toRem(30);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: toRem(652);
+        height: toRem(188);
+        margin-bottom: toRem(60);
+        &Line{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .formsInput{
+            width: toRem(211);
+            height: toRem(40);
+            background-color: transparent;
+            outline: none;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            text-align: right;
+            @include IBMPlexLight(14);
+            padding: toRem(15);  
+            &::placeholder{
+                color: #FFFFFF;
+            }  
+        }
+        .comments{
+            @include IBMPlexLight(14);
+            padding: toRem(12);
+            width: 100%;
+            height: toRem(80);
+            background-color: transparent;
+            outline: none;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            text-align: right;
+            resize: none;
+            &::placeholder{
+                color: #FFFFFF;
+            }  
+        }
+        .btn{
+            width: 100%;
+            height: toRem(48);
+            color: #757575;
+            background-color: #FFFFFF;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            @include IBMPlexLight(18);
+            &:active{
+                background-color: #f1f0f0;
+            }
+
+        }
+    }
+}

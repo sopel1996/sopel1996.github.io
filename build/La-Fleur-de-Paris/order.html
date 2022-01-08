@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMob.css">
+    <title>La Fleur de Paris - Order</title>
+</head>
+<style>
+    .stickyHeader,
+    .stickyHeader * {
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .stickyHeader {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px;
+        background: rgb(248, 157, 254);
+        background: linear-gradient(180deg, rgba(248, 157, 254, 1) 0%, rgba(72, 72, 242, 1) 100%);
+        z-index: 999999999999;
+    }
+
+    .stickyHeader_link {
+        margin: 0 50px 0 0;
+        color: #fff;
+        transition: all 0.3s;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .stickyHeader_link:hover,
+    .stickyHeader_link:visited:hover {
+        color: rgb(0, 255, 242);
+    }
+
+    .stickyHeader_link:visited {
+        color: rgb(251, 255, 0);
+
+    }
+
+    .stickyHeader_link:first-child {
+        margin: 0;
+    }
+    @media screen and (max-width: 360px) {
+        .stickyHeader_link {
+            margin: 0 20px 0 0;
+        }
+        
+    }
+</style>
+<body style="background-color: rgb(243,245,245);">
+    <header class="stickyHeader">
+        <a href="/La-Fleur-de-Paris/product.html" class="stickyHeader_link">
+            fourth page
+        </a>
+        <a href="/La-Fleur-de-Paris/order.html" class="stickyHeader_link">
+            third page
+        </a>
+        <a href="/La-Fleur-de-Paris/catalog.html" class="stickyHeader_link">
+            second page
+        </a>
+        <a href="/La-Fleur-de-Paris/index.html" class="stickyHeader_link">
+            first page
+        </a>
+    </header>
+    <header class="sectionHeader">
+        <div class="sectionHeader_firstLine">
+            <div class="sectionInner">
+                <ul class="sectionHeader_firstLine-text">
+                    <li>
+                        <a href="index.html">
+                            דף הבית
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            יצירת קשר
+                        </a>
+                    </li>
+                </ul>
+                <div class="sectionHeader_firstLine-phoneSearch">
+                    <div class="phone">
+                        <a href="tel:+054-9727239">
+                            054-9727239
+                        </a>
+                    </div>
+                    <form action="" class="search">
+                        <input type="search" name="searchField" id="searchField" class="searchField" />
+                        <input type="submit" value="" class="sendSearch" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sectionHeader_secondLine">
+            <div class="sectionInner">
+                <section class="mobMenu">
+                    <div class="burger-menu">
+                        <a href="" class="burger-menu_button">
+                            <spun class="burger-menu_lines"></spun>
+                        </a>
+                        <nav class="burger-menu_nav">
+                            <a href="catalog.html" class="burger-menu_link">
+                                זרים אורבניים
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                זרים בקופסא
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                זרי ראש
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                זרים לגבר
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                אותיות ומספרים
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                טיפוח הבית
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                מתנות ליולדת ומארזי חג
+                            </a>
+                            <a href="catalog.html" class="burger-menu_link">
+                                תוספות
+                            </a>
+                        </nav>
+                        <div class="burger-menu_overlay"></div>
+                    </div>
+                </section>
+                <img src="img/svg/headMenuLogo.svg" alt="" class="sectionHeader_secondLine-logo">
+                <nav class="sectionHeader_secondLine-nav">
+                    <a href="catalog.html">
+                        זרים אורבניים
+                    </a>
+                    <a href="catalog.html">
+                        זרים בקופסא
+                    </a>
+                    <a href="catalog.html">
+                        זרי ראש
+                    </a>
+                    <a href="catalog.html">
+                        זרים לגבר
+                    </a>
+                    <a href="catalog.html">
+                        אותיות ומספרים
+                    </a>
+                    <a href="catalog.html">
+                        טיפוח הבית
+                    </a>
+                    <a href="catalog.html">
+                        מתנות ליולדת ומארזי חג
+                    </a>
+                    <a href="catalog.html">
+                        תוספות
+                    </a>
+                </nav>
+                <div class="sectionHeader_secondLine-userCart">
+                    <a href="#">
+                        <div class="sectionHeader_secondLine-userCart-cart"></div>
+                    </a>
+                    <a href="#">
+                        <div class="sectionHeader_secondLine-userCart-user"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="sectionTitleText">
+            <div class="sectionInner">
+                <h3 class="sectionTitleText_title">
+                    שערש
+                </h3>
+                <div class="sectionTitleText_text">
+                    <p>
+                        שערש שמחויטשלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה
+                        ניצאחו נמרגי
+                    </p>
+                    <p>
+                        לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב
+                    </p>
+                    <p>
+                        שהכים תוק, הדש שנרא התידם הכייר וק.
+                    </p>
+                    <p>
+                        ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק?
+                        לתיג ישבעס.
+                    </p>
+                    <p>
+                        גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <form action="" class="sectionOrderForm">
+            <div class="sectionInner">
+
+                <table class="sectionOrderForm_itemList">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>שערש</th>
+                        <th>שערש</th>
+                        <th>שערש</th>
+                        <th>שערש</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="deleteItem">X</div>
+                        </td>
+                        <td>
+                            <div class="itemImg"></div>
+                        </td>
+                        <td>
+                            <div class="itemName">
+                                שערש שמחויטשלושע
+                            </div>
+                        </td>
+                        <td>
+                            <div class="itemPrice">
+                                ₪200.00
+                            </div>
+                        </td>
+                        <td>
+                            <div class="itemQuantity">
+                                <div class="quantity-block">
+                                    <button class="quantity-arrow-minus"> - </button>
+                                    <input class="quantity-num" type="number" value="1" name="quantity" id="quantity" />
+                                    <button class="quantity-arrow-plus"> + </button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="totalPrice">
+                                ₪200.00
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="sectionOrderForm_greenLine">
+                    <div class="greenBlock"></div>
+                    <div class="text">
+                        שערש שמחויטשלושע ותלברו חשלו שעותלשך
+                    </div>
+                </div>
+                <div class="sectionOrderForm_firstInputField">
+                    <h4 class="sectionOrderForm_firstInputField-title">
+                        שערש
+                    </h4>
+                    <div class="inputFields">
+                        <label for="firstInput">
+                            <p>
+                                שערש
+                            </p>
+                            <input type="text" name="firstInput" id="firstInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" required />
+                        </label>
+                        <label for="secondInput">
+                            <p>
+                                שערש
+                            </p>
+                            <input type="text" name="firstInput" id="firstInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" required />
+                        </label>
+                        <label for="thirdInput">
+                            <p>
+                                שערש
+                            </p>
+                            <input type="text" name="thirdInput" id="thirdInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" required />
+                        </label>
+                        <label for="fourthInput">
+                            <p>
+                                שערש
+                            </p>
+                            <input type="text" name="fourthInput" id="fourthInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" required />
+                        </label>
+                        <label for="fifthInput">
+                            <p>
+                                שערש
+                            </p>
+                            <input type="text" name="fifthInput" id="fifthInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" required />
+                        </label>
+                        <label for="sixthInput">
+                            <p>
+                                שערש
+                            </p>
+                            <input type="text" name="sixthInput" id="sixthInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" required />
+                        </label>
+                    </div>
+                </div>
+                <label for="check" class="checkBox">
+                    <input type="checkbox" name="check" id="check">
+                    שערש שערש
+                </label>
+                <div class="sectionOrderForm_secondInputField">
+                    <h4 class="sectionOrderForm_secondInputField-title">
+                        שערש
+                    </h4>
+                    <div class="inputFields">
+                        <label for="firstInput">
+                            שערש
+                            <input type="text" name="firstInput" id="firstInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" />
+                        </label>
+                        <label for="secondInput">
+                            שערש
+                            <input type="text" name="firstInput" id="firstInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" />
+                        </label>
+                        <label for="thirdInput">
+                            שערש
+                            <input type="text" name="thirdInput" id="thirdInput" class="inputField"
+                                placeholder="שערש שמחויטשלושע" />
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="otherOptions">
+                    <h4 class="otherOptions_title">
+                        שערש
+                    </h4>
+                    <div class="firstRow">
+                        <div class="firsCol">
+                            שערש
+                        </div>
+                        <div class="secondCol">
+                            ₪200.00
+                        </div>
+                    </div>
+                    <div class="secondRow">
+                        <div class="firsCol">
+                            שערש
+                        </div>
+                        <div class="secondCol">
+                            <label for="radio1">
+                                <input type="radio" name="radio" id="radio1" value="radio1" />
+                                זותה מנק הבקיץ אפאח דלאמת יבש: ₪15.00
+                            </label>
+                            <select name="selectFirst">
+                                <option value="0">שערש שמחויטשלושע</option>
+                                <option value="1">שערש שמחויטשלושע</option>
+                            </select>
+                            <select name="selectSecond">
+                                <option value="0">שערש שמחויטשלושע</option>
+                                <option value="1">שערש שמחויטשלושע</option>
+                            </select>
+                            <label for="radio2">
+                                <input type="radio" name="radio" id="radio2" value="radio2" />
+                                זותה מנק הבקיץ אפאח דלאמת
+                            </label>
+                            <label for="radio3">
+                                <input type="radio" name="radio" id="radio3" value="radio3" />
+                                זותה מנק הבקיץ אפאח דלאמת
+                            </label>
+                            <label for="radio4">
+                                <input type="radio" name="radio" id="radio4" value="radio4" />
+                                זותה מנק הבקיץ אפאח דלאמת
+                            </label>
+                        </div>
+                    </div>
+                    <div class="thirdRow">
+                        <div class="firsCol">
+                            שערש
+                        </div>
+                        <div class="secondCol">
+                            ₪200.00
+                        </div>
+                    </div>
+                </div>
+                <label for="secondCheck" class="checkBoxSecond">
+                    <input type="checkbox" name="secondCheck" id="secondCheck" required>
+                    שערש שערש שערש שערש
+                </label>
+                <input type="submit" value="זותה מנק" class="btn">
+            </div>
+        </form>
+        <section class="sectionSubscribe">
+            <div class="sectionInner">
+                <div class="sectionSubscribe_text">
+                    <h4 class="sectionSubscribe_text-title">
+                        הצטרפו לרשימת התפוצה שלנו
+                    </h4>
+                    <h5 class="sectionSubscribe_text-subtitle">
+                        לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב
+                    </h5>
+                </div>
+                <form action="" class="sectionSubscribe_form">
+                    <input type="email" name="subscribeEmail" id="subscribeEmail" class="sectionSubscribe_email"
+                        placeholder="לורם" />
+                    <input type="submit" value="" class="sendSubscribe" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="sectionFooter">
+        <div class="sectionInner">
+            <div class="sectionFooter_firstLine">
+                <div class="sectionFooter_firstLine-laFlor">
+                    <h5 class="footerTitle">לה פלור</h5>
+                    <ul class="footerList">
+                        <li><a href="#">
+                                זרי פרחים
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                פרחים מיוחדים
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                בלונים
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                מתנה ליולדת
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                קישוטי רכב
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sectionFooter_firstLine-products">
+                    <h5 class="footerTitle">לה פלור</h5>
+                    <ul class="footerList">
+                        <li>
+                            <a href="#">
+                                פרחים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                פרחים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                פרחים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                פרחים
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sectionFooter_firstLine-contacts">
+                    <h5 class="footerTitle">יצירת קשר</h5>
+                    <div class="workTime">
+                        <img src="img/svg/workTimeIcon.svg" alt="work Time Icon" class="contactsIcon">
+                        <div class="contactsText">
+                            שעות פעילות: <br>
+                            א' - ה' 09:00-17:00
+                            <br>
+                            ו' 09:00 13:00
+                        </div>
+                    </div>
+                    <div class="location">
+                        <img src="img/svg/locationIcon.svg" alt="location Icon" class="contactsIcon">
+                        <address class="contactsText">
+                            רולוד םוספיא. רולוד םוספיא 38, רולוד םוספיא טמא טיס רולוד םוספיא םרול
+                        </address>
+                    </div>
+                    <div class="contacts">
+                        <img src="img/svg/contactsIcon.svg" alt="contacts Icon" class="contactsIcon">
+                        <div class="contactsText">
+                            פניות בטלפון: 03-123-1234 פניות במייל: <a href="mailto:prahim@info">prahim@info</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.whatsapp.com/" class="socialIcon"><img src="img/svg/whatsAppIcon.svg"
+                                alt="whatsapp"></a>
+                        <a href="http://www.messenger.com/" class="socialIcon"><img src="img/svg/fbMessengerIcon.svg"
+                                alt="messenger"></a>
+                        <a href="http://facebook.com" class="socialIcon"><img src="img/svg/fbIcon.svg"
+                                alt="facebook"></a>
+                    </div>
+
+                </div>
+                <div class="sectionFooter_firstLine-feedback">
+                    <h5 class="footerTitle">מלאו פרטיכם ונחזור אליכם בהקדם:</h5>
+                    <form action="" class="footerForm">
+                        <input type="text" name="firstName" id="firstName" class="footerForm-input"
+                            placeholder="שם מלא" />
+                        <input type="tel" name="phone" id="phone" class="footerForm-input" placeholder="ןופלט" />
+                        <input type="email" name="email" id="email" class="footerForm-input" placeholder="אימייל" />
+                        <input type="text" name="topic" id="topic" class="footerForm-input"
+                            placeholder="איך נוכל לעזור?" />
+                        <input type="submit" value="שלח" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="sectionFooter_secondLine">
+                <div class="copyright">
+                    <p class="copyrightText"> &#169; 2021 כל הזכויות שמורות לחברת הביטוח</p>
+                </div>
+                <div class="realmediaLogo">
+                    <p class="logoText">בניית אתרים</p>
+                    <img src="img/svg/realMediaLogo.svg" alt="Realmedia logo" class="logoImg">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <input type="checkbox" name="" id="">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

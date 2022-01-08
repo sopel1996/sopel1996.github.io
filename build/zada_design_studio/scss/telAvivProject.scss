@@ -1,0 +1,96 @@
+@import 'mixins.scss';
+
+.grid-item--height1 {
+    background:grey url(/img/png/496x331.png) 50% 50% no-repeat;
+    background-size: cover; 
+    width: toRem(496);
+    height: toRem(331);
+
+}
+.grid-item--height2 { 
+    background:grey url(/img/png/496x720.png) 50% 50% no-repeat;
+    background-size: cover; 
+    width: toRem(496);
+    height: toRem(720);
+
+}
+.grid{
+    margin: 0 auto;
+}
+.grid-item{
+    margin-bottom: 60px;
+}
+// .sectionInner{
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+.TelAvivProject{
+    .description{
+        .sectionInner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .fistImg{
+            width: toRem(800);
+            height: toRem(484);
+            margin-right: toRem(10);
+        }
+        .TelAvivText{
+            width: toRem(673);
+            height: toRem(364);
+            @include IBMPlexLight(20);
+            letter-spacing: 0.1em;
+            color: #757575;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        margin-bottom: toRem(60);
+    }
+    .cards{
+        .sectionInner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .smallImgCard{
+            width: toRem(496);
+            height: toRem(331);
+            margin-bottom: toRem(60);
+        }
+        .bigImgCard{
+            width: toRem(496);
+            height: toRem(720);
+            margin-bottom: toRem(60);
+        }
+        .firstColumn{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .seconColumn{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .thirdColumn{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        // margin-bottom: toRem(60);
+    }
+}

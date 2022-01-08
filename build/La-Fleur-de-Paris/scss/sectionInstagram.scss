@@ -1,0 +1,35 @@
+.sectionInstagram{
+    width: 100%;
+    height: toRem(150);
+    margin: toRem(20) 0;
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .imgInstagram{
+        width: toRem(40);
+        height: toRem(40);
+    }
+    &_text{
+        @include IBMPlexRegular(44);
+        color: #4E3C43;
+    }
+    .btnBrown{
+        @include IBMPlexRegular(20);
+        background-color: #4E3C43;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: toRem(25);
+        width: toRem(278);
+        height: toRem(45);
+        cursor: pointer;
+        &:active{
+            background-color: #745863;
+        }
+    
+
+    }
+}

@@ -1,0 +1,20 @@
+.sectionSmallBanner{
+    z-index: 5;
+    width: 100%;
+    height: toRem(180);
+    background-color: #FAEDF2;
+    margin-bottom: toRem(20);
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    &_title{
+        @include AlmoniRegular(44);
+    }
+    &_subtitle{
+        @include AlmoniRegular(15);
+    }
+}

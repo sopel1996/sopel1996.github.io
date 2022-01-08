@@ -1,0 +1,39 @@
+/*
+----------------------------
+Small banner
+-----------------------------
+*/
+.sectionSmallBanner{
+    z-index: 5;
+    width: 100%;
+    padding: toRem(100) 0 toRem(40) 0;
+    // height: toRem(420);
+    background-color: #FAEDF2;
+    background: transparent url(../img/bgBanner.png) 50% 50%/cover no-repeat;
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff
+    }
+    h2{
+        @include AlmoniBold(64);
+        position: relative;
+        margin: 0 0 toRem(20) 0;
+        &::after{
+            content: "";
+            display: block;
+            height: toRem(2);
+            width: 50px;
+            background-color: $secondaryColor;
+            position: absolute;
+            bottom: toRem(-10);
+            left: 50%;
+            transform: translate(-50%,0)
+        }
+    }
+    h3{
+        @include AlmoniNormal(20);
+    }
+}

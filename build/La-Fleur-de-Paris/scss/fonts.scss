@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "IBMPlex";
+        src: url('/fonts/eot/IBMPlexSansHebrew-Light.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/otf/IBMPlexSansHebrew-Light.otf') format("openType"),
+             url('/fonts/ttf/IBMPlexSansHebrew-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/woff/IBMPlexSansHebrew-Light.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/woff2/IBMPlexSansHebrew-Light.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: "IBMPlex";
+        src: url('/fonts/eot/IBMPlexSansHebrew-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/otf/IBMPlexSansHebrew-Regular.otf') format("openType"),
+             url('/fonts/ttf/IBMPlexSansHebrew-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/woff/IBMPlexSansHebrew-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/woff2/IBMPlexSansHebrew-Regular.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "IBMPlex";
+        src: url('/fonts/eot/IBMPlexSansHebrew-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/otf/IBMPlexSansHebrew-Bold.otf') format("openType"),
+             url('/fonts/ttf/IBMPlexSansHebrew-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/woff/IBMPlexSansHebrew-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/woff2/IBMPlexSansHebrew-Bold.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "IBMPlexText";
+        src: url('/fonts/eot/IBMPlexSansHebrew-Text.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/otf/IBMPlexSansHebrew-Text.otf') format("openType"),
+             url('/fonts/ttf/IBMPlexSansHebrew-Text.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/woff/IBMPlexSansHebrew-Text.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/woff2/IBMPlexSansHebrew-Text.woff2') format('woff2'); /* Super Modern Browsers */
+    font-display: swap;
+}
+@font-face {
+    font-family: "Almoni";
+        src: url('/fonts/otf/almoni-dl-aaa-light.otf') format("openType"); /* Super Modern Browsers */
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Almoni";
+        src: url('/fonts/otf/almoni-dl-aaa-regular.otf') format("openType"); /* Super Modern Browsers */
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Almoni";
+        src: url('/fonts/otf/almoni-dl-aaa-bold.otf') format("openType"); /* Super Modern Browsers */
+    font-weight: 700;
+    font-display: swap;
+}

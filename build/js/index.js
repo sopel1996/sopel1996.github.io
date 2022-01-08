@@ -1,0 +1,1 @@
+$(".js-tilt").tilt({glare:!0,maxGlare:5,scale:1.05});

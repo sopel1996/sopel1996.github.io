@@ -1,0 +1,247 @@
+.sectionOrderForm{
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+    &_itemList{
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: toRem(30);
+        th{
+            @include AlmoniBold(19);
+            background-color: #fff; 
+        }
+        td{
+            @include AlmoniRegular(19);
+        }
+        th,td{
+            border: none;
+            border-top: 1px solid #E8E8E8;
+            border-bottom: 1px solid #E8E8E8;
+            text-align: right;
+            height: toRem(43);
+            &:first-child{
+                border-right: 1px solid #E8E8E8;
+                padding-right: toRem(13);
+            }
+            &:last-child{
+                border-left: 1px solid #E8E8E8;
+            }
+        }
+        .deleteItem{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: toRem(23);
+            height: toRem(23);
+            border: 1px solid #000;
+            border-radius: 50%;
+            background-color: #fff;
+            font-size: toRem(12);            
+        }
+        .itemImg{
+            width: toRem(37);
+            height: toRem(37);
+            background-color: #fff;
+        }
+
+        .itemQuantity{
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                margin: 0;
+            }
+            /* Для Firefox */
+            input[type=number]{
+                -moz-appearance: textfield;
+            }
+            
+            .quantity-arrow-minus{
+                border-radius: 0 toRem(20) toRem(20) 0;
+                width: toRem(25);
+                height: toRem(27);
+                border: 1px solid #F0F0F0;;
+                outline: none;
+                margin-left: toRem(-6);
+            }
+            .quantity-arrow-plus{
+                border-radius: toRem(20) 0 0 toRem(20);
+                width: toRem(25);
+                height: toRem(27);
+                border: 1px solid #F0F0F0;
+                outline: none;
+                margin-right: toRem(-6);
+            }
+            .quantity-num{
+                width: toRem(45);
+                height: toRem(27);
+                border: 1px solid #F0F0F0;
+                outline: none;
+                text-align: center;
+            }
+        }
+
+    }
+    &_greenLine{
+        width: 100%;
+        height: toRem(40);
+        border: 1px solid #94AF85;
+        background-color: #F3FBF0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        .greenBlock{
+            width: toRem(17);
+            height: toRem(19);
+            background-color: #45712D;
+            margin: 0 toRem(10);
+        }
+        .text{
+            @include AlmoniRegular(22);
+            color: #45712D;
+            text-decoration: underline;
+        }
+    }
+    &_firstInputField,
+    &_secondInputField{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &-title{
+            margin: toRem(25) 0;
+            @include AlmoniBold(34);
+        }
+        .inputFields{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            label{
+                @include AlmoniRegular(18);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                height: toRem(64);
+                margin-bottom: toRem(24);
+                p::after{
+                    content: "*";
+                    color: red;
+                }
+                
+                input{
+                    width: toRem(371);
+                    height: toRem(40);
+                    border: 1px solid #ECECEC;
+                    outline: none;
+                    padding: toRem(11);
+                    background-color: transparent;
+                    &::placeholder{
+                        color: #A9A9A9;
+                    } 
+                }
+            }
+        }
+    }
+    &_secondInputField{
+        border: none;
+        border-bottom: 1px solid #ECECEC;
+    }
+    .checkBox,
+    .checkBoxSecond{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        @include AlmoniRegular(18);
+        input{
+            width: toRem(15);
+            height: toRem(15);
+            border: 1px solid #B2B2B2;
+            margin-left: toRem(14);
+            background-color: transparent;
+        }
+    }
+    .checkBoxSecond{
+        margin: toRem(60) 0 toRem(24) 0;
+        &::after{
+            content: "*";
+            color: red;
+        }
+    }
+
+    .otherOptions{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include AlmoniBold(18);
+        &_title{
+            margin: toRem(25) 0;
+            @include AlmoniBold(34);
+        }
+        .firstRow,
+        .secondRow,
+        .thirdRow{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
+            border-bottom: 1px solid #ECECEC;
+            border-top: 1px solid #ECECEC;
+            min-height: toRem(50);
+            .firsCol,
+            .secondCol{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                label{
+                    margin: toRem(7) 0;
+                }
+                select{
+                    margin: toRem(7) 0;
+                    width: 100%;
+                    height: toRem(40);
+                    border: 1px solid #AAAAAA;
+                    border-radius: toRem(20);
+                    outline: none;
+                    padding: toRem(9);
+                    appearance: none;
+                    background: transparent url(/img/svg/selectArrow.svg) toRem(15) no-repeat;
+                }
+            }
+        }
+        .secondRow{
+            padding-top: toRem(16);
+            align-items: flex-start;
+        }
+    }
+    .btn{
+        background-color: #A52357;
+        width: toRem(520);
+        height: toRem(40);
+        color: #fff;
+        @include IBMPlexRegular(18);
+        border: none;
+        outline: none;
+        border-radius: toRem(20); 
+    }
+}

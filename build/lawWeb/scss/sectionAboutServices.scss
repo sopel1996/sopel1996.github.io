@@ -1,0 +1,127 @@
+/*
+----------------------------
+About services
+-----------------------------
+*/
+.about-services {
+    background-color: #fff;
+    padding         : toRem(40) 0 toRem(40) 0;
+    color           : $primaryColorText;
+    // height          : toRem(740);
+    
+
+    .sectionInner {
+        display       : flex;
+        flex-direction: row;
+        align-items   : flex-start;
+        justify-content  : space-between;
+
+    }
+
+    h2 {
+        @include AlmoniBold(42);
+        margin: 0 0 toRem(20) 0;
+        line-height: toRem(38);
+    }
+
+    .about-services_firstCol {
+        padding: 0 0 0 toRem(25);
+        // height      : toRem(648);
+        width       : 52%;
+        border      : none;
+
+        .text {
+            @include AlmoniNormal(22);
+            line-height: toRem(24);
+            margin: 0 0 toRem(30) 0;
+
+            p {
+                margin: 0 0 toRem(20) 0;
+            }
+        }
+
+        .btn {
+            // width : toRem(160);
+            height: toRem(45);
+            display: inline-flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            // svg {
+            //     margin: 0 toRem(20) 0 0;
+            // }
+        }
+    }
+
+    .about-services_secondCol {
+        width: 48%;
+        // height       : toRem(648);
+        padding: 0 toRem(45) 0 0;
+        border: none;
+        border-right : 1px solid rgba(0, 0, 0, 0.2);
+
+        .title {
+            margin: 0 0 toRem(20) 0;
+        }
+
+        .imgList {
+            display       : flex;
+            flex-direction: row;
+            // width         : 100%;
+            flex-wrap     : wrap;
+            justify-content: flex-end;
+
+            &-Item {
+                width          : toRem(281);
+                height         : toRem(180);
+                display        : flex;
+                align-items    : flex-end;
+                justify-content: center;
+                color: #fff;
+                padding: toRem(22) toRem(47);
+                @include AlmoniNormal(20);
+                text-align: center;
+                transition: 0.2s;
+                background   : transparent url(../img/firstCard.png) 50% 50% no-repeat;
+                background-size: 100% 100%;
+                margin: 0 0 toRem(23) 0;
+                &:hover{
+                    background-size: 110% 110%;
+                }
+
+                &:nth-child(2) {
+                    background-image: url(../img/firstCard.png);
+                }
+
+                &:nth-child(1) {
+                    background-image: url(../img/secondCard.png);
+                }
+
+                &:nth-child(4) {
+                    background-image: url(../img/thirdCard.png);
+                }
+
+                &:nth-child(3) {
+                    background-image: url(../img/fourthCard.png);
+                }
+
+                &:nth-child(6) {
+                    background-image: url(../img/fifthCard.png);
+                }
+
+                &:nth-child(5) {
+                    background-image: url(../img/sixthCard.png);
+                }
+                &:nth-child(2n){
+                    margin: 0 toRem(27) toRem(27) 0;
+                }
+                &:nth-last-child(2){
+                    margin: 0 ;
+                }
+                &:nth-last-child(1){
+                    margin: 0 toRem(27) 0 0;
+                }
+            }
+        }
+
+    }
+}

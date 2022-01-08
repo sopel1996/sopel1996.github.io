@@ -1,0 +1,146 @@
+.sectionHeader{
+    z-index: 20;
+    color: #fff; 
+    &_firstLine{
+        .sectionInner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        background-color: #4E3C43;
+        width: 100%;
+        height: toRem(40);
+        &-text{
+            @include IBMPlexLight(14);
+            width: toRem(130);
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: toRem(30);
+            li{
+                &:first-child{
+                    padding-left: toRem(10);
+                }
+                &:last-child{
+                    border: none;
+                    border-right: 1px solid #fff ;
+                    padding-right: toRem(10);
+                }
+            }
+        }
+        &-phoneSearch{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: toRem(392);
+            height: toRem(30);
+
+            .phone{
+                @include AlmoniLight(20);
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-left: toRem(20);
+                width: toRem(163);
+                height: 100%;
+                border: 1px solid #fff;
+                border-radius: toRem(15);
+                position: relative;
+                margin-left: toRem(10);
+                &::before{
+                    position: absolute;
+                    right: toRem(11);
+                    content: "";
+                    width: toRem(20);
+                    height: toRem(20);
+                    background: transparent url(/img/svg/pnoeCall.svg) 50% 50% no-repeat;
+                    background-size: cover;
+                }
+            }
+            .search{
+                @include AlmoniLight(20);
+
+                position: relative;
+                .searchField{
+                    width: toRem(220);
+                    height: toRem(27);
+                    background-color: transparent;
+                    outline: none;
+                    border: 1px solid #fff;
+                    border-radius: toRem(20);
+                    padding: toRem(10) toRem(20);
+                    color: #fff;
+                }
+                .sendSearch{
+                    background: transparent url("/img/svg/search.svg") 50% 50% no-repeat;
+                    width: toRem(14);
+                    height: toRem(14);
+                    outline: none;
+                    border: none;
+                    position: absolute;
+                    top: 25%;
+                    left: toRem(10);
+                }
+            }
+        }
+    }
+    &_secondLine{
+        box-shadow: 0 toRem(5) toRem(25) rgba(0, 0, 0, 0.2);
+        height: toRem(110);
+        z-index: 20;
+        background-color: #fff;
+        .sectionInner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-logo{
+            width: toRem(84);
+            height: toRem(92);
+        }
+        &-nav{
+            @include IBMPlexLight(18);
+            width: toRem(896);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                color: #201A14;
+            }
+
+        }
+        &-userCart{
+            width: toRem(66);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            &-cart{
+                background: transparent url(/img/svg/cart.svg) 50% 50% no-repeat;
+                border: 1px solid #346056;
+                border-radius: 50%;
+                width: toRem(27);
+                height: toRem(27);
+                cursor: pointer;
+                // padding: toRem(7px);
+            }
+            &-user{
+                background: transparent url(/img/svg/user.svg) 50% 50% no-repeat;
+                border: 1px solid #346056;
+                border-radius: 50%;
+                width: toRem(27);
+                height: toRem(27);
+                cursor: pointer;
+                // padding: toRem(7px);
+            }
+        }
+
+    }
+}

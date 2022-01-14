@@ -216,7 +216,8 @@ button:hover {
     margin-right: 10px;
 }
 .promo__right-btnContainer{
-
+    display: flex;
+    justify-content: center;
 }
 .promo__right-btnContainer button{
     background-color: #107b1c;

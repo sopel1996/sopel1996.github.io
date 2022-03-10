@@ -7,26 +7,34 @@ const btn = document.querySelector('button');
 const inputSearch = document.querySelector('.searchWrapper input');
 const btnSearch = document.querySelector('.searchWrapper button');
 
-const pokemonsList = mockedPokemons.map((pokemon) => {
-    const {
-        name,
-        abilities,
-        base_experience: experience,
-        sprites: { front_default: image },
-    } = pokemon;
-    // const { front_default: image } = sprites;
-    // const abilitiesNames = abilities.map(el => el.ability.name);
-    const abilitiesNames = abilities.map((el) => {
-        const {
-            ability: { name },
-        } = el;
-        return name;
-    });
-    return new RenamePoke(name, abilitiesNames, experience, image);
-});
+const pokemonsList = mockedPokemons.map(makePokemon);
 
 btn.addEventListener('click', (event) => {
-    fillPokemonCard(pokemonsList[func.getRandom(0, pokemonsList.length-1)]);
+
+
+    fetch('https://pokeapi.co/api/v2/pokemon').then(response =>{
+    if (response.ok) {
+        return response.json();
+    } else {
+        return Promise.reject(response);
+    }
+    })
+    .then(data =>{
+        return fetch(data.results[func.getRandom(0, data.results.length)].url)
+    })
+    .then(resp =>{
+        if (resp.ok) {
+            return resp.json();
+        } else {
+            return Promise.reject(resp);
+        } 
+    })
+    .then(data =>{
+        fillPokemonCard(makePokemon(data));
+    })
+    .catch(function (error){
+        console.warn(error);
+    })
 });
 
 btnSearch.addEventListener('click', ()=>{
@@ -38,3 +46,22 @@ document.addEventListener('keyup', (e)=>{
         func.alertFunc(inputSearch);
     }
 })
+
+function makePokemon(pokemon) {
+    {
+        const {
+            name,
+            abilities,
+            base_experience: experience,
+            sprites: { front_default: image },
+        } = pokemon;
+        const abilitiesNames = abilities.map((el) => {
+            const {
+                ability: { name },
+            } = el;
+            return name;
+        });
+        return new RenamePoke(name, abilitiesNames, experience, image);
+    }
+}
+

@@ -1,4 +1,4 @@
-const user = localStorage.getItem("user");
+const user = localStorage.getItem("user") || '';
 const clearUserNameBtn = document.querySelector(".ClearUsernameBtn");
 const [closeModalSpan] = document.getElementsByClassName("close");
 const modal = document.querySelector(".modal");

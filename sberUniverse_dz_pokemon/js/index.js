@@ -24,11 +24,9 @@ btnSearch.addEventListener("click", () => {
 var pokeLocal = localStorage.getItem("pokeArray") || [];
 
 if (pokeLocal.length) {
-  console.log(1);
   let pokeArray = JSON.parse(pokeLocal);
   pokeArray.forEach((el) => {
     func.getPoke(el);
   });
 } else {
-  console.log(0);
 }

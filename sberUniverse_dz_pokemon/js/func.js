@@ -3,10 +3,9 @@ import fillPokemonCard from "./seeder.js";
 
 export function searchFunc(inputSearch) {
   if (inputSearch === "") {
-    console.log(inputSearch);
     alert("Введите имя покемона!");
   } else {
-    var pokeLocal = localStorage.getItem("pokeArray");
+    var pokeLocal = localStorage.getItem("pokeArray") || [];
     let pokeArray = [];
     if (pokeLocal.length) {
       pokeArray = JSON.parse(pokeLocal);
@@ -22,8 +21,6 @@ export function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 export function getPoke(nameOrId) {
-  console.log(nameOrId);
-
   fetch(`https://pokeapi.co/api/v2/pokemon/${nameOrId}`)
     .then((response) => {
       if (response.ok) {
@@ -59,7 +56,7 @@ export function makePokemon(pokemon) {
   }
 }
 export function pushToLocalStorage(nameOrId) {
-  var pokeLocal = localStorage.getItem("pokeArray");
+  var pokeLocal = localStorage.getItem("pokeArray") || [];
   let pokeArray = [];
   if (pokeLocal.length) {
     pokeArray = JSON.parse(pokeLocal);

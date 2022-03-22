@@ -1,51 +1,44 @@
-//
-// ─── DESTRUCTURING ──────────────────────────────────────────────────────────────
-//
-
-// console.log({ kiwi, anotherPokemon });
-// const obj = {
-//     name: 'Jania',
-//     age: 23,
-// };
-
-// const { name, age } = obj;
-
-// console.log(name, age);
-
-// const newAge = age+1;
-
-// 1) создать 2 покемона через класс
-// 2) cloneNode чтобы создать "шаблон"
-// 3) наполнить шаблон корректными данными
-// 4) добавть новую карточку на страницу
-
-import bar,{ Pokemon } from './classes.js';
-// mock pockemons
-const kiwi = new Pokemon('Kiwi', ['jump on tree'], null, null);
-const slowpoke = new Pokemon('Slowpoke', ['wisdom', 'psycho', 'smile'], 101, './assets/Slowpoke.png');
-
-const cardList = document.querySelector('.card-list');
-const card = document.querySelector('.card');
+const cardList = document.querySelector(".card-list");
 
 export default function fillPokemonCard(pokemon) {
-    const cloneCard = card.cloneNode(true);
-    const title = cloneCard.querySelector('h3');
-    const image = cloneCard.querySelector('img');
-    const propertiesText = cloneCard.querySelector('.properties p');
+  const card = document.createElement("div");
+  card.classList.add("card");
 
-    const [description] = cloneCard.getElementsByClassName('description');
-    title.innerText = pokemon.name;
-    image.src = pokemon.image;
-    propertiesText.innerText = `Experience ${pokemon.experience}`;
-    //  ['<li>wisdom</li>', 'psycho', 'smile']
-    // `<li>${el}</li>` ===> '<li>' + el + '</li>'
-    description.innerHTML = `
+  const imageWrap = document.createElement("div");
+  imageWrap.classList.add("image");
+
+  const image = document.createElement("img");
+  image.src = pokemon.image;
+
+  imageWrap.append(image);
+  card.append(imageWrap);
+
+  const properties = document.createElement("div");
+  properties.classList.add("properties");
+
+  const title = document.createElement("h3");
+  title.innerText = pokemon.name;
+
+  properties.append(title);
+
+  const propText = document.createElement("p");
+  propText.innerText = `Experience ${pokemon.experience}`;
+  properties.append(propText);
+
+  card.append(properties);
+
+  const description = document.createElement("div");
+  description.classList.add("description");
+
+  const descText = document.createElement("p");
+  descText.innerHTML = `
         <h4> Abilities: </h4>
         <ul>
-        ${pokemon.abilities.map((el) => `<li>${el}</li>`).join('')}
+        ${pokemon.abilities.map((el) => `<li>${el}</li>`).join("")}
         </ul>
     `;
-    cardList.append(cloneCard);
-};
+  description.append(descText);
+  card.append(description);
 
-[kiwi, slowpoke].forEach(fillPokemonCard);
+  cardList.append(card);
+}

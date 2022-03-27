@@ -24,18 +24,18 @@
           <a href="tel:+71231231212" class="sectionHeader_contacts-phone"
             >+ 7 (123) 123-12-12</a
           >
-          <div class="sectionHeader_contacts-socialLogo">
+          <div class="sectionHeader_contacts-socialLogo whatsApp">
             <img
               src="img/svg/whatsAppLogo.svg"
               alt="whatsApp"
-              class="sectionHeader_contacts-socialLogoImg"
+              class="sectionHeader_contacts-socialLogoImg "
             />
           </div>
-          <div class="sectionHeader_contacts-socialLogo">
+          <div class="sectionHeader_contacts-socialLogo telegram">
             <img
               src="img/svg/telegramLogo.svg"
               alt="telegram"
-              class="sectionHeader_contacts-socialLogoImg"
+              class="sectionHeader_contacts-socialLogoImg "
             />
           </div>
         </div>
@@ -47,7 +47,7 @@
           <div class="burger-menu">
             <a href="" class="burger-menu_button"> </a>
             <nav class="burger-menu_nav">
-              <img src="img/svg/logo.svg" alt="logo">
+              <img src="img/svg/logo.svg" alt="logo" />
               <a href="#" class="burger-menu_link"> Преимущества </a>
               <a href="#" class="burger-menu_link"> Тарифы </a>
               <a href="#" class="burger-menu_link"> План коворкинга </a>
@@ -154,15 +154,15 @@
             </div>
           </div>
         </div>
-        <img
-          src="img/png/workComfort.png"
+        <div class="sectionWorkComfort_img">
+        <img src="img/png/workComfort.png"
           alt="work comfort img"
-          class="sectionWorkComfort_img"
         />
+      </div>
       </div>
     </section>
 
-    <div class="sectionTarifs">
+    <!-- <div class="sectionTarifs">
       <div class="sectionInner">
         <h2 class="sectionTarifs_title">Тарифы</h2>
         <table class="sectionTarifs_table">
@@ -304,7 +304,7 @@
           </tr>
         </table>
       </div>
-    </div>
+    </div> -->
 
     <section class="sectionWhyUs">
       <div class="sectionInner">
@@ -332,18 +332,20 @@
               работаем круглосуточно.
             </li>
           </ul>
-          <img
+          <div class="sectionWhyUs_img">
+            <img
             src="img/png/whyRidge1.png"
             alt="work comfort img"
-            class="sectionWhyUs_img"
-          />
+            />
+          </div>
         </div>
         <div class="sectionWhyUsSecondRow">
-          <img
+          <div class="sectionWhyUs_img">
+            <img
             src="img/png/whyRidge2.png"
             alt="work comfort img"
-            class="sectionWhyUs_img"
-          />
+            />
+          </div>
           <ul class="sectionWhyUs_list">
             <h4 class="sectionWhyUs_title">А еще у нас:</h4>
             <li class="sectionWhyUs_listItem">Уборка рабочего места</li>
@@ -383,65 +385,69 @@
     </section>
 
     <section class="sectionLocation">
-      <h2 class="sectionLocation_title">Местоположение</h2>
-      <div class="sectionLocation_cards">
-        <div class="sectionLocation_cards-item">
-          <img
-            src="img/svg/phoneLogo.svg"
-            alt="phone"
-            class="sectionLocation_cards-itemImg"
-          />
-          <div class="sectionLocation_cards-itemText">
-            <a href="tel+71231231212" class="phone">+ 7 (123) 123-12-12</a>
+      <div class="sectionInner">
+        <h2 class="sectionLocation_title">Местоположение</h2>
+        <div class="sectionLocation_cards">
+          <div class="sectionLocation_cards-item">
+            <img
+              src="img/svg/phoneLogo.svg"
+              alt="phone"
+              class="sectionLocation_cards-itemImg"
+            />
+            <div class="sectionLocation_cards-itemText">
+              <a href="tel+71231231212" class="phone">+ 7 (123) 123-12-12</a>
+            </div>
           </div>
-        </div>
-        <div class="sectionLocation_cards-item">
-          <img
-            src="img/svg/mapPinLogo.svg"
-            alt="map"
-            class="sectionLocation_cards-itemImg"
-          />
-          <div class="sectionLocation_cards-itemText">
-            <address class="address">ул. Днепровская д.37</address>
+          <div class="sectionLocation_cards-item">
+            <img
+              src="img/svg/mapPinLogo.svg"
+              alt="map"
+              class="sectionLocation_cards-itemImg"
+            />
+            <div class="sectionLocation_cards-itemText">
+              <address class="address">ул. Днепровская д.37</address>
+            </div>
           </div>
-        </div>
-        <div class="sectionLocation_cards-item">
-          <img
-            src="img/svg/phoneLogo.svg"
-            alt="phone"
-            class="sectionLocation_cards-itemImg"
-          />
-          <div class="sectionLocation_cards-itemText">
-            <a href="mailto:info@gmail.com" class="email">info@gmail.com</a>
+          <div class="sectionLocation_cards-item">
+            <img
+              src="img/svg/mailLogo.svg"
+              alt="email"
+              class="sectionLocation_cards-itemImg"
+            />
+            <div class="sectionLocation_cards-itemText">
+              <a href="mailto:info@gmail.com" class="email">info@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="sectionForm">
-      <h2 class="sectionForm_title">Хочу на бесплатный день</h2>
-      <h6 class="sectionForm_subtitle">
-        Оставьте заявку и мы свяжемся с вами в ближайшее время!
-      </h6>
-      <form action="" class="sectionForm_form">
-        <input
-          type="text"
-          class="sectionForm_form-input"
-          name="name"
-          id="sectionForm_form-name"
-          placeholder="Ваше имя"
-        />
-        <input
-          type="tel"
-          class="sectionForm_form-input"
-          name="phone"
-          id="sectionForm_form-phone"
-          placeholder="Телефон"
-        />
-        <button type="submit" class="sectionForm_form-submit btn">
-          Бронировать
-        </button>
-      </form>
+      <div class="sectionInner">
+        <h2 class="sectionForm_title">Хочу на бесплатный день</h2>
+        <h6 class="sectionForm_subtitle">
+          Оставьте заявку и мы свяжемся с вами в ближайшее время!
+        </h6>
+        <form action="" class="sectionForm_form">
+          <input
+            type="text"
+            class="sectionForm_form-input"
+            name="name"
+            id="sectionForm_form-name"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="tel"
+            class="sectionForm_form-input"
+            name="phone"
+            id="sectionForm_form-phone"
+            placeholder="Телефон"
+          />
+          <button type="submit" class="sectionForm_form-submit btn">
+            Бронировать
+          </button>
+        </form>
+      </div>
     </section>
 
     <script src="js/burger.js"></script>

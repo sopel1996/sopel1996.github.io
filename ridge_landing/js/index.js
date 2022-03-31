@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
            document.querySelector(`#popup_${el.dataset.popupid}`).style.display= 'block';
        })
        el.addEventListener('mouseout', ()=>{
-           document.querySelector(`#popup_${el.dataset.popupid}`).style.display= 'none';
+           document.querySelector(`#popup_${el.dataset.popupid}`).style.display= '';
        })
    })
 

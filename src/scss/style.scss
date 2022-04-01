@@ -1,78 +1,120 @@
 @import "color";
 $borderRadius: 1.6rem;
 
-
 .sectionContacts {
-   .sectionInner {
-      max-width: 1024px;
+  margin: 0 0 20px 0;
+  .sectionInner {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .sectionContacts_vkWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-   }
-   .sectionContacts_vkWrap {
-      
-      a:before{
-         display: flex;
-         flex-direction: row+;
-         content: '';
-         display: block;
-         width: 100px;
-         height: 100px;
-         background: transparent url(../img/svg/VK.svg);
-         margin: 0 20px 0 0;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
       }
-   }
-   .sectionContacts_tgWrap {
-      
-      a:before{
-         display: flex;
-         flex-direction: row+;
-         content: '';
-         display: block;
-         width: 100px;
-         height: 100px;
-         background: transparent url(../img/svg/Telegram.svg);
-         margin: 0 20px 0 0;
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/svg/VK.svg) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
       }
-   }
-   .sectionContacts_emailWrap {
-      
-      a:before{
-         display: flex;
-         flex-direction: row+;
-         content: '';
-         display: block;
-         width: 100px;
-         height: 100px;
-         background: transparent url(../img/svg/Gmail.svg);
-         margin: 0 20px 0 0;
+    }
+  }
+  .sectionContacts_tgWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
       }
-   }
-   .sectionContacts_hhWrap {
-      
-      a:before{
-         display: flex;
-         flex-direction: row+;
-         content: '';
-         display: block;
-         width: 100px;
-         height: 100px;
-         background: transparent url(../img/png/hhIcon.jpg);
-         margin: 0 20px 0 0;
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/svg/Telegram.svg) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
       }
-   }
+    }
+  }
+  .sectionContacts_emailWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/svg/Gmail.svg) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .sectionContacts_hhWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/png/min-hh-red.png) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
 }
 
-
-
+.eduProject {
+}
+.project_title {
+   color: rgb(88, 86, 86);
+}
+.comercialProject {
+}
 
 .siteImgBord {
   display: flex;
   flex-wrap: wrap;
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   & a {
@@ -169,6 +211,11 @@ $borderRadius: 1.6rem;
 }
 
 .link {
+   text-decoration: none;
+   color: rgb(88, 86, 86);
+   &:hover{
+      color: rgb(35, 141, 190);
+   }
   &--1::after {
     content: "HebrewSite";
     position: relative;
@@ -251,5 +298,31 @@ $borderRadius: 1.6rem;
     content: "Varwin_beta_test";
     position: relative;
     z-index: 999999;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sectionContacts .sectionInner {
+    flex-direction: column;
+    .sectionContacts_vkWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+    .sectionContacts_tgWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+    .sectionContacts_emailWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+    .sectionContacts_hhWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
   }
 }

@@ -1,0 +1,116 @@
+@import 'color';
+$borderRadius: 1.6rem;
+
+.siteImgBord {
+   display  : flex;
+   flex-wrap: wrap;
+   width    : 1024px;
+   margin   : 0 auto;
+
+   & a {
+      margin-right   : 20px;
+      text-transform : uppercase;
+      display        : flex;
+      flex-direction : column;
+      align-items    : center;
+      justify-content: center;
+   }
+}
+
+.js-tilt-glare {
+   border-radius: $borderRadius;
+
+}
+
+.wrap {
+   border-radius  : $borderRadius;
+   margin         : 1rem;
+   transform-style: preserve-3d;
+   transform      : perspective(100rem);
+   cursor         : pointer;
+}
+
+.container {
+   width              : 150px;
+   height             : 300px;
+   border-radius      : $borderRadius;
+   padding            : 4rem;
+   background-position: 50% 0%;
+   background-size    : 120% auto;
+   background-repeat  : no-repeat;
+   box-shadow         : 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+   &--active {
+      transition: none;
+   }
+
+   &--1 {
+      background-image: url(../img/png/HebrewSite.png);
+   }
+
+   &--2 {
+      background-image: url(../img/png/insurance-online.png);
+   }
+
+   &--3 {
+      background-image: url(../img/png/kwork-juristConsalt.png);
+   }
+
+   &--4 {
+      background-image: url(../img/png/La-Fleur-de-Paris.png);
+   }
+
+   &--5 {
+      background-image: url(../img/png/lawWeb.png);
+   }
+
+   &--6 {
+      background-image: url(../img/png/sberUniverse-greenCorpLand.png);
+   }
+
+   &--7 {
+      background-image: url(../img/png/zada-design-studio.png);
+   }
+}
+
+.link--1::after {
+   content : 'HebrewSite';
+   position: relative;
+   z-index : 999999;
+}
+
+.link--2::after {
+   content : 'insurance-online';
+   position: relative;
+   z-index : 999999;
+}
+
+.link--3::after {
+   content : 'kwork-juristConsalt';
+   position: relative;
+   z-index : 999999;
+}
+
+.link--4::after {
+   content : 'La-Fleur-de-Paris';
+   position: relative;
+   z-index : 999999;
+}
+
+.link--5::after {
+   content : 'law-Web';
+   position: relative;
+   z-index : 999999;
+}
+
+.link--6::after {
+   content : 'sberUniverse-greenCorpLand';
+   position: relative;
+   z-index : 999999;
+}
+
+.link--7::after {
+   content : 'zada-design-studio';
+   position: relative;
+   z-index : 999999;
+}

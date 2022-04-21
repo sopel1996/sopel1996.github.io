@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var test 
 
- fetch('/js/data.json').then((res)=>{
+ fetch('/hisun_landing/js/data.json').then((res)=>{
     if (res.ok){
       return res.json()
     }

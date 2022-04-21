@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var swiper = new Swiper(".mySwiper", {
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination_1",
       type: "fraction",
       formatFractionCurrent: addZero,
       formatFractionTotal: addZero,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next_1",
+      prevEl: ".swiper-button-prev_1",
     },
   });
-  var swiper = new Swiper(".mySwiper_2", {
+  var swiper2 = new Swiper(".mySwiper_2", {
     pagination: {
       el: ".swiper-pagination_2",
       type: "fraction",

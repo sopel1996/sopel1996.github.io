@@ -11,7 +11,26 @@
     <title>HISUN</title>
   </head>
   <body>
+    <div class="modalOverlay"></div>
+
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <h4 class="modalTitle">Заказать звонок</h4>
+      <form class="modalForm" action="" style="">
+        <input
+          class="modalInput"
+          type="text"
+          name="fio"
+          id="fio"
+          placeholder="Имя"
+        />
+        <input class="modalInput" type="tel" name="phone" id="phone" />
+        <input class="modalInput" type="email" name="email" id="email" />
+        <button class="btn modalBtn" type="submit">Отправить</button>
+      </form>
+    </div>
     <a class="back_to_top" title="Наверх">↑</a>
+
     <header class="sectionHeader">
       <div class="sectionInner">
         <div class="sectionHeader_logo">
@@ -140,31 +159,31 @@
 
     <section class="sectionBenefits">
       <div class="sectionInner">
-    <div class="swiper mySwiper_3 sectionBenefits_slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="img/png/firstImg.png"
-            alt=""
-            class="sectionBenefits_slider-item"
-          />
+        <div class="swiper mySwiper_3 sectionBenefits_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/png/firstImg.png"
+                alt=""
+                class="sectionBenefits_slider-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/png/secondImg.png"
+                alt=""
+                class="sectionBenefits_slider-item"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/png/thirdImg.png"
+                alt=""
+                class="sectionBenefits_slider-item"
+              />
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="img/png/secondImg.png"
-            alt=""
-            class="sectionBenefits_slider-item"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="img/png/thirdImg.png"
-            alt=""
-            class="sectionBenefits_slider-item"
-          />
-        </div>
-      </div>
-    </div>
         <div class="sectionBenefits_text">
           <h3 class="sectionBenefits_text-title">Преимущества</h3>
           <div class="sectionBenefits_text-content">
@@ -392,13 +411,13 @@
           </p>
         </div>
       </div>
-        <div class="sectionAboutUs_img">
-          <img
-            src="img/png/quadBike30years.png"
-            alt=""
-            class="sectionAboutUs_img-item"
-          />
-        </div>
+      <div class="sectionAboutUs_img">
+        <img
+          src="img/png/quadBike30years.png"
+          alt=""
+          class="sectionAboutUs_img-item"
+        />
+      </div>
     </section>
 
     <section class="sectionWantSee">

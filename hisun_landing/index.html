@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-webplossy no-avif">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,8 +9,44 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <title>HISUN</title>
+
+    <script>
+      var imageData = {
+        avif: 'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=',
+        webp: 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA',
+      };
+  
+      // Функция проверки написана на основе документации Google:
+      // https://developers.google.com/speed/webp/faq#in_your_own_javascript
+  
+      function checkImageFormatSupport(imageFormat, callback) {
+        var img = new Image();
+        
+        img.src = imageData[imageFormat];
+        
+        img.onload = function () { var result = (img.width > 0) && (img.height > 0); callback(result); };
+        img.onerror = function () { callback(false); };
+      }
+  
+      // Проверяем поддержку WebP Lossy (сжатие с потерями)
+      
+      checkImageFormatSupport('webp', function (isWebpLossySupported) {
+        if (isWebpLossySupported) {
+          document.documentElement.className = document.documentElement.className.replace('no-webplossy', 'webplossy');
+        }
+      });
+  
+      // Проверяем поддержку AVIF
+    
+      checkImageFormatSupport('avif', function (isAvifSupported) {
+        if (isAvifSupported) {
+          document.documentElement.className = document.documentElement.className.replace('no-avif', 'avif');
+        }
+      });
+  </script>
+
   </head>
-  <body>
+  <body class="123">
     <div class="modalOverlay"></div>
 
     <div class="modal-content">
@@ -140,13 +176,28 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/png/quadBike.png" alt="" />
+                <picture>
+                  <source srcset="img/avif/quadBike.avif" type="image/avif" />
+                  <source srcset="img/webp/quadBike.webp" type="image/webp" />
+                  <source srcset="img/png/quadBike.png" />
+                  <img src="img/png/quadBike.png" alt="" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/png/quadBike.png" alt="" />
+                <picture>
+                  <source srcset="img/avif/quadBike.avif" type="image/avif" />
+                  <source srcset="img/webp/quadBike.webp" type="image/webp" />
+                  <source srcset="img/png/quadBike.png" />
+                  <img src="img/png/quadBike.png" alt="" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="img/png/quadBike.png" alt="" />
+                <picture>
+                  <source srcset="img/avif/quadBike.avif" type="image/avif" />
+                  <source srcset="img/webp/quadBike.webp" type="image/webp" />
+                  <source srcset="img/png/quadBike.png" />
+                  <img src="img/png/quadBike.png" alt="" />
+                </picture>
               </div>
             </div>
           </div>
@@ -162,25 +213,40 @@
         <div class="swiper mySwiper_3 sectionBenefits_slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img
-                src="img/png/firstImg.png"
-                alt=""
-                class="sectionBenefits_slider-item"
-              />
+              <picture>
+                <source srcset="img/avif/firstImg.avif" type="image/avif" />
+                <source srcset="img/webp/firstImg.webp" type="image/webp" />
+                <source srcset="img/png/firstImg.png" />
+                <img
+                  src="img/png/firstImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
             </div>
             <div class="swiper-slide">
-              <img
-                src="img/png/secondImg.png"
-                alt=""
-                class="sectionBenefits_slider-item"
-              />
+              <picture>
+                <source srcset="img/avif/secondImg.avif" type="image/avif" />
+                <source srcset="img/webp/secondImg.webp" type="image/webp" />
+                <source srcset="img/png/secondImg.png" />
+                <img
+                  src="img/png/secondImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
             </div>
             <div class="swiper-slide">
-              <img
-                src="img/png/thirdImg.png"
-                alt=""
-                class="sectionBenefits_slider-item"
-              />
+              <picture>
+                <source srcset="img/avif/thirdImg.avif" type="image/avif" />
+                <source srcset="img/webp/thirdImg.webp" type="image/webp" />
+                <source srcset="img/png/thirdImg.png" />
+                <img
+                  src="img/png/thirdImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -206,11 +272,22 @@
               </li>
             </ul>
             <div class="sectionBenefits_text-contentVideo">
-              <img
-                src="img/png/videoPlaceholder.png"
-                alt=""
-                class="sectionBenefits_text-contentVideoItem"
-              />
+              <picture>
+                <source
+                  srcset="img/avif/videoPlaceholder.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="img/webp/videoPlaceholder.webp"
+                  type="image/webp"
+                />
+                <source srcset="img/png/videoPlaceholder.png" />
+                <img
+                  src="img/png/videoPlaceholder.png"
+                  alt=""
+                  class="sectionBenefits_text-contentVideoItem"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -221,7 +298,7 @@
       <div class="sectionInner">
         <h3 class="sectionPeculiarities_title">Особенности конструкции</h3>
         <div class="sectionPeculiarities_content">
-          <div class="sectionPeculiarities_content-iteractiveImg">
+          <div class="sectionPeculiarities_content-iteractiveImg no-webplossy no-avif">
             <!-- <label for="accordeon-1" class="number one">1</label> -->
             <label for="accordeon-2" class="number two">2</label>
             <label for="accordeon-3" class="number three">3</label>
@@ -412,11 +489,16 @@
         </div>
       </div>
       <div class="sectionAboutUs_img">
-        <img
-          src="img/png/quadBike30years.png"
-          alt=""
-          class="sectionAboutUs_img-item"
-        />
+        <picture>
+          <source srcset="img/avif/quadBike30years.avif" type="image/avif" />
+          <source srcset="img/webp/quadBike30years.webp" type="image/webp" />
+          <source srcset="img/png/quadBike30years.png" />
+          <img
+            src="img/png/quadBike30years.png"
+            alt=""
+            class="sectionAboutUs_img-item"
+          />
+        </picture>
       </div>
     </section>
 
@@ -438,11 +520,16 @@
           </button>
         </div>
         <div class="sectionWantSee_img">
-          <img
-            src="img/png/quadBikeReverse.png"
-            alt=""
-            class="sectionWantSee_img-item"
-          />
+          <picture>
+            <source srcset="img/avif/quadBikeReverse.avif" type="image/avif" />
+            <source srcset="img/webp/quadBikeReverse.webp" type="image/webp" />
+            <source srcset="img/png/quadBikeReverse.png" />
+            <img
+              src="img/png/quadBikeReverse.png"
+              alt=""
+              class="sectionWantSee_img-item"
+            />
+          </picture>
         </div>
       </div>
     </section>
@@ -586,13 +673,46 @@
             <div class="swiper mySwiper_2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="img/png/sliderImg.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="img/avif/sliderImg.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="img/webp/sliderImg.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="img/png/sliderImg.png" />
+                    <img src="img/png/sliderImg.png" alt="" />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/png/sliderImg.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="img/avif/sliderImg.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="img/webp/sliderImg.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="img/png/sliderImg.png" />
+                    <img src="img/png/sliderImg.png" alt="" />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/png/sliderImg.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="img/avif/sliderImg.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="img/webp/sliderImg.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="img/png/sliderImg.png" />
+                    <img src="img/png/sliderImg.png" alt="" />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -619,11 +739,18 @@
           <div class="sectionGetOffer_text-getPhone btn">Заказать звонок</div>
         </div>
         <div class="sectionGetOffer_img">
-          <img
-            src="img/png/quadBike_2.png"
-            alt=""
-            class="sectionGetOffer_img-item"
-          />
+          <picture>
+            <source
+              srcset="img/avif/quadBike_2.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="img/webp/quadBike_2.webp"
+              type="image/webp"
+            />
+            <source srcset="img/png/quadBike_2.png" />
+            <img src="img/png/quadBike_2.png" alt="" class="sectionGetOffer_img-item"/>
+          </picture>
         </div>
       </div>
     </section>

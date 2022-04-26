@@ -28,8 +28,9 @@ function parseMediaURL(media) {
     // let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
     // let url = media.src;
     // let match = url.match(regexp);
+    // return match[1];
+    
     let match = media.dataset.hashvideo;
-
     return match;
 }
 

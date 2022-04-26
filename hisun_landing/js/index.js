@@ -144,4 +144,82 @@ document.addEventListener("DOMContentLoaded", function () {
       openModal(".modal-content");
     });
   });
-});
+
+
+  let numbers = [];
+  numbers.push(document.querySelector('.two'));
+  numbers.push(document.querySelector('.three'));
+  numbers.push(document.querySelector('.five'));
+  numbers.push(document.querySelector('.six'));
+  numbers.push(document.querySelector('.seven'));
+  
+  let two = document.querySelector('.trig2');
+  let three = document.querySelector('.trig3');
+  let five = document.querySelector('.trig5');
+  let six = document.querySelector('.trig6');
+  let seven = document.querySelector('.trig7');
+  
+  numbers.forEach(el=>{
+    el.addEventListener('mouseover', ()=>{
+      if (el.classList.contains('two')){
+        two.classList.add('hover');
+      } 
+      if (el.classList.contains('three')){
+        three.classList.add('hover');
+      } 
+      if (el.classList.contains('five')){
+        five.classList.add('hover');
+      } 
+      if (el.classList.contains('six')){
+        six.classList.add('hover');
+      } 
+      if (el.classList.contains('seven')){
+        seven.classList.add('hover');
+      } 
+    });
+    el.addEventListener('mouseout', ()=>{
+      if (el.classList.contains('two')){
+        two.classList.remove('hover');
+      } 
+      if (el.classList.contains('three')){
+        three.classList.remove('hover');
+      } 
+      if (el.classList.contains('five')){
+        five.classList.remove('hover');
+      } 
+      if (el.classList.contains('six')){
+        six.classList.remove('hover');
+      } 
+      if (el.classList.contains('seven')){
+        seven.classList.remove('hover');
+      } 
+    })
+  })
+
+
+  let baseModels = document.querySelectorAll('.baseModel');
+  let secondModels = document.querySelectorAll('.secondModel');
+
+  console.log();
+
+  back = document.querySelector('.back');
+  forward = document.querySelector('.forward');
+
+  back.addEventListener('click', ()=>{
+    baseModels.forEach(el=>{
+      el.classList.remove('noActive')
+    })
+    secondModels.forEach(el=>{
+      el.classList.add('noActive')
+    })
+  });
+  forward.addEventListener('click', ()=>{
+    secondModels.forEach(el=>{
+      el.classList.remove('noActive')
+    })
+    baseModels.forEach(el=>{
+      el.classList.add('noActive')
+    })
+  })
+
+})

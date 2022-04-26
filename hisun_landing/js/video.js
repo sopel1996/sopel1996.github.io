@@ -1,5 +1,5 @@
 function findVideos() {
-    let videos = document.querySelectorAll('.video');
+    let videos = document.querySelectorAll('.sectionBenefits_text-contentVideo');
 
     for (let i = 0; i < videos.length; i++) {
         setupVideo(videos[i]);
@@ -8,9 +8,9 @@ function findVideos() {
 
 function setupVideo(video) {
     let link = video.querySelector('.video__link');
-    let media = video.querySelector('.video__media');
-    let button = video.querySelector('.video__button');
-    let id = media.dataset.hashVideo;
+    let media = video.querySelector('.sectionBenefits_text-contentVideoItem');
+    let button = video.querySelector('.sectionBenefits_text-contentVideoBtn');
+    let id = parseMediaURL(media);
 
     video.addEventListener('click', () => {
         let iframe = createIframe(id);
@@ -25,11 +25,12 @@ function setupVideo(video) {
 }
 
 function parseMediaURL(media) {
-    let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-    let url = media.src;
-    let match = url.match(regexp);
+    // let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+    // let url = media.src;
+    // let match = url.match(regexp);
+    let match = media.dataset.hashvideo;
 
-    return match[1];
+    return match;
 }
 
 function createIframe(id) {

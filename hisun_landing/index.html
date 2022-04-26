@@ -76,6 +76,9 @@
             alt="Hisun logo"
             class="sectionHeader_logo-img"
           />
+          <a href="+78126490008" class="sectionHeader_logo-phone none"
+              >649-00-08</a
+            >
           <span class="sectionHeader_logo-text">
             Официальный диллер в Санкт-Петербурге
           </span>
@@ -249,6 +252,42 @@
                 />
               </picture>
             </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/firstImg.avif" type="image/avif" />
+                <source srcset="img/webp/firstImg.webp" type="image/webp" />
+                <source srcset="img/png/firstImg.png" />
+                <img
+                  src="img/png/firstImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/secondImg.avif" type="image/avif" />
+                <source srcset="img/webp/secondImg.webp" type="image/webp" />
+                <source srcset="img/png/secondImg.png" />
+                <img
+                  src="img/png/secondImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/thirdImg.avif" type="image/avif" />
+                <source srcset="img/webp/thirdImg.webp" type="image/webp" />
+                <source srcset="img/png/thirdImg.png" />
+                <img
+                  src="img/png/thirdImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
           </div>
         </div>
         <div class="sectionBenefits_text">
@@ -273,6 +312,7 @@
               </li>
             </ul>
             <div class="sectionBenefits_text-contentVideo">
+              <a href="https://youtu.be/6dqRtyRP19o" class="video__link">
               <picture>
                 <source
                   srcset="img/avif/videoPlaceholder.avif"
@@ -287,8 +327,11 @@
                   src="img/png/videoPlaceholder.png"
                   alt=""
                   class="sectionBenefits_text-contentVideoItem"
+                  data-hashVideo="6dqRtyRP19o"
                 />
               </picture>
+            </a>
+            <div class="sectionBenefits_text-contentVideoBtn"></div>
             </div>
           </div>
         </div>
@@ -300,7 +343,6 @@
         <h3 class="sectionPeculiarities_title">Особенности конструкции</h3>
         <div class="sectionPeculiarities_content">
           <div class="sectionPeculiarities_content-iteractiveImg no-webplossy no-avif">
-            <!-- <label for="accordeon-1" class="number one">1</label> -->
             <label for="accordeon-2" class="number two">2</label>
             <label for="accordeon-3" class="number three">3</label>
             <label for="accordeon-5" class="number five">5</label>
@@ -600,48 +642,48 @@
             </div>
           </div>
         </div>
-        <div id="relative">
-          <div id="wrapper">
-            <table class="sectionTable_table" cellpadding="0" cellspacing="0">
-              <tr>
-                <th>Особенности</th>
-                <th>HISON TACTIC 750</th>
-                <th id="modelName">CAN-AM OUTLANDER</th>
-              </tr>
-              <tr>
-                <td><div>Двигатель</div></td>
-                <td><div class="better">735cc EFI</div></td>
-                <td><div class="worse" id="engine">850 EEI</div></td>
-              </tr>
-              <tr>
-                <td><div>Охлаждение двигателя</div></td>
-                <td><div class="better">Жидкость</div></td>
-                <td><div class="worse" id="cooling">Жидкость</div></td>
-              </tr>
-              <tr>
-                <td><div>Передние шины</div></td>
-                <td><div class="better">26 х 9 -12</div></td>
-                <td><div class="worse" id="frontTires">Жидкость</div></td>
-              </tr>
-              <tr>
-                <td><div>Задние шины</div></td>
-                <td><div class="better">26 х 9 -12</div></td>
-                <td><div class="worse" id="rearTires">Жидкость</div></td>
-              </tr>
-              <tr>
-                <td><div>Передние тормоза</div></td>
-                <td><div class="pad">Двойной гидравлический диск</div></td>
-                <td><div class="pad">Двойной гидравлический диск</div></td>
-              </tr>
-              <tr>
-                <td><div>Задние тормоза</div></td>
-                <td><div class="pad">Двойной гидравлический диск</div></td>
-                <td><div class="pad">Двойной гидравлический диск</div></td>
-              </tr>
-            </table>
+        <div class="sectionTable_table">
+          <div class="btns">
+            <div class="back"></div>
+            <div class="forward"></div>
+          </div>
+            <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem header title">Особенности</div>  
+            <div class="sectionTable_table-rowItem header baseModel">HISON TACTIC 750</div>
+            <div class="sectionTable_table-rowItem header secondModel noActive" id="modelName">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Двигатель</div>
+            <div class="sectionTable_table-rowItem better baseModel">735cc EFI</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="engine">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Охлаждение двигателя</div>
+            <div class="sectionTable_table-rowItem better baseModel">Жидкость</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="cooling">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Передние шины</div>
+            <div class="sectionTable_table-rowItem better baseModel">26 х 9 -12</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="frontTires">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Задние шины</div>
+            <div class="sectionTable_table-rowItem better baseModel">26 х 9 -12</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="rearTires">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Передние тормоза</div>
+            <div class="sectionTable_table-rowItem pad baseModel">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Задние тормоза</div>
+            <div class="sectionTable_table-rowItem pad baseModel">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive">СAN</div>
           </div>
         </div>
-      </div>
+        </div>
     </section>
 
     <section class="sectionWhyUs">
@@ -801,6 +843,7 @@
     </footer>
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/video.js"></script>
     <script src="js/index.js"></script>
     <script src="js/burger.js"></script>
   </body>

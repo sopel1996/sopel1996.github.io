@@ -94,14 +94,27 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", trackScroll);
   goTopBtn.addEventListener("click", backToTop);
 
+  let logo = document.querySelector('.sectionHeader_logo-img');
+  let phone = document.querySelector('.sectionHeader_logo-phone');
+
+
   function trackScroll() {
     let scrolled = window.pageYOffset;
+    let clientWidth = document.documentElement.clientWidth;
     let coords = 500;
     if (scrolled > coords) {
       goTopBtn.classList.add("back_to_top-show");
     }
     if (scrolled < coords) {
       goTopBtn.classList.remove("back_to_top-show");
+    }
+    if ((scrolled > 0)&& (clientWidth<768)) {
+      logo.classList.add("none");
+      phone.classList.remove("none");
+    }
+    if (scrolled === 0) {
+      logo.classList.remove("none");
+      phone.classList.add("none");
     }
   }
   function backToTop() {

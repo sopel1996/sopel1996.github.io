@@ -1,1 +1,27 @@
-{var o=".burger-menu";let e=document.querySelector(o),t=document.querySelector(".sectionHeader .sectionHeader_nav"),r=document.querySelector(".burger-menu_button"),n=document.querySelectorAll(".sectionHeader_nav-item"),c=document.querySelector(".burger-menu_overlay"),u=document.body;function l(){e.classList.toggle("burger-menu_active"),t.classList.toggle("burger-menu_active"),r.classList.toggle("burger-menu_button_active"),e.classList.contains("burger-menu_active")?u.style.overflow="hidden":u.style.overflow="visible"}r.addEventListener("click",e=>{e.preventDefault(),l()}),n.forEach(e=>{e.addEventListener("click",()=>l())}),c.addEventListener("click",()=>l())}
+function burgerMenu(selector) {
+  let menu = document.querySelector(selector);
+  let menu_nav = document.querySelector(".sectionHeader .sectionHeader_nav");
+  let button = document.querySelector('.burger-menu_button');
+  let links = document.querySelectorAll('.sectionHeader_nav-item');
+  let overlay = document.querySelector('.burger-menu_overlay');
+  let body = document.body;
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleMenu();
+  });
+  links.forEach((el) => {
+    el.addEventListener('click', () => toggleMenu());
+  });
+  overlay.addEventListener('click', () => toggleMenu());
+  function toggleMenu() {
+    menu.classList.toggle('burger-menu_active');
+    menu_nav.classList.toggle('burger-menu_active');
+    button.classList.toggle('burger-menu_button_active');
+    if (menu.classList.contains('burger-menu_active')) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'visible';
+    }
+  }
+}
+burgerMenu('.burger-menu');

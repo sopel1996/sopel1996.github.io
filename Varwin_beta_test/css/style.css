@@ -1,0 +1,1189 @@
+@charset "UTF-8";
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.sectionInner {
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  background: -o-linear-gradient(24.45deg, #039 -24.66%, #0cf 103.65%), #f1f1f7;
+  background: linear-gradient(65.55deg, #039 -24.66%, #0cf 103.65%), #f1f1f7;
+  border-radius: 24px;
+  font-size: 18px;
+  text-decoration: none
+}
+
+.hoverShanow {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s
+}
+
+.hoverShanow:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4)
+}
+
+.edu {
+  background: -o-linear-gradient(183.44deg, #7e3697 -2.18%, #db2087 96.47%);
+  background: linear-gradient(266.56deg, #7e3697 -2.18%, #db2087 96.47%)
+}
+
+.sectionTitle {
+  color: #039;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 50px;
+  width: 740px
+}
+
+.check__label {
+  vertical-align: middle;
+  color: #fff
+}
+
+.check__label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 13px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 10px;
+  text-align: center;
+  position: relative
+}
+
+.check__label a, .check__label a:active, .check__label a:visited {
+  color: #0cf;
+  text-decoration: none
+}
+
+.check__input {
+  position: absolute;
+  left: -99999999px
+}
+
+.check__input:checked+.check__label::before {
+  content: url(../img/svg/check.svg);
+  color: #0cf
+}
+
+.__select {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.__select[data-state=active] .__select__title::before {
+  -webkit-transform: translate(-1px, -50%) rotate(-45deg);
+  -ms-transform: translate(-1px, -50%) rotate(-45deg);
+  transform: translate(-1px, -50%) rotate(-45deg)
+}
+
+.__select[data-state=active] .__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(45deg);
+  -ms-transform: translate(3px, -50%) rotate(45deg);
+  transform: translate(3px, -50%) rotate(45deg)
+}
+
+.__select[data-state=active] .__select__content {
+  opacity: 1;
+  display: block;
+  max-height: 225px;
+  overflow-y: scroll
+}
+
+.__select[data-state=active] .__select__label+.__select__input+.__select__label {
+  max-height: 40px;
+  border-top-width: 1px
+}
+
+.__select__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.__select__title::after, .__select__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  display: block;
+  width: 6px;
+  height: 2px;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  background-color: #fff;
+  -webkit-transform: translate(-1px, -50%) rotate(45deg);
+  -ms-transform: translate(-1px, -50%) rotate(45deg);
+  transform: translate(-1px, -50%) rotate(45deg)
+}
+
+.__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(-45deg);
+  -ms-transform: translate(3px, -50%) rotate(-45deg);
+  transform: translate(3px, -50%) rotate(-45deg)
+}
+
+.__select__content {
+  position: absolute;
+  top: 48px;
+  left: -1px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #c7ccd1;
+  border-radius: 24px;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  opacity: 0;
+  z-index: 8;
+  color: #000;
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
+
+.__select__content::-webkit-scrollbar {
+  display: none
+}
+
+.__select__input {
+  display: none
+}
+
+.__select__input:checked+label {
+  background-color: #dedede
+}
+
+.__select__input:disabled+label {
+  opacity: .6;
+  pointer-events: none
+}
+
+.__select__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 0 16px;
+  -webkit-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  overflow: hidden
+}
+
+.__select__label+input+.__select__label {
+  border-top: 0 solid rgba(199, 204, 209, .3764705882)
+}
+
+.__select__label:hover {
+  border: none;
+  color: #0faffc;
+  text-decoration: underline
+}
+
+.varwinInBusiness {
+  padding: 105px 0 95px;
+  margin: 0 0 60px
+}
+
+.varwinInBusiness_lineBlock {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.varwinInBusiness_lineBlock-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 0 20px;
+  border-radius: 12px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s
+}
+
+.varwinInBusiness_lineBlock-card .imgWrapper {
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.varwinInBusiness_lineBlock-card .imgWrapper .cardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px
+}
+
+.varwinInBusiness_lineBlock-card .imgWrapper::before {
+  border-radius: 12px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -o-radial-gradient(50% 50%, 61.43% 61.43%, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .35) 100%), -o-linear-gradient(193.44deg, rgba(15, 175, 252, .15) 1.09%, rgba(120, 57, 200, .15) 73.44%);
+  background: radial-gradient(61.43% 61.43% at 50% 50%, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .35) 100%), linear-gradient(256.56deg, rgba(15, 175, 252, .15) 1.09%, rgba(120, 57, 200, .15) 73.44%)
+}
+
+.varwinInBusiness_lineBlock-card .imgWrapper::after {
+  content: "Подробнее";
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: -o-linear-gradient(24.45deg, rgba(0, 51, 153, .6) -24.66%, rgba(0, 204, 255, .6) 103.65%);
+  background: linear-gradient(65.55deg, rgba(0, 51, 153, .6) -24.66%, rgba(0, 204, 255, .6) 103.65%);
+  border-radius: 12px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  opacity: 0
+}
+
+.varwinInBusiness_lineBlock-card .imgCaption {
+  width: 240px;
+  height: 48px;
+  position: absolute;
+  bottom: -24px;
+  left: calc(50% - 120px)
+}
+
+.varwinInBusiness_lineBlock-card:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4)
+}
+
+.varwinInBusiness_lineBlock-card:hover .imgWrapper::after {
+  opacity: 1
+}
+
+.varwinOpportunities {
+  padding: 100px 0
+}
+
+.varwinOpportunitiesLine {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.varwinOpportunitiesLine-card {
+  display: block;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+  border-radius: 12px;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  padding: 0 0 60px;
+  margin: 0 0 10px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s
+}
+
+.varwinOpportunitiesLine-card:active, .varwinOpportunitiesLine-card:visited {
+  color: inherit
+}
+
+.varwinOpportunitiesLine-card .imgWrapper {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  position: relative;
+  margin: 0 0 25px
+}
+
+.varwinOpportunitiesLine-card .imgWrapper .cardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px
+}
+
+.varwinOpportunitiesLine-card .imgWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -o-linear-gradient(226.41deg, rgba(15, 175, 252, 0) 24.39%, rgba(120, 57, 200, .3) 75.61%);
+  background: linear-gradient(223.59deg, rgba(15, 175, 252, 0) 24.39%, rgba(120, 57, 200, .3) 75.61%);
+  border-radius: 12px
+}
+
+.varwinOpportunitiesLine-card .cardTitle {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 25px 25px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  position: relative
+}
+
+.varwinOpportunitiesLine-card .cardText {
+  margin: 0 25px
+}
+
+.varwinOpportunitiesLine-card:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4)
+}
+
+.varwinOpportunitiesLine-card:hover .cardTitle {
+  color: #0cf;
+  text-decoration: underline
+}
+
+.varwinOpportunitiesBtn {
+  text-decoration: none;
+  margin: 30px 0 0;
+  width: 270px;
+  height: 48px
+}
+
+.varwinEduBanner {
+  background: url(../img/png/eduBanner.png) 50% 100%/100% 338px no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+
+.varwinEduBanner .sectionInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 338px
+}
+
+.varwinEduBanner_img {
+  width: 50%;
+  height: 100%;
+  -ms-flex-item-align: end;
+  align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.varwinEduBanner_img img {
+  height: 120%
+}
+
+.varwinEduBanner_textWrapper {
+  height: 100%;
+  width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.varwinEduBanner_textWrapper-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 25px
+}
+
+.varwinEduBanner_textWrapper-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 30px
+}
+
+.varwinEduBanner_textWrapper-Btn {
+  width: 300px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  text-decoration: none
+}
+
+.varwinLicenseBanner {
+  background: url(../img/png/licenseBanner.png) 50% 100%/100% 338px no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+
+.varwinLicenseBanner .sectionInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 338px
+}
+
+.varwinLicenseBanner_img {
+  width: 50%;
+  height: 100%;
+  -ms-flex-item-align: end;
+  align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.varwinLicenseBanner_img img {
+  height: 120%
+}
+
+.varwinLicenseBanner_textWrapper {
+  height: 100%;
+  width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.varwinLicenseBanner_textWrapper-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 25px
+}
+
+.varwinLicenseBanner_textWrapper-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 30px
+}
+
+.varwinLicenseBanner_textWrapper-Btn {
+  width: 300px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  text-decoration: none
+}
+
+.varwinImplementation {
+  padding: 45px 0 128px
+}
+
+.varwinImplementation .sectionInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.varwinImplementation_text {
+  width: 48%;
+  -ms-flex-item-align: start;
+  align-self: flex-start
+}
+
+.varwinImplementation_text-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  color: #039;
+  margin-bottom: 20px
+}
+
+.varwinImplementation_text-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 50px
+}
+
+.varwinImplementation_text-Btn {
+  width: 270px;
+  height: 48px
+}
+
+.varwinImplementation_cards {
+  width: 48%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px
+}
+
+.varwinImplementation_cards-card {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  margin: 0 0 20px
+}
+
+.varwinImplementation_cards-card .imgWrapper {
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.varwinImplementation_cards-card .imgWrapper .cardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px
+}
+
+.varwinImplementation_cards-card .imgWrapper::before {
+  border-radius: 12px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -o-radial-gradient(50% 50%, 61.43% 61.43%, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .35) 100%), -o-linear-gradient(193.44deg, rgba(15, 175, 252, .15) 1.09%, rgba(120, 57, 200, .15) 73.44%);
+  background: radial-gradient(61.43% 61.43% at 50% 50%, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .35) 100%), linear-gradient(256.56deg, rgba(15, 175, 252, .15) 1.09%, rgba(120, 57, 200, .15) 73.44%)
+}
+
+.varwinImplementation_cards-card .imgWrapper::after {
+  content: "Подробнее";
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: -o-linear-gradient(24.45deg, rgba(0, 51, 153, .6) -24.66%, rgba(0, 204, 255, .6) 103.65%);
+  background: linear-gradient(65.55deg, rgba(0, 51, 153, .6) -24.66%, rgba(0, 204, 255, .6) 103.65%);
+  border-radius: 12px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  opacity: 0
+}
+
+.varwinImplementation_cards-card .imgCaption {
+  width: 200px;
+  height: 48px;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 100px)
+}
+
+.varwinImplementation_cards-card:hover .imgWrapper::after {
+  opacity: 1
+}
+
+.rew_itemslide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #858585;
+  padding: 40px
+}
+
+.rew_itemslide .rew_userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 150%;
+  text-align: center;
+  font-size: 13px;
+  margin: 0 30px 0 0;
+  font-style: italic
+}
+
+.rew_itemslide .rew_userInfo img {
+  margin-bottom: 20px;
+  width: 170px
+}
+
+.rew_itemslide .rew_userInfo-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px
+}
+
+.rew_itemslide .rew_userInfo-position {
+  margin-bottom: 10px
+}
+
+.rew_itemslide .rew_it_text {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5
+}
+
+.rew_itemslide .rew_it_text p {
+  margin-bottom: 10px
+}
+
+.formTitle {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  color: #fff;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin: 20px 0 40px
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.form * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.form .row1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.form .row2 {
+  margin-bottom: 25px
+}
+
+.form .col1, .form .col2 {
+  width: 48%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px
+}
+
+.form input:not([type=file]) {
+  width: 100%;
+  height: 48px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: 0;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff
+}
+
+.form input:not([type=file])::-webkit-input-placeholder {
+  color: inherit
+}
+
+.form input:not([type=file])::-moz-placeholder {
+  color: inherit
+}
+
+.form input:not([type=file]):-ms-input-placeholder {
+  color: inherit
+}
+
+.form input:not([type=file])::-ms-input-placeholder {
+  color: inherit
+}
+
+.form input:not([type=file])::placeholder {
+  color: inherit
+}
+
+.form textarea {
+  height: 100%;
+  width: 100%;
+  background: 0 0;
+  outline: 0;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff
+}
+
+.form textarea::-webkit-input-placeholder {
+  color: inherit
+}
+
+.form textarea::-moz-placeholder {
+  color: inherit
+}
+
+.form textarea:-ms-input-placeholder {
+  color: inherit
+}
+
+.form textarea::-ms-input-placeholder {
+  color: inherit
+}
+
+.form textarea::placeholder {
+  color: inherit
+}
+
+.form #budget {
+  margin: 0 0 40px
+}
+
+.form .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin: 0 0 5px
+}
+
+.form .fileBtnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0 0 35px
+}
+
+.form .fileBtnWrapper .fileBtn {
+  width: 135px;
+  height: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  margin-right: 15px
+}
+
+.form .fileBtnWrapper #fileChosen {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff
+}
+
+.form .btnSubmit {
+  width: 240px;
+  height: 50px;
+  border: none;
+  outline: 0
+}
+
+.varwinTariffs {
+  margin: 0 0 100px
+}
+
+.varwinTariffs .sectionInner {
+  position: relative
+}
+
+.varwinTariffs_title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  color: #039;
+  margin: 0 0 30px;
+  width: 55%
+}
+
+.varwinTariffs_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #000;
+  margin: 0 0 40px
+}
+
+.varwinTariffs_tarifs {
+  width: 100%;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 0 100px;
+  position: relative
+}
+
+.varwinTariffs_tarifs-tarif {
+  width: calc(33.3333333333% - 40px);
+  height: 650px;
+  padding: 23px 23px 80px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16), 0 0 21px rgba(0, 0, 0, .4);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative
+}
+
+.varwinTariffs_tarifs-tarifTitle {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 150%;
+  color: #039;
+  min-height: 75px
+}
+
+.varwinTariffs_tarifs-tarifDescription {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #646464;
+  min-height: 25px
+}
+
+.varwinTariffs_tarifs-tarif .restrictions {
+  width: 100%;
+  color: #039
+}
+
+.varwinTariffs_tarifs-tarifRestrictions {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #039;
+  list-style: none inside;
+  min-height: 150px
+}
+
+.varwinTariffs_tarifs-tarifRestrictions .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.varwinTariffs_tarifs-tarifRestrictions .item:before {
+  content: "•";
+  display: block;
+  font-size: 25px;
+  margin: 0 5px 0 0
+}
+
+.varwinTariffs_tarifs-tarifBonus {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #039;
+  min-height: 60px
+}
+
+.varwinTariffs_tarifs-tarifCost {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #039
+}
+
+.varwinTariffs_tarifs-tarifBtn {
+  width: 100%;
+  height: 48px
+}
+
+.varwinTariffs_tarifs-tarif:nth-child(2) {
+  background: url(../img/png/tarifBg.png) 50% 50%/cover no-repeat #2196f3;
+  color: #fff
+}
+
+.varwinTariffs_tarifs-tarif:nth-child(2) .varwinTariffs_tarifs-tarifTitle {
+  color: #fff
+}
+
+.varwinTariffs_tarifs-tarif:nth-child(2) .varwinTariffs_tarifs-tarifDescription {
+  color: #d2d2d2
+}
+
+.varwinTariffs_tarifs-tarif:nth-child(2) .restrictions, .varwinTariffs_tarifs-tarif:nth-child(2) .twoStarTip, .varwinTariffs_tarifs-tarif:nth-child(2) .varwinTariffs_tarifs-tarifBonus, .varwinTariffs_tarifs-tarif:nth-child(2) .varwinTariffs_tarifs-tarifBtn, .varwinTariffs_tarifs-tarif:nth-child(2) .varwinTariffs_tarifs-tarifCost, .varwinTariffs_tarifs-tarif:nth-child(2) .varwinTariffs_tarifs-tarifRestrictions {
+  color: #fff
+}
+
+.varwinTariffs_tarifs-tarif .twoStarTip {
+  position: absolute;
+  bottom: 20px;
+  left: 23px;
+  color: #039;
+  font-size: 14px;
+  line-height: 150%;
+  height: 42px
+}
+
+.varwinTariffs_tarifs-tarif:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .4), 0 0 21px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4), 0 0 21px rgba(0, 0, 0, .6)
+}
+
+.varwinTariffs .tipNDS {
+  position: absolute;
+  bottom: -50px;
+  left: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000
+}
+
+.varwinTariffs_btn {
+  width: 277px;
+  height: 48px
+}
+
+.sectionInner_2 {
+  width: 100%;
+  background: -o-linear-gradient(24.45deg, #039 -24.66%, #0cf 103.65%), #0cf;
+  background: linear-gradient(65.55deg, #039 -24.66%, #0cf 103.65%), #0cf
+}
+
+/*# sourceMappingURL=style.css.map */

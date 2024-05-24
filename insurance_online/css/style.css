@@ -1,0 +1,759 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "almoni";
+  src: url("../fonts/almoni-dl-aaa-light.otf") format("openType");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "almoni";
+  src: url("../fonts/almoni-dl-aaa-regular.otf") format("openType");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "almoni";
+  src: url("../fonts/almoni-dl-aaa-bold.otf") format("openType");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "almoni";
+  src: url("../fonts/almoni-dl-aaa-black.otf") format("openType");
+  font-weight: 900;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+a,
+a:active,
+a:visited {
+  outline: none;
+  text-decoration: none;
+  color: #0070cc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.sectionInner {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+input {
+  outline: none;
+  border: 1px solid #858585;
+  background-clip: padding-box;
+}
+
+._borderNone {
+  border: none !important;
+}
+
+._opacity {
+  opacity: 1 !important;
+}
+
+._marked {
+  color: #00549B;
+}
+
+._markedRed {
+  color: #F00D11;
+}
+
+.sectionSearchForm {
+  min-height: 1165px;
+  width: 100%;
+  background: url(../img/png/sectionSearchBg.jpg) 0 0 no-repeat;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+  /* New Picker */
+}
+.sectionSearchForm::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.sectionSearchForm .sectionInner {
+  position: relative;
+  z-index: 10;
+  padding-top: 60px;
+}
+.sectionSearchForm_Logo {
+  width: 295px;
+  height: 93px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background: url(../img/svg/Logo.svg) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionSearchForm_title {
+  font-family: "almoni", sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  color: #00549B;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sectionSearchForm_subtitle {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sectionSearchForm_text {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sectionSearchForm .calculator2021 a:link, .sectionSearchForm .calculator2021 a:visited, .sectionSearchForm .calculator2021 a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.sectionSearchForm .calculator2021 a img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.sectionSearchForm .buy a p {
+  direction: rtl;
+}
+.sectionSearchForm .calculator2021 input[type=text],
+.sectionSearchForm .calculator2021 input[type=number],
+.sectionSearchForm .calculator2021 select {
+  border: 1px #ececec solid;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 10px;
+  -webkit-appearance: none;
+}
+.sectionSearchForm .calculator2021 .dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sectionSearchForm .calculator2021 .dates label {
+  width: 200px;
+  padding: 5px 0;
+}
+.sectionSearchForm .calculator2021 .dates label span.title {
+  display: block;
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 10px;
+  color: #00549B;
+}
+.sectionSearchForm .calculator2021 .dates label input[type=text] {
+  width: 100%;
+}
+.sectionSearchForm .calculator2021 .dates label.checkbox {
+  width: 100%;
+  display: flex;
+  max-width: 650px;
+  padding: 7px 0;
+}
+.sectionSearchForm .calculator2021 .dates label.checkbox:nth-child(2) {
+  padding-top: 15px;
+}
+.sectionSearchForm .calculator2021 .dates label.checkbox:nth-child(6) {
+  padding-bottom: 15px;
+}
+.sectionSearchForm .calculator2021 .dates label.etgari,
+.sectionSearchForm .calculator2021 .dates label.ski {
+  display: none;
+}
+.sectionSearchForm .calculator2021 .fields {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.sectionSearchForm .calculator2021 .fields li {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0 0 0;
+  background: #fafafa;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sectionSearchForm .calculator2021 .fields li .num {
+  height: 57px;
+  background-color: #00549B;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 20px;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  width: calc(100% + 20px);
+  margin: -10px;
+  margin-bottom: 0;
+}
+.sectionSearchForm .calculator2021 .fields li .num a {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ef1616;
+  font-size: 15px;
+  line-height: 15px;
+  margin: 0 0 0 5px;
+  color: #fff;
+  position: relative;
+}
+.sectionSearchForm .calculator2021 .fields li .lastInput {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.sectionSearchForm .calculator2021 .fields li label {
+  width: 20%;
+  position: relative;
+  padding: 10px;
+}
+.sectionSearchForm .calculator2021 .fields li label:first-child {
+  padding-right: 100px;
+}
+.sectionSearchForm .calculator2021 .fields li label .lastInput {
+  width: 667px;
+}
+.sectionSearchForm .calculator2021 .fields li label span.title {
+  display: block;
+  color: #5A5A5A;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+.sectionSearchForm .calculator2021 .fields li label div.error {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: red;
+}
+.sectionSearchForm .calculator2021 .fields li label select,
+.sectionSearchForm .calculator2021 .fields li label input {
+  width: 100%;
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #888888;
+  height: 40px;
+}
+.sectionSearchForm .calculator2021 .fields li label:before {
+  content: "▾";
+  position: absolute;
+  font-size: 12px;
+  left: 25px;
+  top: calc(50% + 5px);
+}
+.sectionSearchForm .calculator2021 .fields li label.age:before {
+  display: none;
+}
+.sectionSearchForm .calculator2021 #addperson {
+  cursor: pointer;
+  height: 57px;
+  background-color: #EEEEEE;
+  color: #00549B;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 20px;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+}
+.sectionSearchForm .calculator2021 #addperson:hover {
+  color: #fff;
+  background: #069;
+  border-color: #069;
+}
+.sectionSearchForm .calculator2021 #calculate {
+  display: block;
+  margin: 40px auto 0;
+  height: 50px;
+  width: 204px;
+  text-align: center;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  background-color: #00549B;
+  border: none;
+  cursor: pointer;
+}
+.sectionSearchForm .calculator2021 .results {
+  display: none;
+  margin: 0 0 20px 0;
+}
+.sectionSearchForm .t-datepicker {
+  display: flex;
+}
+.sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out, .sectionSearchForm .t-datepicker {
+  float: none;
+}
+.sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px #00549B solid;
+  border-radius: 3px;
+  padding: 0 10px;
+  background-color: #fff;
+  width: 365px;
+  height: 40px;
+  color: #00559bB2;
+}
+.sectionSearchForm .t-dates {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.sectionSearchForm .t-datepicker-days .t-table-wrap {
+  margin-left: 0;
+  margin-right: 2%;
+}
+.sectionSearchForm .t-check-in .t-date-info-title, .sectionSearchForm .t-check-out .t-date-info-title {
+  width: auto !important;
+  line-height: inherit;
+  padding: 0 !important;
+  position: static;
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.sectionSearchForm .t-next, .sectionSearchForm .t-prev, .sectionSearchForm .t-table-condensed td, .sectionSearchForm .t-table-condensed th {
+  border: 0 !important;
+  width: auto !important;
+  padding: 10px !important;
+}
+.sectionSearchForm .t-table-condensed {
+  border: 0 !important;
+}
+.sectionSearchForm .t-table-condensed th:first-child,
+.sectionSearchForm .t-table-condensed td:first-child {
+  text-align: center !important;
+  font-size: inherit !important;
+  background: inherit !important;
+  color: inherit !important;
+  font-weight: normal !important;
+}
+.sectionSearchForm .t-table-condensed tr th:first-child {
+  font-weight: bold;
+}
+.sectionSearchForm .t-table-condensed tbody td, .sectionSearchForm .t-table-condensed tbody td:first-child {
+  background: #efefef !important;
+  border: 1px #fff solid !important;
+}
+.sectionSearchForm .t-table-condensed tbody td:hover,
+.sectionSearchForm .t-table-condensed tbody .t-range,
+.sectionSearchForm .t-table-condensed tbody .t-range:first-child,
+.sectionSearchForm .t-table-condensed tbody .t-start,
+.sectionSearchForm .t-table-condensed tbody .t-start:first-child,
+.sectionSearchForm .t-table-condensed tbody .t-end,
+.sectionSearchForm .t-table-condensed tbody .t-hover-day,
+.sectionSearchForm .t-table-condensed tbody .t-hover-day:first-child,
+.sectionSearchForm .t-table-condensed tbody .t-range-limit,
+.sectionSearchForm .t-table-condensed tbody .t-range-limit:first-child {
+  background: #069 !important;
+  color: #fff !important;
+}
+.sectionSearchForm .t-table-condensed tbody .t-today,
+.sectionSearchForm .t-today .t-hover-day-content {
+  background: orange !important;
+  color: #fff !important;
+}
+.sectionSearchForm .t-today:after, .sectionSearchForm .t-today:hover:after {
+  border-top-color: orange;
+}
+.sectionSearchForm .t-month-check-in,
+.sectionSearchForm .t-month-check-out {
+  margin: 0 5px;
+}
+.sectionSearchForm .t-check-in {
+  margin: 0 0 0 20px;
+}
+.sectionSearchForm .t-input {
+  display: none;
+}
+.sectionSearchForm .calculator2021 .tablewrap ul {
+  display: none;
+}
+.sectionSearchForm input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.sectionSearchForm .tablewrap-inner {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.sectionSearchForm .tablewrap-inner table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sectionSearchForm .tablewrap-inner table th, .sectionSearchForm .tablewrap-inner table td {
+  border: 1px solid #CCC;
+  height: 50px;
+  text-align: center;
+  color: #00549B;
+}
+.sectionSearchForm .tablewrap-inner table tr th:first-child,
+.sectionSearchForm .tablewrap-inner table tr td:first-child {
+  width: 293px;
+  color: #00549B;
+  padding-right: 20px;
+  padding-left: 150px;
+}
+.sectionSearchForm .tablewrap-inner table tr:last-child th, .sectionSearchForm .tablewrap-inner table tr:last-child td {
+  color: #FFF;
+  background-color: #00549B;
+}
+
+.sectionFirstTable {
+  margin-top: 40px;
+}
+.sectionFirstTable .firstTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.sectionFirstTable .firstTable th, .sectionFirstTable .firstTable td {
+  border: 1px solid #CCC;
+  max-width: 127px;
+  height: 90px;
+}
+.sectionFirstTable .firstTable th {
+  color: #00549B;
+  padding-right: 20px;
+  padding-left: 150px;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.sectionFirstTable .firstTable td {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #5A5A5A;
+  text-align: center;
+  padding: 10px 15px;
+}
+.sectionFirstTable .firstTable td img {
+  width: 100%;
+  object-fit: cover;
+}
+.sectionFirstTable .textAfterTable {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5A5A5A;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionSecondTable {
+  margin-top: 40px;
+}
+.sectionSecondTable .caption {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #00549B;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.sectionSecondTable .secondTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.sectionSecondTable .secondTable th, .sectionSecondTable .secondTable td {
+  border: 1px solid #CCC;
+}
+.sectionSecondTable .secondTable tr:nth-child(4) th, .sectionSecondTable .secondTable tr:nth-child(5) th, .sectionSecondTable .secondTable tr:nth-child(6) th, .sectionSecondTable .secondTable tr:nth-child(7) th, .sectionSecondTable .secondTable tr:nth-child(8) th, .sectionSecondTable .secondTable tr:nth-child(9) th, .sectionSecondTable .secondTable tr:nth-child(10) th, .sectionSecondTable .secondTable tr:nth-child(11) th {
+  color: #fff;
+  background-color: #00549B;
+}
+.sectionSecondTable .secondTable th {
+  width: 293px;
+  height: 90px;
+  color: #00549B;
+  padding-right: 20px;
+  padding-left: 150px;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.sectionSecondTable .secondTable td {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 127px;
+  height: 90px;
+  color: #5A5A5A;
+  text-align: center;
+  padding: 10px 15px;
+}
+.sectionSecondTable .secondTable td img {
+  width: 100%;
+  object-fit: cover;
+}
+.sectionSecondTable .textAfterTable {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #00549B;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sectionSecondTable .markedTextAfterTable {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #F20D0D;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionVideo {
+  height: 654px;
+  background: #FAFAFA url(../img/png/sectionVideoBg.png) 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.sectionVideo::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(250, 250, 250, 0.75);
+}
+.sectionVideo .sectionInner {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionVideo .content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.sectionVideo .title {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #00549B;
+  margin-bottom: 3px;
+  margin-top: 40px;
+}
+.sectionVideo .sectionVideo_list .list {
+  list-style: none;
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5A5A5A;
+  margin-bottom: 10px;
+}
+.sectionVideo .sectionVideo_list .list:last-child {
+  margin: 0;
+}
+.sectionVideo .sectionVideo_list .textBetweenLists {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #00549B;
+  margin-bottom: 10px;
+}
+.sectionVideo .sectionVideo_media iframe {
+  width: 729px;
+  height: 526px;
+}
+
+.sectionAccordeon {
+  margin-top: 40px;
+}
+.sectionAccordeon .title {
+  text-align: center;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #00549B;
+  margin-bottom: 10px;
+}
+.sectionAccordeon .subtitle {
+  text-align: center;
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5A5A5A;
+  margin-bottom: 40px;
+}
+.sectionAccordeon .accordeonTitle {
+  text-align: center;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #00549B;
+  margin-bottom: 20px;
+}
+.sectionAccordeon .accordeonItem {
+  position: relative;
+  margin-bottom: 10px;
+}
+.sectionAccordeon .accordeonItem_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.sectionAccordeon .accordeonItem_input:checked ~ .accordeonItem_trigger::after {
+  content: "-";
+}
+.sectionAccordeon .accordeonItem_input:checked ~ .accordeonItem_content {
+  display: flex;
+}
+.sectionAccordeon .accordeonItem_trigger {
+  position: relative;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  display: block;
+  padding: 10px;
+  padding-left: 150px;
+  background-color: #00549B;
+  color: #fff;
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sectionAccordeon .accordeonItem_trigger::after {
+  display: block;
+  color: #fff;
+  content: "+";
+  position: absolute;
+  left: 20px;
+}
+.sectionAccordeon .accordeonItem_content {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px;
+  display: none;
+  color: #5A5A5A;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sectionFooter {
+  margin: 40px 0;
+}
+.sectionFooter .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectionFooter .sectionFooter_firstLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.sectionFooter .sectionFooter_firstLine .footerImg {
+  margin-bottom: 40px;
+  width: 583px;
+  height: 88px;
+  object-fit: cover;
+}
+.sectionFooter .sectionFooter_firstLine .footerText {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5A5A5A;
+}
+.sectionFooter .sectionFooter_secondLine {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo .logoImg {
+  width: 90px;
+  height: 20px;
+  object-fit: cover;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText {
+  font-family: "almoni", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #00549B;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText::after {
+  content: "";
+  border: none;
+  border-left: 1px solid #00549B;
+  margin: 0 10px;
+}
+.sectionFooter .sectionFooter_secondLine .copyright {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #00549B;
+}

@@ -1,0 +1,89 @@
+/*
+----------------------------
+Steps Online
+-----------------------------
+*/
+.steps-online{
+    background-color: #E5E5E5;
+    // height: toRem(418);
+    padding: toRem(40) 0 toRem(40) 0;
+
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: $primaryColor;
+    }
+    h2{
+        @include AlmoniBold(42);
+        margin: 0 0 toRem(20) 0;
+    }
+    h3{
+        @include AlmoniNormal(24);
+        line-height: toRem(22);
+        margin: 0 0 toRem(50) 0;
+        text-align: center;
+        width: 60%;
+    }
+    .stepsLine{
+        margin: 0 0 toRem(150) 0;
+        position: relative;
+        height: toRem(1);
+        background: rgb(22,24,45);
+        background: linear-gradient(90deg, rgba(22,24,45,.0) 0%, rgba(22,24,45,1) 50%, rgba(22,24,45,.0) 100%);
+        width: toRem(1000);
+        .firstStep,
+        .secondStep,
+        .thirdStep{
+            position: absolute;
+            top: toRem(-23);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            // height: toRem(147);
+        }
+        .firstStep{
+            right: toRem(20);
+        }
+        .secondStep{
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .thirdStep{
+            left: toRem(20);
+        }
+        .stepNumber{
+            background-color: $primaryColor;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include AlmoniBold(26);
+            color: #fff;
+            width: toRem(45);
+            height: toRem(45);
+            margin: 0 0 toRem(20) 0;  
+        }
+        .stepImg{
+            width: toRem(45);
+            height: toRem(45);
+            margin: 0 0 toRem(20) 0;  
+        }
+        p{
+            @include AlmoniNormal(24);
+        }
+    }
+    .btn{
+        // width: toRem(160);
+        height: toRem(46);
+        color: #fff; 
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-evenly;
+        svg{
+            // margin: 0 toRem(20) 0 0;
+        }
+    }
+}

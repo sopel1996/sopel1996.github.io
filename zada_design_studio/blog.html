@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMob.css">
+    <title>Blog - ZADA design studio</title>
+</head>
+<style>
+    .stickyHeader,
+    .stickyHeader * {
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .stickyHeader {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px;
+        background: rgb(248, 157, 254);
+        background: linear-gradient(180deg, rgba(248, 157, 254, 1) 0%, rgba(72, 72, 242, 1) 100%);
+        z-index: 999999999999;
+    }
+
+    .stickyHeader_link {
+        margin: 0 50px 0 0;
+        color: #fff;
+        transition: all 0.3s;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .stickyHeader_link:hover,
+    .stickyHeader_link:visited:hover {
+        color: rgb(0, 255, 242);
+    }
+
+    .stickyHeader_link:visited {
+        color: rgb(251, 255, 0);
+
+    }
+
+    .stickyHeader_link:first-child {
+        margin: 0;
+    }
+    @media screen and (max-width: 360px) {
+        .stickyHeader_link {
+            margin: 0 20px 0 0;
+        }
+        
+    }
+</style>
+<body>
+    <header class="stickyHeader">
+        <a href="/zada_design_studio/about.html" class="stickyHeader_link">
+            fifth page
+        </a>
+        <a href="/zada_design_studio/blog.html" class="stickyHeader_link">
+            fourth page
+        </a>
+        <a href="/zada_design_studio/projects.html" class="stickyHeader_link">
+            third page
+        </a>
+        <a href="/zada_design_studio/TelAvivProject.html" class="stickyHeader_link">
+            second page
+        </a>
+        <a href="/zada_design_studio/index.html" class="stickyHeader_link">
+            first page
+        </a>
+    </header>
+    <section class="mobMenu">
+        <div class="burger-menu">
+            <a href="" class="burger-menu_button">
+                <spun class="burger-menu_lines"></spun>
+            </a>
+            <nav class="burger-menu_nav">
+                <a href="TelAvivProject.html" class="burger-menu_link">
+                    יצירת קשר
+                </a>
+                <a href="projects.html" class="burger-menu_link">
+                    פרויקטים
+                </a>
+                <a href="about.html" class="burger-menu_link">
+                    אודות
+                </a>
+                <a href="blog.html" class="burger-menu_link">
+                    בלוג
+                </a>
+                <a href="/" class="burger-menu_link _borderNone">
+                    <img src="img/svg/logo.svg" alt="Company Logo" class="logoImg burger">
+                </a>
+            </nav>
+            <div class="burger-menu_overlay"></div>
+        </div>
+        <a href="/" class="logo"><img src="img/svg/logo.svg" alt="Company Logo" class="logoImg"></a>
+    </section>
+    <header class="sectionHeader">
+        <nav class="headerNav _grayBG">
+            <div class=" sectionInner">
+                <a href="blog.html" class="navLink">
+                    בלוג
+                </a>
+                <a href="about.html" class="navLink">
+                    אודות
+                </a>
+                <a href="/" class="logo"><img src="img/svg/logo.svg" alt="Company Logo" class="logoImg"></a>
+                <a href="projects.html" class="navLink">
+                    פרויקטים
+                </a>
+                <a href="TelAvivProject.html" class="navLink">
+                    יצירת קשר
+                </a>
+            </div>
+        </nav>
+        <div class="headerText _otherPages">
+            <div class="sectionInner">
+
+                <p class="title">BLOG</p>
+                <p class="subTitle">
+                    דף הבית / פרוייקטים
+                </p>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="sectionPojects ">
+            <div class="sectionInner">
+                <div class="projectCards _borderNone">
+                    <div class="fistColumn">
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondColumn _marginTop370">
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smallCard _opacity">
+                            <img src="img/png/cardImg.png" alt="card Image" class="cardImg">
+                            <h3 class="title">
+                                Tel Aviv Project
+                            </h3>
+                            <div class="cardText">
+                                <p>
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינגערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionForm">
+            <div class="sectionInner">
+                <h5 class="subTitle">
+                    I'M HERE FOR YOU
+                </h5>
+                <h2 class="title">
+                    LET'S TALK
+                </h2>
+                <form action="" class="form">
+                    <div class="formLine">
+                        <input type="text" class="formsInput" dir="auto" placeholder="שם מלא" name="FIO" id="FIO" />
+                        <input type="tel" class="formsInput" dir="auto" placeholder="טלפון" name="phone" id="phone" />
+                        <input type="text" class="formsInput" dir="auto" placeholder="איזור" name="address"
+                            id="address" />
+                    </div>
+                    <textarea name="commentsArea" id="commentsArea" class="comments" placeholder="העדוה"></textarea>
+                    <input type="submit" value="שלח" class="btn">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="sectionFooter">
+        <div class="sectionInner">
+            <a href="/"><img src="img/svg/logo.svg" alt="Company Logo" class="Logo"></a>
+            <p class="copyright">ALL RIGHTS RESERVED TO ZADA - INTERIOR DESIGN STUDIO</p>
+            <div class="social">
+                <a href="http://facebook.com" class="socialLink">
+                    <img src="img/svg/fb.svg" alt="facebook link" class="socialLinkImg">
+                </a>
+                <a href="http://instagramm.com" class="socialLink">
+                    <img src="img/svg/instagram.svg" alt="instagramm link" class="socialLinkImg">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="owlcarousel/jquery-3.6.0.js"></script>
+    <script src="js/burger.js"></script>
+
+</body>
+
+</html>

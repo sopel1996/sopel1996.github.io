@@ -1,0 +1,704 @@
+/*
+----------------------------
+Mobile adaptive
+-----------------------------
+*/
+@import 'mixins.scss';
+
+@media (max-width: 1324px) {
+    .sectionInner {
+        padding: 0 toRem(20);
+        width: 100%;
+    }
+    .services .firstCol{
+        padding-left: toRem(10);
+    }
+    .services .firstCol .grid{
+        width: 100%;
+    }
+    .about-services .about-services_secondCol{
+        margin-right: toRem(10);
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .about-services .about-services_secondCol .imgList-Item {
+        width    : toRem(260);
+        font-size: toRem(15);
+    }
+
+    .testimonials_listItem {
+        width: toRem(280);
+    }
+
+    .testimonials_listItem .itemText {
+        font-size: toRem(18);
+    }
+
+    .other-services_listItem {
+        width: toRem(210);
+    }
+
+    .articles_listItem {
+        width: toRem(280);
+    }
+
+
+    .contact-us .cuppleImg{
+        width: toRem(550);
+        height: toRem(395);
+    }
+    .contact-us .contact-us_form{
+        width: toRem(380);
+        height: toRem(395);
+    }
+    .address .firstAddress .addressImg,
+    .address .firstAddress iframe,
+    .address .secondAddress .addressImg,
+    .address .secondAddress iframe{
+        width: toRem(250) !important;
+        height: toRem(250) !important;
+    }
+
+    .services .firstCol .title{
+        text-align: center;
+    }
+    footer ._firstLine-list,
+    footer ._firstLine-services,
+    footer ._firstLine-contacts,
+    footer ._firstLine-feedback {
+        width: toRem(280);
+    }
+}
+
+@media (max-width: 1200px) {
+    header ._navItem {
+        font-size: toRem(14);
+    }
+    header ._nav > li > ul.sub-menu{
+        top: toRem(29);
+    }
+    header .btn {
+        font-size: toRem(15);
+        height   : toRem(36);
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        width: toRem(250);
+    }
+}
+
+@media (max-width: 1160px) {
+    .banner .sectionInner{
+        height: toRem(440);
+    }
+    .banner ._cupple{
+        width: 45%;
+        // height: toRem(440);
+        // background-size: cover;
+    }
+    .banner ._text{
+        width: 45%;
+    }
+    .banner ._text .title{
+        font-size: toRem(62);
+    }
+    .banner ._text .subTitle{
+        font-size: toRem(30);
+    }
+    .banner ._text .statsTitle{
+        font-size: toRem(24);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(36);
+    }
+    .banner ._text .statsList-item .text{
+        font-size: toRem(18);
+    }
+    .about-services .title,
+    .steps-online .title,
+    .testimonials_title,
+    .why-us .title,
+    .other-services_title,
+    .articles_title{
+        font-size: toRem(36);
+    }
+    .about-services .about-services_firstCol .text{
+        font-size: toRem(20);
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        width: toRem(200);
+    }
+    .steps-online .subTitle{
+        font-size: toRem(18);
+    }
+    
+    .testimonials_listItem {
+        width: toRem(240);
+    }
+
+    .testimonials_listItem .itemText {
+        font-size: toRem(16);
+    }
+
+    .why-us .text .reasonTitle{
+        font-size: toRem(28);
+    }
+
+    .why-us .text .reasonSubTitle{
+        font-size: toRem(24);
+    }
+
+    .why-us .text .reasonText{
+        font-size: toRem(20);
+    }
+    .other-services_listItem{
+        width: toRem(180);
+    }
+    .other-services_listItem .nameService{
+        font-size: toRem(21);
+    }
+    
+    .articles_listItem {
+        width: toRem(240);
+    }
+
+    .articles_listItem .itemTitle,
+    .ArticlesCatalog .grid-item .itemTitle {
+        font-size: toRem(24);
+    }
+
+    .articles_listItem .itemSubtitle,
+    .ArticlesCatalog .grid-item .itemSubitle {
+        font-size: toRem(18);
+    }
+    .articles_listItem .itemImg{
+        height: toRem(170);
+    }
+
+    .contact-us .cuppleImg{
+        width: toRem(500);
+        height: toRem(355);
+    }
+    .contact-us .contact-us_form{
+        width: toRem(380);
+        height: toRem(355);
+        font-size: toRem(14);
+    }
+    .contact-us .contact-us_form .title{
+        font-size: toRem(25);
+    }
+    .contact-us .contact-us_form label textarea{
+        height: toRem(100);
+    }
+    .contact-us .contacts{
+        width: toRem(185);
+    }
+    .contact-us .contacts .title{
+        margin: 0;
+        font-size: toRem(20);
+    }
+    .contact-us .contacts .location .textTitle{
+        font-size: toRem(18);
+    }
+    .contact-us .contacts .phone, .contact-us .contacts .fax, .contact-us .contacts .email, .contact-us .contacts .workTime, .contact-us .contacts .location, .contact-us .contacts .contacts{
+        font-size: toRem(15);
+    }
+
+    .address .firstAddress .addressImg, .address .firstAddress iframe, .address .secondAddress .addressImg, .address .secondAddress iframe{
+        width: toRem(200) !important;
+        height: toRem(200) !important;
+    }
+    .services .firstCol .steps-online .title{
+        font-size: toRem(35);
+    }
+    .services .firstCol .steps-online .firstStep{
+        right: 0;
+    }
+    .services .firstCol .steps-online .thirdStep{
+        left: 0;
+    }
+    .services .firstCol .form .formWrapper{
+        flex-direction: column;
+    }
+
+    .services .firstCol .form .formWrapper,
+    .services .firstCol .form .formWrapper label,
+    .services .firstCol .form .formWrapper input,
+    .services .firstCol .form .formWrapper .btn{
+        width: 100%;
+    }
+    .services .firstCol .form .formWrapper label{
+        margin-bottom: toRem(10);
+    }
+    
+
+    footer ._firstLine .footerList li a,
+    footer ._firstLine-contacts .phone,
+    footer ._firstLine-contacts .fax,
+    footer ._firstLine-contacts .email,
+    footer ._firstLine-contacts .workTime,
+    footer ._firstLine-contacts .location,
+    footer ._firstLine-contacts .contacts,
+    footer ._firstLine-feedback .footerForm .btn {
+        font-size: toRem(16);
+    }
+
+    
+    
+}
+@media (max-width: 1000px) {
+    .mobMenu{
+        display: flex;
+    }
+    header{
+        background-color: #fff;
+        position: fixed;
+    }
+    header ._nav{
+        display: none;
+    }
+    header ._logo,
+    header .btn{
+        margin: 0;
+        padding: 0;
+    }
+    header ._logo{
+        background-image: url(../img/logoDark.png);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(30);
+    }
+
+    .banner ._text .statsList-item .text{
+        font-size: toRem(15);
+    }
+
+    .about-services .title,
+    .steps-online .title,
+    .testimonials_title,
+    .why-us .title,
+    .other-services_title,
+    .articles_title{
+        font-size: toRem(30);
+    }
+    .about-services .about-services_firstCol .text{
+        font-size: toRem(18);
+    }
+    .steps-online .subTitle{
+        font-size: toRem(16);
+    }
+    .steps-online .sectionInner{
+        width: 100%;
+    }
+    .steps-online .stepsLine{
+        width: 90%;
+    }
+    .steps-online .stepsLine .stepText{
+        font-size: toRem(20);
+    }
+    .steps-online .stepsLine .firstStep{
+        right: toRem(60);
+    }
+    .steps-online .stepsLine .thirdStep{
+        left: toRem(60);
+    }
+    .testimonials{
+        height: auto;
+        padding-bottom: 0;
+    }
+    .testimonials_title{
+        margin-bottom: toRem(20);
+    }
+    .testimonials_list{
+        width: 70%;
+        // flex-wrap: wrap;
+    }
+    .testimonials_listItem{
+        margin-bottom: toRem(20);
+    }
+    .articles{
+        height: auto;
+        padding-bottom: 0;
+    }
+    .articles_title{
+        margin-bottom: toRem(20);
+    }
+    .articles_list{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .articles_listItem{
+        margin-bottom: toRem(20);
+    }
+}
+@media (max-width: 970px) {
+    
+    .banner ._text .title{
+        font-size: toRem(55);
+    }
+    .banner ._text .subTitle{
+        font-size: toRem(25);
+    }
+    .banner ._text .statsTitle{
+        font-size: toRem(20);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(25);
+    }
+    .banner ._text .statsList-item .text{
+        font-size: toRem(12);
+    }
+
+    .banner ._cupple{
+        width: 53%;
+        height: toRem(376);
+        background-size: contain;
+    }
+    
+    .about-services {
+        height: auto;
+    }
+    .about-services .sectionInner{
+        flex-direction: column;
+    }
+    .about-services .about-services_firstCol{
+        height: auto;
+        border: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: toRem(20);
+    }
+    .about-services .title{
+        text-align: center;
+    }
+    .about-services .about-services_secondCol{
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .about-services .about-services_secondCol .imgList{
+        width: 66%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .about-services .about-services_secondCol .imgList-Item:nth-child(2n){
+        margin-right: toRem(20);
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        margin-bottom: toRem(20);
+    }
+   
+    .other-services_listItem{
+        width: toRem(135);
+    }
+  
+
+    .contact-us .sectionInner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-us .cuppleImg{
+        width: 100%;
+        height: toRem(550);
+        background-size: cover;
+    }
+    .contact-us .contact-us_form{
+        margin-top: toRem(20);
+        height: auto;
+        width: 100%;
+        border: none;
+        font-size: toRem(16);
+    }
+    .contact-us .contact-us_form label{
+        margin-bottom: toRem(15);
+    }
+    .contact-us .contacts{
+        display: none;
+    }
+    .address .sectionInner{
+        flex-direction: column;
+    }
+    .address .firstAddress, .address .secondAddress{
+        width: 100%;
+    }
+    .address .firstAddress{
+        margin-bottom: toRem(20);
+    }
+    .address .firstAddress .addressImg, .address .firstAddress iframe, .address .secondAddress .addressImg, .address .secondAddress iframe{
+        width: 45% !important;
+        height: toRem(250) !important;
+    }
+
+    .services .firstCol .steps-online .title{
+        font-size: toRem(30);
+    }
+
+    footer ._firstLine-list, footer ._firstLine-services, footer ._firstLine-contacts, footer ._firstLine-feedback{
+        width: toRem(160);
+    }
+    footer .footerTitle{
+        font-size: toRem(20);
+    }
+    footer ._firstLine .footerList li a, footer ._firstLine-contacts .phone, footer ._firstLine-contacts .fax, footer ._firstLine-contacts .email, footer ._firstLine-contacts .workTime, footer ._firstLine-contacts .location, footer ._firstLine-contacts .contacts, footer ._firstLine-feedback .footerForm .btn{
+        font-size: toRem(14);
+    }
+    footer ._firstLine .footerList li a{
+        margin-bottom: toRem(10);
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner{
+        height: auto;
+    }
+    .banner .sectionInner{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner ._text{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .banner ._text .statsList{
+        width: 100%;
+    }
+    .banner ._text .subTitle{
+        font-size: toRem(30);
+    }
+    .banner ._text .statsTitle{
+        font-size: toRem(25);
+    }
+    .banner ._text .statsList-item .text{
+        font-size: toRem(20);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(35);
+    }
+    .banner ._cupple{
+        width: 100%;
+        background-position: 50% 50%;
+    }
+    .sectionSmallBanner{
+        height: toRem(350);
+    }
+    .sectionSmallBanner_title{
+        font-size: toRem(58);
+    }
+    .sectionSmallBanner_breadcrumbs{
+        font-size: toRem(18);
+    }
+    .about-services .about-services_secondCol .imgList{
+        width: 99%;
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        width: toRem(240);
+    }
+    .testimonials_list,
+    .articles_list{
+        width: 95%;
+    }
+    .why-us{
+        height: auto;
+    }
+    .steps-online .stepsLine .firstStep{
+        right: toRem(20);
+    }
+    .steps-online .stepsLine .thirdStep{
+        left: toRem(20);
+    }
+    .steps-online .stepsLine .stepText{
+        font-size: toRem(16);
+    }
+    .other-services{
+        height: auto;
+    }
+    .other-services_title{
+        margin-bottom: toRem(20);
+    }
+    .other-services_list{
+        flex-direction: column;
+    }
+    .other-services_listItem{
+        width: toRem(250);
+        margin-bottom: toRem(20);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .services .sectionInner{
+        flex-direction: column;
+        background-color: #fff;
+    }
+    .services .firstCol{
+        padding: 0;
+        width: 100%;
+    }
+    .services .firstCol .text{
+        margin: 0;
+        // padding: 0 10px;
+        width: 100%;
+    }
+    .services .secondCol{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        background-color: #fafafa;
+    }
+
+    .services .secondCol .card,
+    .services .secondCol .subscribe{
+        width: 100%;
+        max-width: none;
+    }
+
+    .services .firstCol .steps-online .firstStep{
+        right: 5%;
+    }
+    .services .firstCol .steps-online  .thirdStep{
+        left: 5%;
+    }
+
+    footer ._firstLine{
+        flex-direction: column;
+    }
+    footer ._firstLine-list, footer ._firstLine-services, footer ._firstLine-contacts, footer ._firstLine-feedback{
+        width: 100%;
+    }
+    footer .footerTitle{
+        font-size: toRem(22);
+        margin-top: toRem(10);
+    }
+    footer ._firstLine-contacts .footerTitle{
+        margin-top: 0;
+    }
+    footer ._firstLine .footerList li a, footer ._firstLine-contacts .phone, footer ._firstLine-contacts .fax, footer ._firstLine-contacts .email, footer ._firstLine-contacts .workTime, footer ._firstLine-contacts .location, footer ._firstLine-contacts .contacts, footer ._firstLine-feedback .footerForm .btn{
+        margin-bottom: toRem(10);
+        font-size: toRem(18);
+    }
+    footer ._secondLine .sectionInner{
+        flex-direction: column;
+        margin: toRem(10) 0;
+    }
+    footer ._secondLine .copyright{
+        order: 3;
+    }
+    footer ._secondLine .socialLogo{
+        order: 2;
+    }
+    footer ._secondLine .realmediaLogo{
+        order: 1;
+    }
+}
+
+@media (max-width: 545px) { 
+    .mobMenu .burger-menu_button{
+    }
+    header .btn,
+    .mobMenu{
+        width: toRem(80);
+    }
+    .mobMenu .burger-menu_button{
+        left: 0;
+    }
+    .banner ._text .statsList{
+        width: 100%;
+    }
+    .banner ._text .statsList-item{
+        padding-right: toRem(10);
+    }
+    .banner ._cupple{
+        height: toRem(273);
+    }
+    .banner ._text .subTitle{
+        font-size: toRem(20);
+    }
+    .banner ._text .statsTitle{
+        font-size: toRem(15);
+    }
+    .banner ._text .statsList-item .text{
+        font-size: toRem(12);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(22);
+    }
+    header ._logo{
+        width: toRem(120);
+    }
+    .about-services .about-services_secondCol .imgList{
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    .about-services .about-services_secondCol .imgList-Item:nth-child(2n){
+        margin-right: 0;
+    }
+    .articles_list{
+        justify-content: center;
+    }
+    .why-us .text{
+        flex-direction: column;
+    }
+    .why-us .text .firstCol, .why-us .text .secondCol{
+        width: 100%;
+    }
+    .steps-online{
+        height: auto;
+    }
+    .steps-online .subTitle{
+        margin-bottom: toRem(25);
+    }
+    .steps-online .stepsLine{
+        background: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .steps-online .stepsLine .firstStep,
+    .steps-online .stepsLine .secondStep,
+    .steps-online .stepsLine .thirdStep{
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        position: static;
+        left: auto;
+        right: auto;
+        transform: translate(0);
+        justify-content: flex-start;
+        margin-bottom: toRem(20);
+        
+    }
+    .steps-online .stepsLine .thirdStep{
+        margin-bottom: toRem(30);
+    }
+    .steps-online .stepsLine .stepNumber{
+        min-width: toRem(45);
+        min-height: toRem(45);
+        margin-left: toRem(10);
+    }
+    .steps-online .stepsLine .stepImg{
+        margin-left: toRem(10);
+    }
+    footer ._secondLine .copyright .copyrightText{
+        font-size: toRem(14);
+    } 
+    .ArticlesCatalog .grid-item{
+        width: toRem(250);
+    }
+    .address .firstAddress .addressImg, .address .firstAddress iframe, .address .secondAddress .addressImg, .address .secondAddress iframe{
+        height: toRem(200) !important;
+    }
+    .address .firstAddress .addressImg, .address .secondAddress .addressImg, {
+        background-position: 100% 50%;
+    }
+}
+
+@media (max-width: 360px) {}

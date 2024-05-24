@@ -1,0 +1,27 @@
+[
+    {
+      "engine": "735cc EFI",
+      "cooling":"Жидкость0",
+      "frontTires":"26 х 9 -12",
+      "rearTires": "26 х 9 -12"
+    },
+    {
+      "engine": "735cc EFI",
+      "cooling":"Жидкость1",
+      "frontTires":"26 х 9 -12",
+      "rearTires": "26 х 9 -12"
+    },
+    {
+      "engine": "735cc EFI",
+      "cooling":"Жидкость2",
+      "frontTires":"26 х 9 -12",
+      "rearTires": "26 х 9 -12"
+    },
+    {
+      "engine": "735cc EFI",
+      "cooling":"Жидкость3",
+      "frontTires":"26 х 9 -12",
+      "rearTires": "26 х 9 -12"
+    }
+    
+]

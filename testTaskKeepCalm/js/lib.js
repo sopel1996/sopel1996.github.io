@@ -1,0 +1,5 @@
+import "./lib/swiper-bundle.min.js"
+import "./lib/fancybox.umd.js"
+// import "./lib/lightgallery.umd.min.js"
+// import "./lib/lg-zoom.umd.js"
+// import "./lib/lg-thumbnail.umd.js"

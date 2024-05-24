@@ -1,0 +1,83 @@
+/*
+----------------------------
+Banner
+-----------------------------
+*/
+.banner {
+    padding: toRem(120) 0 toRem(0) 0;
+    background: $primaryColor url(../img/bgBanner.png) 50% 50% /cover no-repeat;
+
+    .sectionInner{
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        // height         : toRem(650);
+    }
+
+    ._cupple {
+        width     : 100%;
+        height    : toRem(640);
+        background: transparent url(../img/cupple.png) bottom left/contain no-repeat;
+        align-self: flex-end;
+    }
+
+    ._text {
+        color          : #fff;
+
+        h2 {
+            @include AlmoniBlack(72);
+            margin: 0 0 toRem(20) 0;
+            line-height: toRem(62);
+        }
+
+        h3 {
+            @include AlmoniBold(36);
+            margin: 0 0 toRem(20) 0;
+            line-height: toRem(36);
+
+        }
+
+        h4 {
+            @include AlmoniNormal(28);
+            margin: 0 0 toRem(20) 0;
+            color: $secondaryColorText;
+        }
+
+        .statsList {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+            width          : 100%;
+
+            &-item {
+                border       : none;
+                border-right : 1px solid rgba(255, 255, 255, .2);
+                padding: 0 20px 0 0;
+
+
+                &:first-child {
+                    padding: 0;
+                    border       : none;
+                    .number{
+                        &::after{
+                            content: "%"
+                        }
+                    }
+                }
+
+                .number {
+                    @include AlmoniBold(44);
+                    line-height: toRem(38);
+                    margin:0 0 toRem(5) 0;
+                }
+
+                .text {
+                    @include AlmoniNormal(22);
+                    color: $secondaryColorText;
+                }
+            }
+        }
+    }
+}

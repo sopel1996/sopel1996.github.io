@@ -1,0 +1,48 @@
+@import 'mixins.scss';
+.sectionFooter{
+    background-color: #474849;
+    width: 100%;
+    height: toRem(294);
+    color: #FFFFFF;
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .copyright{
+        @include IBMPlexLight(12);
+        letter-spacing: 0.25em;
+        text-align: center;
+    }
+    .Logo{
+        width: toRem(106);
+        height: toRem(47);
+    }
+    .social{
+    width: toRem(84);
+    height: toRem(35);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    &Link{
+            opacity: 0.5;
+            display: flex;
+            border: 1px solid rgba(255, 255, 255, 1);
+            width: toRem(35);
+            height: toRem(35);
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                opacity: 0.9;
+            }   
+            &Img{
+                width: toRem(20);
+                height: toRem(20);
+            }
+        }
+        
+    }
+}

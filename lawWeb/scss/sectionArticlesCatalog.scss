@@ -1,0 +1,84 @@
+/*
+----------------------------
+Articles catalog
+-----------------------------
+*/
+.ArticlesCatalog{
+    padding: toRem(40) 0;
+   background-color: #fff;
+    .grid{
+        margin: 0 auto;
+    }
+        .grid-item{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: #fafafa;
+            width: toRem(316);
+            padding: toRem(20);
+            margin: 0 0 toRem(20) 0;
+            &:hover{
+                .itemImg{
+                    background-size: 110% 110%;
+                }
+            }
+           
+            &:nth-child(n){
+                .itemImg{
+                background-image: url(../img/footerFirstCard.png);
+            }
+            }
+            &:nth-child(2n){
+                .itemImg{
+                background-image: url(../img/footerSecondCard.png);
+                }
+            }
+            &:nth-child(3n){
+                .itemImg{
+                background-image: url(../img/footerThirdCard.png);
+                }
+            }
+            &:nth-child(4n){
+                .itemImg{
+                background-image: url(../img/footerFourthCard.png);
+                }
+            }
+            .itemImg{
+                min-height: toRem(200);
+                width: calc(100% + 40px);
+                background: transparent url(../img/footerFirstCard.png) 50% 50% no-repeat;
+                background-size: 100% 100%;
+                transition: 0.2s;
+                margin: toRem(-20) toRem(-20) toRem(20) 0;
+                
+            }
+            .itemTitle{
+                @include AlmoniBold(28);
+                color: $primaryColorText;
+                margin: 0 0 toRem(20) 0;
+                flex-grow: 1;
+                
+            }
+            .itemSubtitle{
+                color: $thirdColorText;
+                @include AlmoniNormal(18); 
+                margin: 0 0 toRem(20) 0;
+                flex-grow: 1;
+            }
+            .more{
+                cursor: pointer;
+                @include AlmoniBold(16);
+                color: $secondaryColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                span{
+                    margin: 0 0 0 toRem(15);
+                }
+            }
+        
+        }
+    }

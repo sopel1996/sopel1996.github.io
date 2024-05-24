@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-webplossy no-avif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>TestTask LiveHTML</title>
+
+    <script>
+      var imageData = {
+        avif: "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=",
+        webp: "data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+      };
+
+      // Функция проверки написана на основе документации Google:
+      // https://developers.google.com/speed/webp/faq#in_your_own_javascript
+
+      function checkImageFormatSupport(imageFormat, callback) {
+        var img = new Image();
+
+        img.src = imageData[imageFormat];
+
+        img.onload = function () {
+          var result = img.width > 0 && img.height > 0;
+          callback(result);
+        };
+        img.onerror = function () {
+          callback(false);
+        };
+      }
+
+      // Проверяем поддержку WebP Lossy (сжатие с потерями)
+
+      checkImageFormatSupport("webp", function (isWebpLossySupported) {
+        if (isWebpLossySupported) {
+          document.documentElement.className =
+            document.documentElement.className.replace(
+              "no-webplossy",
+              "webplossy"
+            );
+        }
+      });
+
+      // Проверяем поддержку AVIF
+
+      checkImageFormatSupport("avif", function (isAvifSupported) {
+        if (isAvifSupported) {
+          document.documentElement.className =
+            document.documentElement.className.replace("no-avif", "avif");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header class="sectionHeader">
+      <div class="sectionInner">
+        <div class="sectionHeader_main">
+          <picture class="logo">
+            <source srcset="img/avif/logo.avif" type="image/avif" />
+            <source srcset="img/webp/logo.webp" type="image/webp" />
+            <source srcset="img/jpg/logo.jpg" type="image/jpg" />
+            <img src="img/png/logo.png" type="image/png" alt="" />
+          </picture>
+          <div class="wrap">
+            <div class="sectionHeader_main-firstLine">
+              <ul class="sectionHeader_main-firstLine-headNav">
+                <li class="headNav-item">Каталог инструментов</li>
+                <li class="headNav-item">Все для сада</li>
+                <li class="headNav-item">Ручной интрумент</li>
+                <li class="headNav-item">Электрика</li>
+                <li class="headNav-item">Доставка</li>
+                <li class="headNav-item">Оплата</li>
+                <li class="headNav-item">О нас</li>
+              </ul>
+              <div class="sectionHeader_main-firstLine-signupIn">
+                <div class="signIn">Вход</div>
+                <span class="sepparator"></span>
+                <div class="signUp">Регистрация</div>
+              </div>
+            </div>
+            <div class="sectionHeader_main-secondLine">
+              <picture class="sectionHeader_main-secondLine-banner">
+                <source srcset="img/avif/banner.avif" type="image/avif" />
+                <source srcset="img/webp/banner.webp" type="image/webp" />
+                <source srcset="img/jpg/banner.jpg" type="image/jpg" />
+                <img src="img/png/banner.png" type="image/png" alt="" />
+              </picture>
+              <div class="sectionHeader_main-secondLine-cartBlock">
+                <div class="cartBlock_links">
+                  <a href="#" class="cartBlock_links cart">3 шт./17 250 р.</a>
+                  <a href="#" class="cartBlock_links favorite">Избранное (7)</a>
+                  <a href="#" class="cartBlock_links compare"
+                    >К сравнению (5)</a
+                  >
+                </div>
+                <div class="cardBlock_itemsOnCart">
+                  <div class="cardBlock_itemsOnCart-item">
+                    <picture>
+                      <source srcset="img/avif/item1.avif" type="image/avif" />
+                      <source srcset="img/webp/item1.webp" type="image/webp" />
+                      <source srcset="img/jpg/item1.jpg" type="image/jpg" />
+                      <img src="img/png/item1.png" type="image/png" alt="" />
+                    </picture>
+                  </div>
+                  <div class="cardBlock_itemsOnCart-item">
+                    <picture>
+                      <source srcset="img/avif/item2.avif" type="image/avif" />
+                      <source srcset="img/webp/item2.webp" type="image/webp" />
+                      <source srcset="img/jpg/item2.jpg" type="image/jpg" />
+                      <img src="img/png/item2.png" type="image/png" alt="" />
+                    </picture>
+                  </div>
+                  <div class="cardBlock_itemsOnCart-item">
+                    <picture>
+                      <source srcset="img/avif/item3.avif" type="image/avif" />
+                      <source srcset="img/webp/item3.webp" type="image/webp" />
+                      <source srcset="img/jpg/item3.jpg" type="image/jpg" />
+                      <img src="img/png/item3.png" type="image/png" alt="" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="sectionHeader_main-secondLine-workTimeAndContacts">
+                <span class="workTime"
+                  >Время работы <span class="time">10:00 - 19:00</span></span
+                >
+                  <a href="tel:+74957212525" class="phone">
+                    8 495 721-25-25
+                  </a>
+                <span class="city"
+                  >Москва <span class="change">сменить</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+<div class='sectionHeader_burger'>
+  <div class='burger-menu'>
+    <div class='burger-menu_button'></div>
+    <div class='burger-menu_overlay'></div>
+  </div>
+</div>
+
+
+        <nav class="sectionHeader_nav">
+          <a href="#" class="sectionHeader_nav-item"
+            ><img src="img/svg/search.svg" alt="searchIcon"
+          /></a>
+          <a href="#" class="sectionHeader_nav-item">Перфораторы</a>
+          <a href="#" class="sectionHeader_nav-item">Дрели</a>
+          <a href="#" class="sectionHeader_nav-item">Шлифмашины</a>
+          <a href="#" class="sectionHeader_nav-item">Пистолеты</a>
+          <a href="#" class="sectionHeader_nav-item">Электропилы</a>
+          <a href="#" class="sectionHeader_nav-item">Наборы инструментов</a>
+          <a href="#" class="sectionHeader_nav-item">Аксессуары</a>
+          <a href="#" class="sectionHeader_nav-item">Распродажа</a>
+        </nav>
+      </div>
+    </header>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

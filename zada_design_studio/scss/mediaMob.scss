@@ -1,0 +1,194 @@
+@import 'mixins.scss';
+@media (max-width: (768-1)+px) {
+    html{
+        font-size: 16px;
+    }
+    .mobMenu{
+        display: flex;
+    }
+    .sectionHeader{
+        .owl-carousel{
+            .owlItem{
+                height: toRem(400);
+            }
+        }
+        .headerText{
+            top: toRem(200);
+        }
+        .headerNav{
+            display: none;
+        }
+    }
+    .sectionDescription{
+        .descriptionText{
+            padding: toRem(204) toRem(50) toRem(198) toRem(50);
+        }
+        .descriptionImg{
+            order: 1;
+            width: toRem(400);
+        }
+    }
+    .sectionPojects{
+        .cardText{
+            p{
+                width: 90%;
+            }
+        }
+        .fistColumn,
+        .secondColumn{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .smallCard,
+            .bigCard,
+            .s_mediumCard,
+            .mediumCard{
+                // opacity: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .cardImg{
+                    margin: 0;
+                    width: 100%;
+                    height: auto;
+                   
+                    // height: toRem(517);
+                }
+            }
+        }
+    } 
+
+    .sectionDescription{
+        height: auto;
+        .sectionInner{
+            flex-direction: column;
+            .descriptionText{
+                width:100%;
+                height: 100%;
+                padding: toRem(80) toRem(100);
+            }
+            .descriptionImg{
+                width: 100%;
+            }
+        }
+    }
+
+    .sectionForm {
+        height: toRem(900);
+        .subTitle{
+            font-size: toRem(20);
+        }
+        .form{
+            height: toRem(500);
+            width: 100%;
+            .formsInput,
+            .comments{
+                font-size: toRem(18);
+                width: 100%;
+                margin-bottom: toRem(20);
+            }
+            .btn{
+                font-size: 1.3rem;
+                width: 100%;
+                height: toRem(70);
+            }
+            .comments{
+                height: toRem(200);
+            }
+            &Line{
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+
+    .TelAvivProject{
+        .description{
+            .sectionInner{
+                flex-direction: column;
+                .TelAvivText{
+                    width: 100%;
+                }
+                .fistImg{
+                    width: 100%;
+                    order: 1;
+                }
+            }
+        }
+        
+    }
+    .sectionFooter {
+    
+        .copyright {
+            line-height: 2;
+        }
+    }
+}
+@media (max-width: (576-1)+px){
+
+    html {
+        font-size: 13px;
+    }
+    .sectionHeader{ 
+        .owl-carousel{
+            .owl-nav{
+                display: none;
+            } 
+        }
+    }
+}
+@media (max-width: (393-1)+px){
+
+    html {
+        font-size: 10px;
+    }
+    .sectionPojects{
+        .cardText{
+            bdo{
+                width: 70%;
+            }
+        }
+    }
+
+    .sectionDescription{
+        .sectionInner{
+            .descriptionText{
+                font-size: toRem(17);
+            }
+            .descriptionImg{
+                height: toRem(700);
+            }
+        }
+    }
+    .sectionFooter {
+    
+        .copyright {
+            line-height: 2;
+        }
+    }
+}
+@media (max-width: (303-1)+px){
+    html {
+        font-size: 10px;
+    }
+    .sectionHeader {
+        .headerText {
+            .sectionInner {
+                .title{
+                    font-size: toRem(35);
+                }
+                .subTitle{
+                    font-size: toRem(18);
+                }
+            }
+        }
+}
+}
+@media (max-width: (260-1)+px){
+    html {
+        font-size: 8px;
+    }
+}

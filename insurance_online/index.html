@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" media="all" href="css/t-datepicker.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/t-datepicker-blue.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMob.css">
+    <title>INSURANCE-ONLINE</title>
+</head>
+
+
+<body>
+    <section class="sectionSearchForm">
+        <div class="sectionInner">
+            <div class="sectionSearchForm_Logo">
+            </div>
+            <h1 class="sectionSearchForm_title">
+                השוואת ביטוח נסיעות לחו"ל - רכישה ישירה באינטרנט, ביטוח חול מחיר ישיר באתר חברת הביטוח
+            </h1>
+            <h2 class="sectionSearchForm_subtitle">
+                <span class="_marked">כיסוי להוצאות רפואיות דחופות לחול כולל קורונה .</span> ביטוח חול השוואת כיסויי
+                ביטוח, ביטוח חול השוואת מחירים,
+                לכל סוגי הנסיעה: חופשה או טיול, נסיעה קצרה או ארוכה, ביטוח חול משפחתי.
+                מה עוד משווים? החמרה של מצב רפואי קודם אפשר להשוות רק במקרה שימוש בתרופה דרך קבע
+            </h2>
+            <div class="sectionSearchForm_text">
+                אל תשוו לבד מצב רפואי מורכב או מיוחד או בלתי יציב:
+                הליך רפואי או בדיקת אבחון במהלך 6 חודשים אחרונים, מחלת לב, הפרעות בקצב לב, אירוע מוחי,מחלה ממארת, copd,
+                סכרת עם אינסולין, פרקינסון,סיסטיק פיברוזיס, אי ספיקת כליות, אי ספיקת כבד, אפילפסיה, טרשת נפוצה, איידס,
+                מחלות מעיים, קרישיות יתר, מושתל איברים, מחלת מערכת עצבים, המופליה, לחץ דם ריאתי, אלצהיימר, מחלת נפש
+            </div>
+
+            <div class="calculator2021">
+                <div class="dates">
+                    <div class="t-datepicker t-datepicker-flight">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" name="t-datepicker-etgari" />
+                        <span class="title">מתוכנן בטיול ספורט אתגרי</span>
+                    </label>
+                    <div class="t-datepicker t-datepicker-etgari" style="display: none;">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" name="t-datepicker-ski" />
+                        <span class="title">מתוכנן בטיול ספורט חורף</span>
+                    </label>
+                    <div class="t-datepicker t-datepicker-ski" style="display: none;">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" name="t-datepicker-carrental" />
+                        <span class="title">מתוכנן בטיול השכרת רכב</span>
+                    </label>
+                    <div class="t-datepicker t-datepicker-carrental" style="display: none;">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+
+                </div>
+                <ul class="fields">
+                    <li>
+                        <div class="num">נוסע 1:</div>
+                        <label class="age">
+                            <span class="title">גיל</span>
+                            <input type="number" pattern="[0-9]*" name="age" placeholder="גיל" />
+                        </label>
+                        <label>
+                            <span class="title">יעד ארה״ב</span>
+                            <select name="usa">
+                                <option value="0">לא כולל</option>
+                                <option value="1">כולל</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">קורונה</span>
+                            <select name="tavyarok">
+                                <option value="1">אחרי 2 חיסונים</option>
+                                <option value="1">אחרי החלמה</option>
+                                <option value="0">אחר</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">מצב רפואי</span>
+                            <select name="medical">
+                                <option value="0">ללא מצב רפואי</option>
+                                <option value="1">כולל מצב רפואי</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">צד ג׳</span>
+                            <select name="gimel">
+                                <option value="1">כולל צד ג׳</option>
+                                <option value="0">ללא צד ג׳</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">איתור וחילוץ</span>
+                            <select name="rescue">
+                                <option value="1">כולל איתור וחילוץ</option>
+                                <option value="0">ללא איתור וחילוץ</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">הריון</span>
+                            <select name="pregnant">
+                                <option value="0">ללא כיסוי הריון</option>
+                                <option value="1">כולל כיסוי הריון</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">טלפון נייד</span>
+                            <select name="phone">
+                                <option value="0">ללא כיסוי לטלפון</option>
+                                <option value="1">כולל כיסוי לטלפון</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">לפטופ</span>
+                            <select name="laptop">
+                                <option value="0">ללא כיסוי לפטופ</option>
+                                <option value="1">כולל כיסוי לפטופ</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">כבודה</span>
+                            <select name="luggage">
+                                <option value="0">ללא כבודה</option>
+                                <option value="1">כולל כבודה</option>
+                            </select>
+                        </label>
+                        <!--
+                        <label>
+                            <span class="title">רכב שכור</span>
+                            <select name="carrental">
+                                <option value="0">ללא רכב שכור</option>
+                                <option value="1">כולל רכב שכור</option>
+                            </select>
+                        </label>
+                        -->
+                        <label class="lastInput">
+                            <span class="title">ביטול נסיעה / קיצור נסיעה או הארכת שהייה</span>
+                            <select name="flightcancle">
+                                <option value="0">ללא</option>
+                                <option value="1">כלול ללא קורונה</option>
+                                <option value="2">כלול כולל קורונה</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+                <button id="addperson">+ הוספת נוסע</button>
+                <div class="button">
+                    <button id="calculate">חישוב עלות ביטוח</button>
+                </div>
+                <div class="results tablewrap"></div>
+            </div>
+
+
+            <!-- <form action="" class="sectionSearchForm_form">
+                <div class="firstLineForm">
+
+                    <input type="date" name="departureDate" id="departureDate" class="departure">
+                    <input type="date" name="arrivalDate" id="arrivalDate" class="arrival">
+                    <select name="destination" id="destination" placeholder="יעד נסיעה ארצות הברית" class="destination">
+                        <option value="" disabled selected style="display: none;">יעד נסיעה ארצות הברית</option>
+                        <option value="1">First</option>
+                        <option value="2">Second</option>
+                    </select>
+                </div>
+                <div class="secondLineForm">
+
+                    <label for="winterSport" class="labelSport">
+                        <input type="checkbox" name="winterSport" id="winterSport" class="checkboxSport">
+                        מתוכנן בטיול ספורט חורף
+                    </label>
+
+                    <label for="extreamSport" class="labelSport">
+                        <input type="checkbox" name="extreamSport" id="extreamSport" class="checkboxSport">
+                        מתוכנן בטיול ספורט אתגרי
+                    </label>
+                </div>
+                <div class="sectionSearchForm_form-personalInformation">
+                    <header class="personalInformationHeader num">
+                        <p>
+                            נוסע: 1
+                        </p>
+                    </header>
+                    <main class="personalInformationMain">
+                        <label for="age" class="container">
+                            גיל
+                            <input type="number" name="age" id="age" class="age" min=1>
+                        </label>
+
+                        <label for="" class="container">
+                            קורונה
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">אחרי 2 חיסונים</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="medical" class="container">
+                            מצב רפואי
+                            <select name="medical" id="medical" >
+                                <option value="" disabled selected style="display: none;">ללא מצב רפואי</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            צד ג'י
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">כולל צד ג'י</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            איתור וחילוץ
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">כולל איתור וחילוץ</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            הריון
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">ללא כיסוי הריון</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            טלפון נייד
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">ללא כיסו לטלפון</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            לפטופ
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">ללא כיסו לפטופ</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            כבודה
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">ללא כבודה</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+                        <label for="" class="container">
+                            רכב שכור
+                            <select name="arrivalDate" id="arrivalDate">
+                                <option value="" disabled selected style="display: none;">ללא רכב שכור</option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+                        <label for="" class="container">
+                            ביטול או קיצור נסיעה או הארכת שהייה בחול מסיבה רפואית
+                            <select name="arrivalDate" id="lastSelect">
+                                <option value="" disabled selected style="display: none;">סיבה רפואית לא כולל קורונה
+                                </option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                            </select>
+                        </label>
+
+
+                    </main>
+                    <footer class="personalInformationFooter">
+                        <p>
+                            + הוספת נוסע
+                        </p>
+                    </footer>
+                </div>
+                <input type="submit" value="חישוב עלות ביטוח &larr;" class="btn">
+            </form> -->
+
+        </div>
+    </section>
+    <section class="sectionFirstTable">
+        <div class="sectionInner">
+            <div id="relative">
+                <div id="wrapper">
+                    <table class="firstTable">
+
+                        <tr>
+                            <th>חברה</th>
+                            <td><a
+                                    href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055"><img
+                                        src="img/svg/harel.svg" alt=""></a></td>
+                            <td><a href="https://sites.migdal.co.il/NahalApp/#/nahal/newPolicy/firstStep?id=201"><img
+                                        src="img/svg/migdal.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#"><img
+                                        src="img/svg/fenix.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1"><img
+                                        src="img/svg/passportcard.svg" alt=""></a></td>
+                            <td><a href="https://apps.menoramivt.co.il/TopTravel/?agentNum=910140#miniSite"><img
+                                        src="img/svg/menora.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://shlomi.mynewsite.co.il/CLAL_TRAVEL_INSURANCE-%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9C%D7%97%D7%95%D7%9C.html"><img
+                                        src="img/svg/clal.svg" alt=""></a></td>
+                        </tr>
+
+                        <tr>
+                            <th>ביטוח רפואי עד לסך</th>
+                            <td>5,000,000</td>
+                            <td>5,000,000</td>
+                            <td>ללא הגבלת סכום - Unlimited</td>
+                            <td>5,000,000</td>
+                            <td>2,000,000</td>
+                            <td>5,000,000</td>
+                        </tr>
+                        <tr>
+                            <th>איתור וחילוץ
+                                <br><span class="_markedRed"> ניתן להסיר ההרחבה</span>
+                            </th>
+                            <td>500,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>500,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">0.43- ליום</span>
+                            </td>
+                            <td>
+                                200,000
+                                <br><span class="_markedRed">0.44- ליום
+                                    גיל 0-18 0.22-ליום</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>צד שלישי</th>
+                            <td>150,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>150,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>100,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>100,000
+                                <br><span class="_markedRed">0.14 - ליום</span>
+                            </td>
+                            <td>150,000
+                                <br><span class="_markedRed">0.04- ליום</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>פינוי יבשתי</th>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                        </tr>
+                        <tr>
+                            <th>הטסה רפואית לארץ</th>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                        </tr>
+                        <tr>
+                            <th>פינוי אווירי/ימי</th>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                        </tr>
+                        <tr>
+                            <th>העברת גופה</th>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                        </tr>
+                        <tr>
+                            <th>טיפול חירום שיניים</th>
+                            <td>400</td>
+                            <td>1000</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>550</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <th>תרופות</th>
+                            <td>500</td>
+                            <td>1500</td>
+                            <td>כלול</td>
+                            <td>400</td>
+                            <td>1500</td>
+                            <td>כלול</td>
+                        </tr>
+                        <tr>
+                            <th>הריון שהתגלה לראשונה בחו"ל</th>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>10,000</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                        </tr>
+                        <tr>
+                            <th>לינה בחו"ל מעבר לתקופת ביטוח</th>
+                            <td>150 $ ליום</td>
+                            <td>150 $ ליום עד 2,500 $</td>
+                            <td>100 $ ליום</td>
+                            <td>100 $ ליום</td>
+                            <td>100 $ ליום
+                                עד 3,000 $</td>
+                            <td>100 $ ליום</td>
+                        </tr>
+                        <tr>
+                            <th>המשך טיפול בארץ עקב תאונה בחו"ל</th>
+                            <td>עד 10,000 $</td>
+                            <td>-</td>
+                            <td>ניתן לרכוש ביטוח עד 5,000 $, בעלות
+                                <br><span class="_markedRed">10 $ לנוסע/ת</span>
+                            </td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th>כרטיס נסיעה
+                                לישראל למבוטח</th>
+                            <td>עד 1000 $</td>
+                            <td>עד 1500 $</td>
+                            <td>עד 1500 $</td>
+                            <td>עד 1500 $
+                                עד 1000 $ למלווה</td>
+                            <td>עד 1500 $</td>
+                            <td>עד 1500 $
+                                עד 1500 $ למלווה</td>
+                        </tr>
+                        <tr>
+                            <th>הוצאות מילוט</th>
+                            <td>-</td>
+                            <td>1,500</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th>הטסת בן משפחה קרוב לחו"ל</th>
+                            <td>עד 2500 $
+                                כולל הוצאות שהייה בחו"ל</td>
+                            <td>עד 1,500 $</td>
+                            <td>עד 1,500 $</td>
+                            <td>עד 2,000 $ + 100 $
+                                ליום הוצאות לינה עד 1,000 $</td>
+                            <td>עד 2,000 $ + 100 $ הוצ. נסיעה
+                                + 100 $ ליום הוצ לינה עד 2,000 $</td>
+                            <td>עד 2,000 $
+                                + 100 $ ליום</td>
+                        </tr>
+                        <tr>
+                            <th>השתתפות עצמית</th>
+                            <td>50 $</td>
+                            <td>ללא השתתפות
+                                עצמית בהוצאות
+                                רפואיות</td>
+                            <td>ללא השתתפות עצמית</td>
+                            <td>בעת שימוש בכרטיס passport-
+                                card ללא השתתפות עצמית</td>
+                            <td>30 $</td>
+                            <td>50 $</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+            <p class="textAfterTable">
+                בעת רכישת ביטוח נסיעות לחו"ל באינטרנט השוואת ביטוח נסיעות לחו"ל לצורך המחשה בלבד , בכפוף לתנאי
+                פוליסה
+                ביטוח נסיעות לחו"ל של כל אחת מחברות הביטוח ובכפוף למחירון חברת ביטוח כפי המופיע באתר החברה
+            </p>
+        </div>
+    </section>
+    <section class="sectionSecondTable">
+        <div class="sectionInner">
+            <div class="caption">םיפסונ חוטיב ימד תרומת ל"וחל תועיסנ חוטיב הסילופל תובחרה</div>
+            <div id="relative">
+                <div id="wrapper">
+                    <table class="secondTable">
+                        <tr>
+
+                            <th>חברה</th>
+                            <td><a
+                                    href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055"><img
+                                        src="img/svg/harel.svg" alt=""></a></td>
+                            <td><a href="https://sites.migdal.co.il/NahalApp/#/nahal/newPolicy/firstStep?id=201"><img
+                                        src="img/svg/migdal.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#"><img
+                                        src="img/svg/fenix.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1"><img
+                                        src="img/svg/passportcard.svg" alt=""></a></td>
+                            <td><a href="https://apps.menoramivt.co.il/TopTravel/?agentNum=910140#miniSite"><img
+                                        src="img/svg/menora.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://shlomi.mynewsite.co.il/CLAL_TRAVEL_INSURANCE-%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9C%D7%97%D7%95%D7%9C.html"><img
+                                        src="img/svg/clal.svg" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <th>החמרה של מחלה קיימת</th>
+                            <td>350,000</td>
+                            <td>350,000</td>
+                            <td>500,000</td>
+                            <td>350,000</td>
+                            <td>300,000</td>
+                            <td>250,000</td>
+                        </tr>
+                        <tr>
+                            <th>כבודה-מטען אישי אובדן או גניבה</th>
+                            <td>2,250</td>
+                            <td>2,500</td>
+                            <td>2,500</td>
+                            <td>2,500</td>
+                            <td>2,000</td>
+                            <td>2,000</td>
+                        </tr>
+                        <tr>
+                            <th>ביטול נסיעה</th>
+                            <td>עד 5,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 4,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 7,000 $</td>
+                        </tr>
+                        <tr>
+                            <th>ביטול אירוע רפואי קורונה</th>
+                            <td>עד 400 $ לכרטיס טיסה</td>
+                            <td>עד 400 $ לכרטיס טיסה</td>
+                            <td>-</td>
+                            <td>עד 500 $ לכרטיס טיסה</td>
+                            <td>-</td>
+                            <td>עד 5,000 $</td>
+                        </tr>
+                        <tr>
+                            <th>ביטול בעקבות בידוד</th>
+                            <td>עד 400 $ לכרטיס טיסה</td>
+                            <td>עד 400 $ לכרטיס טיסה</td>
+                            <td>-</td>
+                            <td>עד 500 $ לכרטיס טיסה</td>
+                            <td>-</td>
+                            <td>עד 500 $ לכרטיס טיסה</td>
+                        </tr>
+                        <tr>
+                            <th>קיצור נסיעה</th>
+                            <td>עד 7,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 4,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 8,000 $</td>
+                        </tr>
+                        <tr>
+                            <th>הארכה או קיצור אירוע רפואי קורונה</th>
+                            <td>עד 1,000 $</td>
+                            <td>עד 1,000 $</td>
+                            <td>אין</td>
+                            <td>אין</td>
+                            <td>אין</td>
+                            <td>עד 5,000 $</td>
+                        </tr>
+                        <tr>
+                            <th>הרחבת מגן קורונה אירוע רפואי</th>
+                            <td>3,5 $ ליום</td>
+                            <td>3,5 $ ליום
+                                מגיל 61 - 10.6 $ ליום</td>
+                            <td>תו ירוק 1,5 $ ליום
+                                ללא תו ירוק 2,5 $ ליום</td>
+                            <td>בעלות 2,5 $ ליום
+                                ולא יותר מ - 50 $</td>
+                            <td>אין</td>
+                            <td>כלול ללא עלות נוספת</td>
+                        </tr>
+                        <tr>
+                            <th>ביטול נסיעה</th>
+                            <td>עד 5,000$</td>
+                            <td>עד 5,000$</td>
+                            <td>עד 6,000 $
+                                עד 400 $ לכרטיס
+                                טיסה בעקבות בידוד</td>
+                            <td>עד 4,000$</td>
+                            <td>אין</td>
+                            <td>כלול ללא עלות נוספת</td>
+                        </tr>
+                        <tr>
+                            <th>קיצור או הארכת נסיעה</th>
+                            <td>עד 5,000$</td>
+                            <td>עד 5,000$</td>
+                            <td>עד 3,000$</td>
+                            <td>עד 5,000$</td>
+                            <td>אין</td>
+                            <td>כלול ללא עלות נוספת</td>
+                        </tr>
+                        <tr>
+                            <th>הריון
+                                תעריף ליום</th>
+                            <td>350,000
+                                <br><span class="_markedRed">6.50$
+                                    ארה" 8.50 $</span>
+                            </td>
+                            <td>200,000
+                                <br><span class="_markedRed">4 $</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">3.00 $</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">5 $</span>
+                            </td>
+                            <td>300,000
+                                <br><span class="_markedRed">4.40$
+                                    ארה" 7.48 $</span>
+                            </td>
+                            <td>200,000
+                                <br><span class="_markedRed">7.5$</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>ספורט אתגרי
+                                <br><span class="_markedRed">תעריף ליום</span>
+                            </th>
+                            <td>1,00 $ ליום</td>
+                            <td>0,60 $ ליום</td>
+                            <td>0,50 $ ליום</td>
+                            <td> 0.50 $, ליום
+                                מעל 30 יום 1.00$</td>
+                            <td>1,00 $ ליום</td>
+                            <td>0,46 $ ליום</td>
+                        </tr>
+                        <tr>
+                            <th>ספורט תחרותי</th>
+                            <td>אין</td>
+                            <td>2.50 $ ליום
+                                מקסימום 20 $</td>
+                            <td>25 $ לכל התקופה</td>
+                            <td>פנייה טלפונית</td>
+                            <td>אין</td>
+                            <td>אין</td>
+                        </tr>
+                        <tr>
+                            <th>ספורט חורף - סקי <span class="_markedRed">תעריף ליום</span></th>
+                            <td>9.50 $ ליום</td>
+                            <td>6,50 $ ליום</td>
+                            <td>7,00 $ ליום</td>
+                            <td>7,00 $ ליום</td>
+                            <td>4,00 $ ליום</td>
+                            <td>6,38 $ ליום</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                תאונות אישיות:
+                                מוות מתאונה / נכות מתאונה
+                                <span class="_markedRed">תעריף ליום / גיל</span>
+
+                            </th>
+                            <td>
+                                מוות 50,000 $ אבדן אברים 13,500 $
+                                עד גיל 40 0.02 $ ליום
+                                עד גיל 50 0.10 $ ליום
+                                עד גיל 60 0.29 $ ליום
+                                עד גיל 70 0.39 $ ליום
+                                עד גיל 75 0.52 $ ליום
+                            </td>
+                            <td>20,000 $
+                                0.50 $ ליום</td>
+                            <td>
+                                גיל 18-70 50,000 $
+                                0,50 $ ליום
+                            </td>
+                            <td>גיל 18-67 30,000 $ גיל עד 17 ומ- 68 15,000 $
+                                0.70 $ ליום</td>
+                            <td>אין</td>
+                            <td>עד ניל 75
+                                0.06 $ ליום</td>
+                        </tr>
+                        <tr>
+                            <th>ביטול השתתפות עצמית במקרה תאונה ברכב שכור</th>
+                            <td>
+                                עד 1,500$
+                                <br><span class="_markedRed">6.50 $ ליום</span>
+                            </td>
+                            <td>
+                                עד 1,500 $
+                                <br><span class="_markedRed">6.50 $ ליום</span>
+                            </td>
+                            <td>
+                                עד 2,000 $
+                                <br><span class="_markedRed">פרט 6,00 $ ליום
+                                    קרוון 15,00 $ ליום</span>
+                            </td>
+                            <td>עד 1,500$
+                                <br><span class="_markedRed">8.00 $ ליום</span>
+                            </td>
+                            <td>לא קיים</td>
+                            <td>אין</td>
+                        </tr>
+                        <tr>
+                            <th>טלפון נייד</th>
+                            <td>אובדן או גניבה עד 750 $
+                                <br><span class="_markedRed">1,60 $ ליום</span>
+                            </td>
+                            <td>אובדן או גניבה עד 1,000 $ $
+                                <br><span class="_markedRed">1,90 $ ליום</span>
+                            </td>
+                            <td>גניבה בלבד עד 1,000 $
+                                <br><span class="_markedRed">0.80$ ליום</span>
+                            </td>
+                            <td>גניבה בלבד עד 800 $
+                                <br><span class="_markedRed">1,60 $ ליום</span>
+                            </td>
+                            <td>אין</td>
+                            <td>אובדן או גניבה עד 2,000 $
+                                <br><span class="_markedRed">1,32 $ ליום</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>מחשב נייד / טאבלט</th>
+                            <td>אובדן או גניבה עד 2,000$
+                                <br><span class="_markedRed">1,32 $ ליום</span>
+                            </td>
+                            <td>אובדן או גניבה עד 1,200 $
+                                <br><span class="_markedRed">1,00 $ ליום</span>
+                            </td>
+                            <td>750$
+                                <br><span class="_markedRed">0,50 $ ליום</span>
+                            </td>
+                            <td>גניבה עד 2,000 $
+                                <br><span class="_markedRed">0,80 $ ליום</span>
+                            </td>
+                            <td>אובדן או גניבה עד 1,200$
+                                <br><span class="_markedRed">0,80 $ ליום</span>
+                            </td>
+                            <td>אובדן או גניבה עד 2,000$
+                                <br><span class="_markedRed">2,00 $ ליום</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>מצלמה</th>
+                            <td>קיים בכבודה עד 350 $</td>
+                            <td>קיים בכבודה עד 300 $</td>
+                            <td><span class="_markedRed">גניבה בלבד
+                                    עד
+                                    2000$
+                                    1.00 $ ליום</span></td>
+                            <td><span class="_markedRed">גניבה בלבד
+                                    עד
+                                    750 /1500 /2000$
+                                    0.50 $/1.00 $/1.50 $ ליום</span></td>
+                            <td>קיים בכבודה עד 350 $</td>
+                            <td>קיים בכבודה עד 400 $</td>
+                        </tr>
+                        <tr>
+                            <th>אופניים</th>
+                            <td>אובדן או גניבה
+                                <br><span class="_markedRed">עד 2,500 $ 1.33 $ ליום עד 4,000 $ 2.46 $ ליום עד 6,000 $
+                                    3.00 $ ליום</span>
+                            </td>
+                            <td>אין</td>
+                            <td>נזק מתאונה
+                                <span class="_markedRed">עד 2,500 $ 200 $ עד 7,500 $ 500 $</span>
+                            </td>
+                            <td>אין</td>
+                            <td>אין</td>
+                            <td>אין</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="textAfterTable">
+                הריון - <a href="https://insurance-online.co.il/pregnancy-travel-insurance.htm">מעבר
+                    לביטוח נסיעות לחו"ל הריון</a><br>
+                סקי - ספורט חורף - <a href="https://insurance-online.co.il/travel-insurance-ski.htm">מעבר לביטוח
+                    נסיעות לחו"ל סקי</a><br>
+                תרמילאים / ביטוח נסיעות לחו"ל לצעירים לתקופה ארוכה - <a
+                    href="https://insurance-online.co.il/ביטוח-תרמילאים-חול-השוואה.html"
+                    title="ביטוח חול אתגרי ותרמילאים" target="new">
+                    מעבר לביטוח נסיעות לחו"ל אתגרי</a>
+            </p>
+            <p class="markedTextAfterTable">
+                תקופת ביטוח נסיעות לחו"ל תאושר בהתאם למגבלות של חברת הביטוח ובכללם מצב רפואי קיים
+            </p>
+        </div>
+    </section>
+    <section class="sectionVideo">
+        <div class="sectionInner">
+            <h3 class="title">תנאי פוליסה</h3>
+            <div class="content">
+
+                <div class="sectionVideo_list">
+                    <ul class="list">
+                        <li><a href="pdf/Menora_Top_Travel.pdf" target="new">ביטוח נסיעות לחו"ל - מנורה TRAVEL</a></li>
+                        <li><a href="pdf/מגדל_מסע_עולמי_פלטינום_09-2017.pdf" target="new">ביטוח נסיעות לחו"ל – מגדל מסע
+                                עולמי פלטינום</a></li>
+                        <li><a href="pdf/נסיעות_לחול_מגדל_מסע_עולמי_תרמילאים.pdf" target="new">ביטוח נסיעות לחו"ל – מגדל
+                                מסע
+                                עולמי תרמילאים</a></li>
+                        <li><a href="pdf/harel_09.17.pdf" target="new">ביטוח נסיעות לחו"ל – הראל FIRST CLASS</a></li>
+                        <li><a href="pdf/harel_09.17.pdf" target="new">ביטוח נסיעות לחו"ל – הראל פוליסה לתרמילאים</a>
+                        </li>
+                        <li><a href="pdf/פוליסת_נסיעות_לחול_PASSPORTCARD_2018.pdf" target="new">ביטוח נסיעות לחו"ל –
+                                PassportCard Travel cash free</a></li>
+                        <li><a href="pdf/הפניקס-smart-travel.01.2018.pdf" target="new">ביטוח נסיעות לחו"ל – הפניקס SMART
+                                TRAVEL</a></li>
+                        <li><a href="pdf/הפניקס-smart-travel.01.2018.pdf" target="new">ביטוח נסיעות לחו"ל – הפניקס
+                                MOOCHILER</a></li>
+                        <li><a href="pdf/clal_global_travel_insurance_policy.pdf" target="new">ביטוח נסיעות לחו"ל – כלל
+                                –
+                                מדיכלל עולמי</a></li>
+                    </ul>
+                    <p class="textBetweenLists">ביטוח נסיעות לחו"ל המלצות</p>
+                    <ul class="list">
+                        <li><a href="OVERSEAS_TRAVEL_INSURANCE_ביטוח_חול.html"> ביטוח חו"ל – Overseas Travel
+                                Insurance</a></li>
+                        <li><a href="overseas-insurance-compare-prices.php">ביטוח חו"ל – השוואת מחירים</a></li>
+                        <li><a href="pregnancy-travel-insurance.htm">ביטוח חו"ל – נשים בהריון</a></li>
+                        <li><a href="travel-insurance-extreme-sports.htm">ביטוח חו"ל – אתגרי</a></li>
+                        <li><a href="travel-insurance-ski.htm">ביטוח חו"ל – סקי , ספורט חורף</a></li>
+                        <li><a href="travel-aboard-car-rental-deductible.html">ביטוח חו"ל – רכב שכור - ביטול
+                                השתתפות עצמית</a></li>
+                        <li><a href="travel_abroad_credit_card.htm">ביטוח חו"ל – חינם ויזה , ישראכרט , אמריקן
+                                אקספרס</a></li>
+                        <li><a href="travel-insurance-compare-prices.php">ביטוח חו"ל – כללית , מכבי , מאוחדת ,
+                                לאומית</a></li>
+                    </ul>
+                    <ul class="list">
+                        <li><a href="travel_insurance_existing_illness.htm">ביטוח חו"ל – מצב רפואי החמרה של מצב
+                                רפואי </a></li>
+                        <li><a href="travel-insurance-heart-disease.htm">ביטוח חו"ל – מחלת לב</a></li>
+                        <li><a href="overseas-insurance-existing-medical-condition.htm">ביטוח חו"ל – מצב רפואי
+                                קיים</a></li>
+                        <li><a href="travel-extension-laptop-tablet.htm">ביטוח חו"ל – הרחבה למחשב נישא או מחשב
+                                לוח</a></li>
+                        <li><a href="TRAVEL_INSURANCE_CANCELLATION-OR-SHORTENING-OF-TRIP.html">ביטוח חו"ל – הרחבה
+                                לביטול / קיצור נסיעה נסיעה לחו"ל</a></li>
+                        <li><a href="TRAVEL-INSURANCE-RELOCATION.html">ביטוח חו"ל - ביטוח ReLocation </a></li>
+                        <li><a href="overseas_business_travel.html">ביטוח חו"ל - ביטוח שנתי לאנשי עסקים</a></li>
+                        <li><a href="travel-abroad-information.htm">ביטוח חו"ל – שאלות ותשובות</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sectionVideo_media">
+                    <iframe src="https://www.youtube.com/embed/o9KxmhXcdmk?controls=0&modestbranding=1&showinfo=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sectionAccordeon">
+        <div class="sectionInner">
+            <a href="travel-insurance-compare-prices.php">
+
+                <h3 class="title">ביטוח נסיעות לחו"ל השוואת ביטוח חול INSURANCE -TRAVEL</h3>
+                <h4 class="subtitle">
+                    ביטוח נסיעות לחו"ל השוואה אונליין 24/7: הפניקס SMART TRAVEL הראל FIRST CLASS מנורה TOP
+                    TRAVEL מגדל מסע עולמי PLATINUM כרטיס רפואי בחו"ל Passport Card ביטוח באינטרנט נסיעות חו"ל
+                </h4>
+            </a>
+            <h5 class="accordeonTitle">ביטוח נסיעות לחו"ל שאלות ותשובות:</h5>
+            <div class="accordeon">
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-1" class="accordeonItem_input">
+                    <label for="accordeon-1" class="accordeonItem_trigger">
+                        יש לי ביטוח בריאות פרטי ואני חבר קופת חולים, האם אני מכוסה גם בחו"ל?
+                    </label>
+                    <div class="accordeonItem_content">
+                        ביטוח נסיעות לחו"ל נועד לממן הוצאה רפואית דחופה בחו"ל, ביטוח בריאות ממלכתי אינו מספק מענה לתושב
+                        ישראלי מחוץ לגבולות ישראל, ביטוח בריאות פרטי מספק מענה לניתוח אלקטיבי ולא לניתוח דחוף. נוסע לחול
+                        שלא רכש ביטוח נסיעות לוקח על עצמו סיכון להוצאה רפואית שעלולה להסתכם בסכומים דמיוניים.
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-2" class="accordeonItem_input">
+                    <label for="accordeon-2" class="accordeonItem_trigger">
+                        האם אפשר לצרף לביטוח נסיעות את בת הזוג שלי, אין לה אזרחות ישראלית?
+                    </label>
+                    <div class="accordeonItem_content">
+                        לא. חברות ביטוח בישראל מספקות ביטוח לחול מתוך כוונה ברורה להחזיר את המבוטח לארץ להמשך טיפול
+                        מוקדם ככל האפשר לשם המשך טיפול באמצעות קופת החולים.
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-3" class="accordeonItem_input">
+                    <label for="accordeon-3" class="accordeonItem_trigger">
+                        אם לבת הזוג ביטוח תיירים שנרכש באמצעות חברת ביטוח ישראלית, מומלץ לפנות לאותה חברה ולבקש אישור
+                        מיוחד לרכישת ביטוח חול אני שוהה בחול, חברת הביטוח אינה מאשרת הארכת ביטוח, מה ניתן לעשות?
+                    </label>
+                    <div class="accordeonItem_content">
+                        פוליסה לביטוח נסיעות תקפה רק אם נרכשה טרם היציאה מהארץ, מי ששוהה בחול לא רשאי לרכוש ביטוח
+                        נסיעות, רכישה כאמור אינה תקפה. מומלץ לפנות לסוכן הביטוח דרכו נרכש ביטוח הנסיעות המקורי על מנת
+                        שיאתר פתרון באמצעות אחת מחברות הביטוח המיוצגות דרכו, אם יצליח, סביר שחברת הביטוח תדרוש תוספת
+                        מחיר מיוחדת.
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-4" class="accordeonItem_input">
+                    <label for="accordeon-4" class="accordeonItem_trigger">
+                        לפני חודש עברתי צנתור, הטיפול הסתיים ואינני זקוק להמשך טיפול או לבדיקה נוספת, האם רשאי לרכוש
+                        ביטוח נסיעות?
+                    </label>
+                    <div class="accordeonItem_content">
+                        <div>
+                            כן, ביטוח חול אונליין זמין לרכישה ב-
+                            <a
+                                href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055">
+                                הראל
+                            </a>
+                            כולל הרחבה להחמרת מצב רפואי קודם עד לסך 350,000 $.
+                            בתהליך הרכישה מתבצע חיתום אוטומטי בהתאם לתשובות לשאלון הרפואי. תשומת לב: בכל יתר החברות נדרש
+                            לבצע חיתום ידני, להמציא מסמכים רפואיים ואישור רופא לטיסה. בדרך כלל אם מאושר כיסוי גבולות
+                            האחריות
+                            יצומצמו לכי 50,000 $ ולא ניתן יהיה להרחיב כיסוי לביטול נסיעה או לקיצור נסיעה בנוסף יבוצע
+                            תמחיר
+                            מיוחד – התשלום להרחבת מצב רפואי קודם יהיה גבוה ממחיר ההרחבה הרגילה.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-5" class="accordeonItem_input">
+                    <label for="accordeon-5" class="accordeonItem_trigger">
+                        אני נוטלת תרופה אחת ללחץ דם היכן הכי משתלם לרכוש ביטוח לחו"ל?
+                    </label>
+                    <div class="accordeonItem_content">
+                        <div>
+                            תרופה אחת ללחץ דם אינה מחייבת החמרה למצב רפואי אצל חברת
+                            <a href="https://sites.migdal.co.il/NahalApp/#/nahal/newPolicy/firstStep?id=201">
+                                מגדל
+                            </a>
+                            ואצל חברת
+                            <a
+                                href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1">
+
+                                פספורטכארד
+                            </a>
+                            , יחד עם זאת
+                            מומלץ לבחון אפשרות לרכישת ביטוח חול בחברת
+                            <a
+                                href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#">
+
+                                הפניקס
+                            </a>
+                            תעריף החברה כולל תוספת להחמרה זול יותר בחלק
+                            גדול מהמקרים
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-6" class="accordeonItem_input">
+                    <label for="accordeon-6" class="accordeonItem_trigger">
+                        האם כדאי לפצל ביטוח חול לבני זוג בשתי חברות ביטוח?
+                    </label>
+                    <div class="accordeonItem_content">
+                        <div>
+
+                            גם אם רכישה כאמור תוזיל את מחיר הביטוח מומלץ לרכוש ביטוח חול לבני זוג בפוליסה אחת על מנת
+                            להבטיח
+                            כיסוי מלא במקרה של ביטול נסיעה או קיצור נסיעה מסיבה רפואית. נסיעה ללפלנד הכוללת פעילות
+                            ספורטיבית
+                            – רכיבה באופנועי שלג, איזה הרחבה עלי לרכוש? גלישה בעזרת מגלשיים, סנובורד, מזחלות,
+                            snowshoeing ,
+                            גלישה במישור (קרוס קאנטרי - סקי הליכה) ואופנועי שלג נחשבים ספורט חורף מחיר ההרחבה 7 $ ליום
+                            בממוצע, אצל חברת
+                            <a
+                                href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1">
+                                פספורטכארד
+                            </a>
+                            פעילות חורף בלפלנד נחשבת ספורט אתגרי בעלות 0.5 $ ליום
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-7" class="accordeonItem_input">
+                    <label for="accordeon-7" class="accordeonItem_trigger">
+                        כמה זמן מראש ניתן לרכוש ביטוח נסיעות לחו"ל ?
+                    </label>
+                    <div class="accordeonItem_content">
+                        <a
+                            href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055">
+                            הראל
+                        </a>
+                        – 100 ימים,
+                        <a
+                            href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#">
+                            הפניקס
+                        </a>
+                        <a href="https://sites.migdal.co.il/NahalApp/#/nahal/newPolicy/firstStep?id=201">
+                            מגדל
+                        </a>
+                        180 יום,
+                        <a
+                            href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1">
+                            פספורטכארד
+                        </a>
+                        – שנה
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-8" class="accordeonItem_input">
+                    <label for="accordeon-8" class="accordeonItem_trigger">
+                        האם במסגרת ביטוח נסיעות הרחבה ביטוח ביטול או קיצור נסיעה תופס מסיבה שאינה רפואית?
+                    </label>
+                    <div class="accordeonItem_content">
+                        לא. ניתן עם זאת לרכוש ביטוח ביטול טיסה מכל סיבה
+                        <a href="https://shlomi.mynewsite.co.il/FLIGHT-TRIP-CANCELLATION-INSURANCE.html">
+                            למידע נוסף
+                        </a>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-9" class="accordeonItem_input">
+                    <label for="accordeon-9" class="accordeonItem_trigger">
+                        אנחנו נוסעים לחופשת חורף בחו"ל למשך 8 ימים האם ניתן לרכוש הרחבה לפעילות סקי למשך יומיים בלבד?
+                    </label>
+                    <div class="accordeonItem_content">
+                        כן
+                        <a
+                            href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055">
+                            הראל
+                        </a>
+                        <a
+                            href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#">
+                            הפניקס
+                        </a>
+                        <a
+                            href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1">
+                            פספורטכארד
+                        </a>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <input type="checkbox" name="" id="accordeon-10" class="accordeonItem_input">
+                    <label for="accordeon-10" class="accordeonItem_trigger">
+                        אנחנו מרבים בנסיעות לחו"ל, איזה תוכנית ביטוח הכי משתלמת?
+                    </label>
+                    <div class="accordeonItem_content">
+                        קיימת אפשרות לרכוש מנוי שנתי לנסיעות לחו"ל –
+                        <a href="https://shlomi.mynewsite.co.il/overseas_business_travel.html">
+                            מעבר להשוואת ביטוח נסיעות שנתי
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="sectionFooter">
+        <div class="sectionInner">
+            <div class="sectionFooter_firstLine">
+                <img src="img/png/footerImg.png" alt="Footer image" class="footerImg">
+                <p class="footerText">
+                    ביטוח
+                    תרמילאים - השוואת ביטוח נסיעות חול לתרמילאים, לבחירה חבילת ביטוח חול לתקופה העולה על 30 יום הכוללת
+                    ביטוח הוצאות רפואיות בחול ללא מגבלות בעת אשפוז,
+                    ביטוח חיפוש איתור וחילוץ, ביטוח ספורט אתגרי, ביטוח תאונות אישיות, ביטוח כבודה ועוד
+                    ביטוח תרמילאים מומלץ, איזה ביטוח כדאי לתרמילאים לרכוש? <a href="ביטוח-תרמילאים-חול-השוואה.html">
+                        ביטוח לחול השוואה </a>
+                </p>
+            </div>
+            <div class="sectionFooter_secondLine">
+                <div class="copyright">
+                    <p class="copyrightText"> &#169; 2021 כל הזכויות שמורות לחברת הביטוח</p>
+                </div>
+                <div class="realmediaLogo">
+                    <p class="logoText">בניית אתרים</p>
+                    <img src="img/svg/RealMediaLogo.svg" alt="Realmedia logo" class="logoImg">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calculator2021/js/jquery-3.3.1.min.js"></script>
+    <script src="calculator2021/js/t-datepicker.js"></script>
+    <script src="calculator2021/js/custom.js"></script>
+</body>
+
+</html>

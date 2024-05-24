@@ -1,0 +1,17 @@
+.sectionBanner{
+    z-index: 5;
+    width: 100%;
+    height: toRem(514);
+    background-color: #EBFAF7;
+    margin-bottom: toRem(20);
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+    &_logo{
+        margin-bottom: toRem(30);
+    }
+}

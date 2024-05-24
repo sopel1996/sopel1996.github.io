@@ -1,0 +1,54 @@
+/*
+----------------------------
+Why us
+-----------------------------
+*/
+.why-us{
+    // height: toRem(620);
+    padding: toRem(40) 0;
+    background-color: #fff;
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    h2{
+        @include AlmoniBold(42);
+        color: $primaryColorText;
+        margin: 0 0 toRem(20) 0;
+    }
+    .text{
+        color: $primaryColorText;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100%;
+        margin: toRem(-20);
+        .firstCol,
+        .secondCol{
+            width: 50%;padding: toRem(20);
+            height: 100%;
+        }
+        .reason{
+            
+            h3{
+                color: $secondaryColor;
+                @include AlmoniBold(24);
+                margin: 0 0 toRem(5)0;
+            }
+            h4{
+                @include AlmoniBold(24);
+                margin: 0 0 toRem(5)0;
+            }
+            p{
+                @include AlmoniNormal(22);
+                line-height: toRem(24);
+                margin: 0 0 toRem(20)0;
+            }
+        }
+       
+}
+}

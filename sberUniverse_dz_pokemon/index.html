@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer type="module" src="js/classes.js"></script>
+    <script defer type="module" src="js/seeder.js"></script>
+    <script defer type="module" src="js/user.js"></script>
+    <script defer type="module" src="js/index.js"></script>
+    <title>Pokemon App</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal_content">
+        <span class="close">&times;</span>
+        <h3>Привет, странник. Представься, пожалуйста!</h3>
+        <form class="login">
+          <input name="userName" id="userName" />
+          <button type="submit" class="submitBtn">Ok</button>
+        </form>
+      </div>
+    </div>
+
+    <button class="pokebol"></button>
+    <div class="searchWrapper">
+      <input type="text" />
+      <button class="searchBtn"></button>
+    </div>
+
+    <div class="welcome-msg">
+      <h1></h1>
+      <div class="btnWrapper">
+        <button class="ClearUsernameBtn">Clear Username</button>
+        <button class="ClearPokeStorage">Clear Pokemon Storage</button>
+        <button class="ClearField">Clear Field</button>
+      </div>
+    </div>
+
+    <div class="card-list"></div>
+  </body>
+</html>

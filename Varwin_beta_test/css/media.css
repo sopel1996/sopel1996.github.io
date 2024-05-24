@@ -1,0 +1,137 @@
+@media screen and (max-width:1170px) {
+    .sectionInner {
+        width: 100%;
+        padding: 0 20px
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .varwinInBusiness_lineBlock, .varwinOpportunitiesLine {
+        grid-template-columns: repeat(2, 370px);
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .varwinTariffs_tarifs {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:992px) {
+    .varwinImplementation .sectionInner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .varwinImplementation_text {
+        -ms-flex-item-align: center;
+        align-self: center;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 0 20px
+    }
+
+    .varwinImplementation_cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 320px);
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width:880px) {
+    .varwinEduBanner_img, .varwinLicenseBanner_img {
+        display: none
+    }
+
+    .varwinEduBanner_textWrapper, .varwinLicenseBanner_textWrapper {
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .varwinTariffs_tarifs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .varwinTariffs_tarifs-tarif {
+        margin: 0 0 20px;
+        width: 320px
+    }
+}
+
+@media screen and (max-width:780px) {
+    .sectionTitle, .varwinTariffs_title {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5
+    }
+
+    .formTitle, .varwinEduBanner_textWrapper-title, .varwinImplementation_text-title, .varwinLicenseBanner_textWrapper-title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5
+    }
+
+    .varwinImplementation_text-text, .varwinTariffs_text {
+        font-size: 18px
+    }
+
+    .varwinImplementation_cards, .varwinInBusiness_lineBlock, .varwinOpportunitiesLine {
+        grid-template-columns: 320px
+    }
+
+    .rew_itemslide {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+
+    .rew_itemslide .rew_userInfo {
+        margin: 0 0 20px
+    }
+
+    .form .row1 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .form .col1, .form .col2 {
+        width: 100%
+    }
+}
+
+/*# sourceMappingURL=media.css.map */

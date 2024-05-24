@@ -1,0 +1,200 @@
+/*
+----------------------------
+Header
+-----------------------------
+*/
+header {
+    svg {
+        fill   : $primaryColorText;
+        display: none;
+    }
+
+    position        : fixed;
+    top             : 0;
+    right            : 0;
+    width           : 100%;
+    z-index         : 10;
+    border          : none;
+    box-shadow      : 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+    transition      : height 0.2s;
+
+
+    .sectionInner {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+
+        height: toRem(80);
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .btn {
+        // width       : toRem(126);
+        padding        : toRem(10) toRem(20);
+        // height      : toRem(46);
+
+
+    }
+
+    .realmenu {
+        flex-grow      : 1;
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        border         : none;
+
+        &> li:last-child:hover > a::before {
+            width: 0%;
+        }
+        &> li:last-child:hover > a::after {
+            width: 0%;
+        }
+        &>li {
+            // display: block;
+            height: toRem(80);
+            @include AlmoniNormal(20);
+            color: #fff;
+
+            line-height   : 80px;
+            // margin: 0 0 0 toRem(17);
+            // font-size: 20px;
+            position      : relative;
+
+            // padding: 0 0 15px 0;
+            a {
+                position: relative;
+            }
+            
+            a::before {
+                content   : " ";
+                position  : absolute;
+                bottom    : -10px;
+                left      : 50%;
+                width     : 0;
+                height    : 1px;
+                background: $secondaryColor;
+                transition: width 0.2s;
+            }
+
+            a::after {
+                content   : " ";
+                position  : absolute;
+                bottom    : -10px;
+                right     : 50%;
+                width     : 0;
+                height    : 1px;
+                background: $secondaryColor;
+                transition: width 0.2s;
+            }
+            
+            &:hover {
+                &>a::before {
+                    width: 50%;
+                }
+
+                &>a::after {
+                    width: 50%;
+                }
+            }
+
+        }
+
+        &>li {
+            position: relative;
+
+
+            &:hover>ul.sub-menu {
+                display: block;
+            }
+
+            &>ul.sub-menu {
+                background : rgba(8, 3, 37, 0.9);
+                display    : none;
+                line-height: 25px;
+                position   : absolute;
+                right      : 0;
+                top        : 80px;
+                width      : 250px;
+                z-index    : 1002;
+
+                &>li{
+                    position: relative;
+
+                    border       : none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    &>a {
+                        padding        : 10px 20px;
+                        display        : block;
+                        text-decoration: none;
+                        font-size      : 18px;
+                        color          : #fff;
+                    }
+
+                    &:first-child>a {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+
+        &>.menu-item-has-children {
+            &>a {
+                position    : relative;
+                padding: 0  0 0 17px ;
+            }
+
+            &:after {
+                content       : "\f107";
+                font-family   : 'FontAwesome';
+                position      : absolute;
+                left          : 0;
+                font-size     : 13px;
+                color         : inherit;
+                top           : 0;
+                // transform  : translate(0, -17px);
+            }
+        }
+
+
+    }
+
+    ._logo {
+        height     : toRem(59);
+        width      : toRem(179);
+        transition : 0.2s;
+        background : transparent url(../img/logo.png) 50% 50%/contain no-repeat;
+        margin: 0 0 0 toRem(120);
+    }
+
+}
+
+.shrink {
+    header {
+        position        : fixed;
+        background-color: #fff;
+        color           : $primaryColorText;
+        box-shadow      : 0 2px 3px 0 rgb(0 0 0 / 40%);
+
+        .menu {
+            &-item {
+                color: $primaryColorText;
+            }
+        }
+
+        ._logo {
+            background-image: url(../img/logoDark.png);
+        }
+
+    }
+}

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-webplossy no-avif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>HISUN</title>
+
+    <script>
+      var imageData = {
+        avif: 'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=',
+        webp: 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA',
+      };
+  
+      // Функция проверки написана на основе документации Google:
+      // https://developers.google.com/speed/webp/faq#in_your_own_javascript
+  
+      function checkImageFormatSupport(imageFormat, callback) {
+        var img = new Image();
+        
+        img.src = imageData[imageFormat];
+        
+        img.onload = function () { var result = (img.width > 0) && (img.height > 0); callback(result); };
+        img.onerror = function () { callback(false); };
+      }
+  
+      // Проверяем поддержку WebP Lossy (сжатие с потерями)
+      
+      checkImageFormatSupport('webp', function (isWebpLossySupported) {
+        if (isWebpLossySupported) {
+          document.documentElement.className = document.documentElement.className.replace('no-webplossy', 'webplossy');
+        }
+      });
+  
+      // Проверяем поддержку AVIF
+    
+      checkImageFormatSupport('avif', function (isAvifSupported) {
+        if (isAvifSupported) {
+          document.documentElement.className = document.documentElement.className.replace('no-avif', 'avif');
+        }
+      });
+  </script>
+
+  </head>
+  <body>
+    <div class="modalOverlay"></div>
+
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <form class="modalForm" action="">
+      <h4 class="modalTitle">Заполните форму</h4>
+      <p class="modalText">Мы свяжемся с вами в ближайшее время и
+        ответим на все ваши вопросы.</p>
+        <input
+          class="modalInput"
+          type="text"
+          name="fio"
+          id="fio"
+          placeholder="Ваше имя"
+        />
+        <input class="modalInput" type="tel" name="phone" id="phone" placeholder="Телефон"/>
+        <button class="btn modalBtn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <a class="back_to_top" title="Наверх">↑</a>
+
+    <header class="sectionHeader">
+      <div class="sectionInner">
+        <div class="sectionHeader_logo">
+          <img
+            src="img/svg/logo.svg"
+            alt="Hisun logo"
+            class="sectionHeader_logo-img"
+          />
+          <a href="+78126490008" class="sectionHeader_logo-phone none"
+              >649-00-08</a
+            >
+          <span class="sectionHeader_logo-text">
+            Официальный диллер в Санкт-Петербурге
+          </span>
+        </div>
+        <span class="burgerMenuWrapper">
+          <div class="sectionHeader_locationPhone">
+            <address class="sectionHeader_locationPhone-location">
+              Лахтинский пр.10
+            </address>
+            <a href="+78126490008" class="sectionHeader_locationPhone-phone"
+              >649-00-08</a
+            >
+          </div>
+
+          <div class="sectionHeader_btns">
+            <a href="#" class="sectionHeader_btns-models">Модельный ряд</a>
+            <button class="btn sectionHeader_btns-requestCall">
+              Заказать звонок
+            </button>
+          </div>
+        </span>
+        <div class="sectionHeader_burger">
+          <div class="burger-menu">
+            <div class="burger-menu_button"></div>
+            <div class="burger-menu_overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="sectionBanner">
+      <div class="sectionInner">
+        <h2 class="sectionBanner_title">
+          официальный дилер квадроциклов hisun
+        </h2>
+        <h4 class="sectionBanner_subtitle">
+          СОЗДАй ВПЕЧАТЛЕНИЯ ОТ БЕЗДОРОЖЬЯ, КОТОРЫЕ ОСТАНУТСЯ НА ВСЮ ЖИЗНЬ.
+        </h4>
+        <button class="btn sectionBanner_getOffer">Получить предложение</button>
+        <div class="sectionBanner_specialOffer">
+          <h4 class="sectionBanner_specialOffer-title">
+            Специальное предложение
+          </h4>
+          <div class="sectionBanner_specialOffer-items">
+            <div class="sectionBanner_specialOffer-itemsItem">
+              <span>Trade-In</span>
+              с бонусом до 150 т.р.
+            </div>
+            <div class="sectionBanner_specialOffer-itemsItem">
+              <span>Кредит</span>
+              от 8569 руб/мес
+            </div>
+            <div class="sectionBanner_specialOffer-itemsItem">
+              <span>До 28.12</span>
+              доп оборудование в подарок
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionModels">
+      <div class="sectionInner">
+        <div class="sectionModels_info">
+          <h3 class="sectionModels_title limited">Hisun tactic 1000</h3>
+          <div class="sectionModels_color">
+            <span>Цвет</span>
+            <div class="sectionModels_color-line">
+              <div class="sectionModels_color-lineItem black"></div>
+              <div class="sectionModels_color-lineItem green"></div>
+              <div class="sectionModels_color-lineItem blue"></div>
+            </div>
+          </div>
+          <div class="sectionModels_price">
+            <div class="sectionModels_price-new">
+              от <span>1 399 000</span> рублей
+            </div>
+            <div class="sectionModels_price-old">1 800 000 руб</div>
+          </div>
+          <div class="sectionModels_characteristics">
+            <div class="sectionModels_characteristics-item">
+              <span>91 Л.с.</span>
+              мощность двигателя
+            </div>
+            <div class="sectionModels_characteristics-item">
+              <span>976 см<sup>3</sup></span>
+              объем двигателя
+            </div>
+            <div class="sectionModels_characteristics-item">
+              <span>408 кг</span>
+              сухой вес
+            </div>
+          </div>
+          <button class="btn sectionModels_getOffer">
+            Получить предложение
+          </button>
+        </div>
+        <div class="sectionModels_slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/avif/quadBike.avif" type="image/avif" />
+                  <source srcset="img/webp/quadBike.webp" type="image/webp" />
+                  <source srcset="img/png/quadBike.png" />
+                  <img src="img/png/quadBike.png" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/avif/quadBike.avif" type="image/avif" />
+                  <source srcset="img/webp/quadBike.webp" type="image/webp" />
+                  <source srcset="img/png/quadBike.png" />
+                  <img src="img/png/quadBike.png" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/avif/quadBike.avif" type="image/avif" />
+                  <source srcset="img/webp/quadBike.webp" type="image/webp" />
+                  <source srcset="img/png/quadBike.png" />
+                  <img src="img/png/quadBike.png" alt="" />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-button-next_1"></div>
+          <div class="swiper-button-prev swiper-button-prev_1"></div>
+          <div class="swiper-pagination swiper-pagination_1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionBenefits">
+      <div class="sectionInner">
+        <div class="swiper mySwiper_3 sectionBenefits_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/firstImg.avif" type="image/avif" />
+                <source srcset="img/webp/firstImg.webp" type="image/webp" />
+                <source srcset="img/png/firstImg.png" />
+                <img
+                  src="img/png/firstImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/secondImg.avif" type="image/avif" />
+                <source srcset="img/webp/secondImg.webp" type="image/webp" />
+                <source srcset="img/png/secondImg.png" />
+                <img
+                  src="img/png/secondImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/thirdImg.avif" type="image/avif" />
+                <source srcset="img/webp/thirdImg.webp" type="image/webp" />
+                <source srcset="img/png/thirdImg.png" />
+                <img
+                  src="img/png/thirdImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/firstImg.avif" type="image/avif" />
+                <source srcset="img/webp/firstImg.webp" type="image/webp" />
+                <source srcset="img/png/firstImg.png" />
+                <img
+                  src="img/png/firstImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/secondImg.avif" type="image/avif" />
+                <source srcset="img/webp/secondImg.webp" type="image/webp" />
+                <source srcset="img/png/secondImg.png" />
+                <img
+                  src="img/png/secondImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/avif/thirdImg.avif" type="image/avif" />
+                <source srcset="img/webp/thirdImg.webp" type="image/webp" />
+                <source srcset="img/png/thirdImg.png" />
+                <img
+                  src="img/png/thirdImg.png"
+                  alt=""
+                  class="sectionBenefits_slider-item"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="sectionBenefits_text">
+          <h3 class="sectionBenefits_text-title">Преимущества</h3>
+          <div class="sectionBenefits_text-content">
+            <ul class="sectionBenefits_text-contentList">
+              <li class="sectionBenefits_text-contentListItem">
+                Бензиновый одноцилиндровый двигатель с системой электронного
+                впрыска топлива EF1.
+              </li>
+              <li class="sectionBenefits_text-contentListItem">
+                Электроусилитель руля EPS - Electronic Power Steering
+              </li>
+              <li class="sectionBenefits_text-contentListItem">
+                Автоматическая трансмиссия Automatic CVTech Traibloc L/H/N/R
+              </li>
+              <li class="sectionBenefits_text-contentListItem">
+                Дисковые гидравлические тормоза спереди и сзади
+              </li>
+              <li class="sectionBenefits_text-contentListItem">
+                Легкое и стабильное рулевое управление
+              </li>
+            </ul>
+            <div class="sectionBenefits_text-contentVideo">
+              <a href="https://youtu.be/6dqRtyRP19o" class="video__link">
+              <picture>
+                <source
+                  srcset="img/avif/videoPlaceholder.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="img/webp/videoPlaceholder.webp"
+                  type="image/webp"
+                />
+                <source srcset="img/png/videoPlaceholder.png" />
+                <img
+                  src="img/png/videoPlaceholder.png"
+                  alt=""
+                  class="sectionBenefits_text-contentVideoItem"
+                  data-hashVideo="6dqRtyRP19o"
+                />
+              </picture>
+            </a>
+            <div class="sectionBenefits_text-contentVideoBtn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionPeculiarities">
+      <div class="sectionInner">
+        <h3 class="sectionPeculiarities_title">Особенности конструкции</h3>
+        <div class="sectionPeculiarities_content">
+          <div class="sectionPeculiarities_content-iteractiveImg no-webplossy no-avif">
+            <label for="accordeon-2" class="number two">2</label>
+            <label for="accordeon-3" class="number three">3</label>
+            <label for="accordeon-5" class="number five">5</label>
+            <label for="accordeon-6" class="number six">6</label>
+            <label for="accordeon-7" class="number seven">7</label>
+          </div>
+          <div class="sectionPeculiarities_content-accordeon">
+            <div class="accordeon">
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_1"
+                  id="accordeon-1"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-1" class="accordeonItem_trigger trig1">
+                  01. Инжерный двигатель
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_2"
+                  id="accordeon-2"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-2" class="accordeonItem_trigger trig2">
+                  02. Cиденье пассажира со спинкой и рукоятками
+                </label>
+                <div class="accordeonItem_content">
+                  Комфорт пассажирам обеспечит двухместное разноуровневое
+                  сиденье новой формы со спинкой и рукоятками. Фактура материала
+                  мягкая, при этом не пропускает воду и не боится мороза.
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_3"
+                  id="accordeon-3"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-3" class="accordeonItem_trigger trig3">
+                  03. Передний и задний бамперы
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_4"
+                  id="accordeon-4"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-4" class="accordeonItem_trigger trig4">
+                  04. 26-дюймовые колеса на литых дисках
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_5"
+                  id="accordeon-5"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-5" class="accordeonItem_trigger trig5">
+                  05. Горловина бензобака
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_6"
+                  id="accordeon-6"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-6" class="accordeonItem_trigger trig6">
+                  06. Электролебедка
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_7"
+                  id="accordeon-7"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-7" class="accordeonItem_trigger trig7">
+                  07. Полный комплект светотехники
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_8"
+                  id="accordeon-8"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-8" class="accordeonItem_trigger trig8">
+                  08. Усилитель руля
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+              <div class="accordeonItem">
+                <input
+                  type="checkbox"
+                  name="accordeon_input_9"
+                  id="accordeon-9"
+                  class="accordeonItem_input"
+                />
+                <label for="accordeon-9" class="accordeonItem_trigger trig9">
+                  09. Пластик
+                </label>
+                <div class="accordeonItem_content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                  ipsa modi officia distinctio ad facilis quam iure. Ipsa
+                  impedit repellat provident repudiandae. Laborum quam itaque at
+                  facilis pariatur assumenda rem?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionAboutUs">
+      <div class="sectionInner">
+        <div class="sectionAboutUs_content">
+          <h3 class="sectionAboutUs_content-title">30 ЛЕТ НА РЫНКЕ</h3>
+          <p class="sectionAboutUs_content-text">
+            Hisun заслуженно входит в число известнейших производителей
+            практичной внедорожной техники и транспорта для активного отдыха. За
+            19 лет бренд завоевал огромную популярность в мире: кроме
+            внутреннего рынка (25 китайских провинций), квадроциклы Hisun
+            успешно продаются более чем в 50 странах.
+          </p>
+          <p class="sectionAboutUs_content-text">
+            Сегодня штаб-квартиру или представительство Hisun можно найти на
+            всех континентах, за исключением Антарктиды. Только в Северной
+            Америке работают более 250 официальных дилеров и собственная
+            сборочная площадка.
+          </p>
+        </div>
+      </div>
+      <div class="sectionAboutUs_img">
+        <picture>
+          <source srcset="img/avif/quadBike30years.avif" type="image/avif" />
+          <source srcset="img/webp/quadBike30years.webp" type="image/webp" />
+          <source srcset="img/png/quadBike30years.png" />
+          <img
+            src="img/png/quadBike30years.png"
+            alt=""
+            class="sectionAboutUs_img-item"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section class="sectionWantSee">
+      <div class="sectionInner">
+        <div class="sectionWantSee_content">
+          <h3 class="sectionWantSee_content-title">
+            Хотите увидеть эту модель <span>вживую</span>?
+          </h3>
+          <p class="sectionWantSee_content-text">
+            Hisun заслуженно входит в число известнейших производителей
+            практичной внедорожной техники и транспорта для активного отдыха. За
+            19 лет бренд завоевал огромную популярность в мире: кроме
+            внутреннего рынка (25 китайских провинций), квадроциклы Hisun
+            успешно продаются более чем в 50 странах.
+          </p>
+          <button class="btn sectionWantSee_content-requestCall">
+            Заказать звонок
+          </button>
+        </div>
+        <div class="sectionWantSee_img">
+          <picture>
+            <source srcset="img/avif/quadBikeReverse.avif" type="image/avif" />
+            <source srcset="img/webp/quadBikeReverse.webp" type="image/webp" />
+            <source srcset="img/png/quadBikeReverse.png" />
+            <img
+              src="img/png/quadBikeReverse.png"
+              alt=""
+              class="sectionWantSee_img-item"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionTable">
+      <div class="sectionInner">
+        <div class="sectionTable_row">
+          <h3 class="sectionTable_title">HISUN TACTIC 1000</h3>
+          <div class="sectionTable_select">
+            <span class="sectionTable_select-label"> Сравнить с: </span>
+            <div class="__select" data-state="" id="selectID">
+              <div class="__select__title">CAN-AM OUTLANDER</div>
+              <div class="__select__content">
+                <input
+                  id="singleSelect0"
+                  value="0"
+                  class="__select__input"
+                  type="radio"
+                  name="singleSelect0"
+                />
+                <label
+                  for="singleSelect0"
+                  class="__select__label"
+                  data-jsonID="0"
+                  >Select item</label
+                >
+
+                <input
+                  id="singleSelect1"
+                  value="0"
+                  class="__select__input"
+                  type="radio"
+                  name="select_name"
+                />
+                <label
+                  for="singleSelect1"
+                  class="__select__label"
+                  data-jsonID="1"
+                  >ATV HISUN TACTIC 550 2-UP1</label
+                >
+
+                <input
+                  id="singleSelect2"
+                  value="0"
+                  class="__select__input"
+                  type="radio"
+                  name="select_name"
+                />
+                <label
+                  for="singleSelect2"
+                  class="__select__label"
+                  data-jsonID="2"
+                  >ATV HISUN TACTIC 550 2-UP2</label
+                >
+
+                <input
+                  id="singleSelect3"
+                  value="0"
+                  class="__select__input"
+                  type="radio"
+                  name="select_name"
+                />
+                <label
+                  for="singleSelect3"
+                  class="__select__label"
+                  data-jsonID="3"
+                  >ATV HISUN TACTIC 550 2-UP3</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sectionTable_table">
+          <div class="btns">
+            <div class="back"></div>
+            <div class="forward"></div>
+          </div>
+            <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem header title">Особенности</div>  
+            <div class="sectionTable_table-rowItem header baseModel">HISON TACTIC 750</div>
+            <div class="sectionTable_table-rowItem header secondModel noActive" id="modelName">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Двигатель</div>
+            <div class="sectionTable_table-rowItem better baseModel">735cc EFI</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="engine">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Охлаждение двигателя</div>
+            <div class="sectionTable_table-rowItem better baseModel">Жидкость</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="cooling">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Передние шины</div>
+            <div class="sectionTable_table-rowItem better baseModel">26 х 9 -12</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="frontTires">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Задние шины</div>
+            <div class="sectionTable_table-rowItem better baseModel">26 х 9 -12</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="rearTires">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Передние тормоза</div>
+            <div class="sectionTable_table-rowItem pad baseModel">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Задние тормоза</div>
+            <div class="sectionTable_table-rowItem pad baseModel">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive">СAN</div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="sectionWhyUs">
+      <div class="sectionInner">
+        <h3 class="sectionWhyUs_title">
+          Преимущества покупки в <span>hisun лахта</span>
+        </h3>
+        <div class="sectionWhyUs_content">
+          <ul class="sectionWhyUs_content-list">
+            <li class="sectionWhyUs_content-listItem">
+              Офисициальный диллер Hisun. Сделка в тот же день. Кредитное
+              предложение от 93 банков.
+            </li>
+            <li class="sectionWhyUs_content-listItem">
+              Сервисное обслуживание оригинальными запчастями. Два года
+              гарантии.
+            </li>
+            <li class="sectionWhyUs_content-listItem">
+              Репутация проверенного диллера. Мы работаем с 2014 года. Более
+              15000 проверенных клиентов.
+            </li>
+            <li class="sectionWhyUs_content-listItem">
+              Большой склад в наличии. Есть из чего выбирать.
+            </li>
+          </ul>
+          <div class="sectionWhyUs_content-slider">
+            <div class="swiper mySwiper_2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="img/avif/sliderImg.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="img/webp/sliderImg.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="img/png/sliderImg.png" />
+                    <img src="img/png/sliderImg.png" alt="" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="img/avif/sliderImg.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="img/webp/sliderImg.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="img/png/sliderImg.png" />
+                    <img src="img/png/sliderImg.png" alt="" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="img/avif/sliderImg.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="img/webp/sliderImg.webp"
+                      type="image/webp"
+                    />
+                    <source srcset="img/png/sliderImg.png" />
+                    <img src="img/png/sliderImg.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next_2"></div>
+            <div class="swiper-button-prev swiper-button-prev_2"></div>
+            <div class="swiper-pagination swiper-pagination_2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionGetOffer">
+      <div class="sectionInner">
+        <div class="sectionGetOffer_text">
+          <h3 class="sectionGetOffer_text-title">
+            Получите <span>спецпредложение</span>
+          </h3>
+          <p class="sectionGetOffer_text-content">
+            Hisun Tactic 1000 Limited есть в наличии в выставочных задах
+            дилерского центра. Позвоните по телефону
+            <a href="tel:+78126490008"></a> 8 (812) 649-00-08 или оставьте свой
+            контактный номер
+          </p>
+          <div class="sectionGetOffer_text-getPhone btn">Заказать звонок</div>
+        </div>
+        <div class="sectionGetOffer_img">
+          <picture>
+            <source
+              srcset="img/avif/quadBike_2.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="img/webp/quadBike_2.webp"
+              type="image/webp"
+            />
+            <source srcset="img/png/quadBike_2.png" />
+            <img src="img/png/quadBike_2.png" alt="" class="sectionGetOffer_img-item"/>
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionMap">
+      <div class="mapWrapper">
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad596149bf58e253540e6d8606ba2d2eec29dff33d418583144e39ede846c48e0&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </div>
+      <div class="sectionInner">
+        <div class="sectionMap_banner" style="">
+          <h4 class="sectionMap_banner-title">Hisun Санкт-Петербург</h4>
+          <div class="sectionMap_banner-decription">
+            Ждем вас в нашем салоне
+          </div>
+          <div class="sectionMap_banner-location">Лахтинский пр. 10</div>
+          <a href="tel:+78126490008" class="sectionMap_banner-phone"
+            >649-00-08</a
+          >
+          <div class="sectionMap_banner-workTime">9:00 - 21:00</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="sectionFooter">
+      <div class="sectionInner">
+        <div class="sectionFooter_logo">
+          <img
+            src="img/svg/logo.svg"
+            alt="Hisun logo"
+            class="sectionFooter_logo-img"
+          />
+          <span class="sectionFooter_logo-text"
+            >Официальный диллер в Санкт-Петербурге</span
+          >
+        </div>
+        <div class="sectionFooter_locationPhone">
+          <address class="sectionFooter_locationPhone-location">
+            Лахтинский пр.10
+          </address>
+          <a href="+78126490008" class="sectionFooter_locationPhone-phone"
+            >649-00-08</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
+</html>

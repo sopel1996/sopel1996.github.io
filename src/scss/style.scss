@@ -1,0 +1,328 @@
+@import "color";
+$borderRadius: 1.6rem;
+
+.sectionContacts {
+  margin: 0 0 20px 0;
+  .sectionInner {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .sectionContacts_vkWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/svg/VK.svg) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .sectionContacts_tgWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/svg/Telegram.svg) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .sectionContacts_emailWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/svg/Gmail.svg) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .sectionContacts_hhWrap {
+    a {
+      text-decoration: none;
+      color: rgb(88, 86, 86);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      &:hover {
+        color: rgb(35, 141, 190);
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: transparent url(../img/png/min-hh-red.png) 50% 50% / contain
+          no-repeat;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}
+
+.eduProject {
+}
+.project_title {
+   color: rgb(88, 86, 86);
+}
+.comercialProject {
+}
+
+.siteImgBord {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    margin-right: 20px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.js-tilt-glare {
+  border-radius: $borderRadius;
+}
+
+.wrap {
+  border-radius: $borderRadius;
+  margin: 1rem;
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+  cursor: pointer;
+}
+
+.container {
+  width: 150px;
+  height: 300px;
+  border-radius: $borderRadius;
+  padding: 4rem;
+  background-position: 50% 0%;
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  &--active {
+    transition: none;
+  }
+
+  &--1 {
+    background-image: url(../img/png/HebrewSite.png);
+  }
+
+  &--2 {
+    background-image: url(../img/png/insurance-online.png);
+  }
+
+  &--3 {
+    background-image: url(../img/png/kwork-juristConsalt.png);
+  }
+
+  &--4 {
+    background-image: url(../img/png/La-Fleur-de-Paris.png);
+  }
+
+  &--5 {
+    background-image: url(../img/png/lawWeb.png);
+  }
+
+  &--6 {
+    background-image: url(../img/png/sberUniverse-greenCorpLand.png);
+  }
+
+  &--7 {
+    background-image: url(../img/png/zada-design-studio.png);
+  }
+
+  &--8 {
+    background-image: url(../img/png/haval.png);
+  }
+
+  &--9 {
+    background-image: url(../img/png/ridge_landing.png);
+  }
+
+  &--10 {
+    background-image: url(../img/png/sberUniver_dz_users.png);
+  }
+
+  &--11 {
+    background-image: url(../img/png/sberUniverse_dz_pokemon.png);
+  }
+
+  &--12 {
+    background-image: url(../img/png/sberUniverse_dz_posts.png);
+  }
+
+  &--13 {
+    background-image: url(../img/png/sberuniverse_dz_react_grid.png);
+  }
+
+  &--14 {
+    background-image: url(../img/png/Varwin_beta_test.png);
+  }
+}
+
+.link {
+   text-decoration: none;
+   color: rgb(88, 86, 86);
+   &:hover{
+      color: rgb(35, 141, 190);
+   }
+  &--1::after {
+    content: "HebrewSite";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--2::after {
+    content: "insurance-online";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--3::after {
+    content: "kwork-juristConsalt";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--4::after {
+    content: "La-Fleur-de-Paris";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--5::after {
+    content: "law-Web";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--6::after {
+    content: "sberUniverse-greenCorpLand";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--7::after {
+    content: "zada-design-studio";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--8::after {
+    content: "haval";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--9::after {
+    content: "ridge_landing";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--10::after {
+    content: "sberUniver_dz_users";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--11::after {
+    content: "sberUniverse_dz_pokemon";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--12::after {
+    content: "sberUniverse_dz_posts";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--13::after {
+    content: "sberuniverse_dz_react_grid";
+    position: relative;
+    z-index: 999999;
+  }
+
+  &--14::after {
+    content: "Varwin_beta_test";
+    position: relative;
+    z-index: 999999;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sectionContacts .sectionInner {
+    flex-direction: column;
+    .sectionContacts_vkWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+    .sectionContacts_tgWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+    .sectionContacts_emailWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+    .sectionContacts_hhWrap {
+      padding: 7px 0;
+      width: 220px;
+      align-items: center;
+    }
+  }
+}

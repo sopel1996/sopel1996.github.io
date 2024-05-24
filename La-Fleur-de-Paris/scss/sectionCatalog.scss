@@ -1,0 +1,41 @@
+.sectionCatalog{
+   
+.grid{
+    margin: 0 auto;
+}
+    .grid-item{
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: toRem(275);
+            height: toRem(466);
+            &-img{
+                width: toRem(275);
+                height: toRem(350);
+                object-fit: cover
+            }
+            .productTitle{
+                @include IBMPlexRegular(20);
+                color: #000;
+            }
+            .productPrice{
+                @include IBMPlexText(22);
+                color: #A52357;
+                
+            }
+            .productMore{
+                display: block;
+                color: #000;
+                @include AlmoniRegular(14);
+                margin-bottom: toRem(15);
+                &:after{
+                    margin-right: toRem(10);
+                    content:">";
+                }
+
+            }
+        }
+    }
+}

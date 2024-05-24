@@ -1,0 +1,170 @@
+@import 'mixins.scss';
+.sectionFooter{
+    background-color: #261E21;
+    // height: toRem(548);
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footerTitle{
+        @include IBMPlexBold(22);
+        color: #fff;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255,0.1);
+            width: 100%;
+            height: toRem(33);
+            font-size: toRem(22);
+            margin-bottom: toRem(25);
+            &::after{
+                display: block;
+                margin-top: toRem(7);
+                position: absolute;
+                width: 5%;
+                content: "";
+                border: 1px solid #FDC5BC;
+            } 
+    }
+    .sectionFooter_firstLine{
+        color: rgba(255, 255, 255, 0.6);
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255,0.1);
+        width: 100%;
+        padding-top: toRem(60);
+        padding-bottom: toRem(40);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        .footerList{
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            li{
+                a{
+                    @include IBMPlexLight(16);
+                    color: rgba(255, 255, 255, 0.6);
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255,0.1);
+                    height: toRem(34);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+            }
+        }
+        .title{
+            
+        }
+        &-laFlor{
+            height: 100%;
+            width: toRem(215);
+        }
+        &-products{
+            height: 100%;
+            width: toRem(215);
+            
+        }
+        &-contacts{
+            height: 100%;
+            width: toRem(278);
+            .workTime,
+            .location,
+            .contacts{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-bottom: toRem(25);
+                @include IBMPlexLight(16);
+                a{  
+                    @include IBMPlexLight(16);
+                    color: rgba(255, 255, 255, 0.6);
+
+                }
+                .contactsIcon{
+                    width: toRem(25);
+                    height: toRem(25);
+                    margin-left: toRem(10);
+                }
+            }
+            .social{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                &Icon{
+                    margin-right: toRem(20);
+                    &:first-child{
+                        margin-right: 0;
+                        
+                    }
+                }
+            }
+           
+        }
+        &-feedback{
+            height: 100%;
+            width: toRem(390);
+            .footerForm{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                &-input{
+                    @include IBMPlexLight(16);
+                    color: #B9B9B9;
+                    width: 100%;
+                    height: toRem(40);
+                    margin-bottom: toRem(15);
+                    border: none;
+                    outline: none;
+                    border-radius: toRem(20);
+                    padding: toRem(10) toRem(20);
+                    
+                    &:nth-child(4){
+                        margin-bottom: toRem(20);
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+
+    .sectionFooter_secondLine{
+        width: 100%;
+        height: toRem(100);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .realmediaLogo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .logoImg{
+                width: toRem(90);
+                height: toRem(20);
+                object-fit: cover
+            }
+            .logoText{
+                @include AlmoniLight(15);
+                color: #fff;
+                &::after{
+                    content: "";
+                    border: none;
+                    border-left: 1px solid #fff;
+                    margin: 0 toRem(10);
+                }
+            }
+        }
+        .copyright{
+            @include AlmoniRegular(16);
+            color: #FFF;
+        }
+    }
+}
